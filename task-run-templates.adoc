@@ -32,7 +32,7 @@ summary: 組織が構築したアプリケーションテンプレートの中�
 
 
 [role="quick-margin-para"]
-* AppTemplate* サービスを選択し、 * Templates * タブをクリックします。
+[*正常性]>[修正]を選択し、[*テンプレート*]タブをクリックします。
 
 [role="quick-margin-para"]
 テンプレートを選択し、 *Run Template* をクリックして、編集可能フィールドに値を入力し、リソースを作成します。
@@ -101,7 +101,7 @@ image:screenshot_run_template_from_canvas.png["テンプレートからボリュ
 既存の作業環境にボリュームを追加するには、 _Templates Dashboard_ を使用します。
 
 .手順
-. * AppTemplate* サービスを選択し、 * Templates * タブをクリックします。
+. [*正常性]>[修正]を選択し、[*テンプレート*]タブをクリックします。
 +
 _Templates Dashboard_ が表示されます。
 
@@ -130,7 +130,7 @@ image:screenshot_run_template_from_dashboard.png["テンプレートからボリ
 作業環境の作成に必要な詳細については、を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["AWS での Cloud Volumes ONTAP の起動"^]。
 
 .手順
-. * AppTemplate* サービスを選択し、 * Templates * タブをクリックします。
+. [*正常性]>[修正]を選択し、[*テンプレート*]タブをクリックします。
 +
 _Templates Dashboard_ が表示されます。
 
@@ -154,7 +154,7 @@ image:screenshot_template_run_from_dashboard_we.png["テンプレートから作
 特定のリソース（ボリュームなど）を検出するテンプレートを実行し、それらのリソース（ Cloud Backup など）に対してクラウドサービスを有効にすることができます（この機能を使用してテンプレートを作成している場合）。テンプレートの実行中に若干の調整を加えて、クラウドサービスを適切なリソースにのみ適用することができます。
 
 .手順
-. * AppTemplate* サービスを選択し、 * Templates * タブをクリックします。
+. [*正常性]>[修正]を選択し、[*テンプレート*]タブをクリックします。
 +
 _Templates Dashboard_ が表示されます。
 

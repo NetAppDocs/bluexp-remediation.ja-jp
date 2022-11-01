@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
-  <block id="8c56922858331beaa2fea4df2fc792c6" category="summary">Cloud Manager では、タグを _existing_resources に適用して、これらのリソースの編成と管理を容易にすることができます。タグは、リソースをグループ化してアプリケーション、環境、リージョン、課金コード、クラウドプロバイダを識別するために使用できるメタデータです。 その他。</block>
   <block id="bed434cdb82938c37e10ec775ee39334" category="doc">タグ付けの詳細をご覧ください</block>
   <block id="40fa3ed3deb11f4523fb01c3e53cd533" category="paragraph">タグは、 * タグキー * と * タグ値 * で構成されます。たとえば、「 Environment 」というタグキーを作成し、「 Production 」および「 Test 」のタグ値を追加できます。リソースに適用したら、キーと値のペアに一致するリソースをすばやく検索して表示できます。</block>
-  <block id="3ebce6b779786d56694bbe904777f9b7" category="inline-link-macro">作成する Cloud Manager テンプレート</block>
-  <block id="c076b5a8076ba06e9f4f25544552b0f8" category="paragraph">作業環境または Azure NetApp Files ボリュームを作成するときに、タグキーと値のペアを _new_resources に追加できます。でタグキーと値のペアを定義することもできます <block ref="cccec4231e26dd3cfde8f707c64ce7d6" category="inline-link-macro-rx"></block> ストレージ管理者や DevOps エンジニアの方に最適です。</block>
   <block id="126a062727c3057b3a937eb69aaa1597" category="paragraph">タグ付けサービスを使用して新しいタグを追加したり、既存のタグを変更または削除したりできます。</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">の機能</block>
   <block id="5e30e27f68a75ca7a2e3182f2dd12b16" category="paragraph">Tagging サービスには、次の機能とメリットがあります。</block>
@@ -13,7 +10,6 @@
   <block id="9a9d09dff347b4f762cb3ea1cb1761a1" category="list-text">リソースタイプごとにタグキーとタグ値を追加、削除、および編集します</block>
   <block id="4aeb19e9643ca4bd7c08134d7f5d73ad" category="list-text">AWS や Azure から、環境内の ONTAP のリソースとリソースにタグを付けましょう。</block>
   <block id="8c3c2e38ab977ab43a9ebd00e29973df" category="section-title">価格とライセンス</block>
-  <block id="15a9a77c4cf2e80203ba12f1c0e8550c" category="paragraph">リソースにタグを付ける機能にはライセンスは必要なく、 Account Admin または Workspace Admin のロールを持つすべての Cloud Manager ユーザが無償で使用できます。</block>
   <block id="9b3643d929067c43445625ecc4b23130" category="section-title">タグ付け可能なリソース</block>
   <block id="b087cfd5a6751cde85bc43abdbea1db3" category="paragraph">タグは次のリソースに適用できます。</block>
   <block id="27703c8f150ac4bb0a3a83a7857353af" category="cell">プロバイダ</block>
@@ -50,9 +46,7 @@
   <block id="3b0992b7e8536fc1e15651502081b6e6" category="paragraph">Google ラベルについては、を参照してください<block ref="5b102b4e66babd115f4b84c9458d0cfc" category="inline-link-rx"></block>。</block>
   <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="section-title">前提条件</block>
   <block id="2e555eb89efbc4fa0651bd1f644cf78e" category="section-title">AWS Connector の権限を確認します</block>
-  <block id="ede60e0200bc22484e50c25ec183617f" category="paragraph">Cloud Manager バージョン 3.9.10 以降を使用してコネクタを作成した場合は、すべての設定が完了しています。以前のバージョンの Cloud Manager を使用してコネクタを作成していた場合は、 Cloud Manager IAM ロールで AWS EC2 インスタンスにタグ付けするために必要な権限をいくつか追加する必要があります。</block>
   <block id="f684df81e4cb924eb887af3d63731c28" category="section-title">Azure Connector の権限を確認します</block>
-  <block id="55e86ad3487f5a74e4a7f3adf4c7d04c" category="paragraph">Cloud Manager バージョン 3.9.10 以降を使用してコネクタを作成した場合は、すべての設定が完了しています。以前のバージョンの Cloud Manager を使用してコネクタを作成していた場合は、 Azure リソースにタグを付けるために、 Cloud Manager Operator IAM ロールで必要な権限をいくつか追加する必要があります。</block>
   <block id="2a6cf45576e45e1753cb8e4a3218f9bf" category="section-title">タグルールと制限</block>
   <block id="310e25dd524b7da8c8ff6eb8edf50e5f" category="paragraph">タグキーとタグ値を作成するときは、次のルールが適用されます。</block>
   <block id="47c6baf2a93fb70987f8d50230d68450" category="list-text">キーの最大長： 128 文字</block>
@@ -100,7 +94,6 @@
   <block id="011741db456ebe1ea2d73d2c43f93efc" category="paragraph">この機能を使用すると、 Cloud Manager で、テンプレート内のパラメータに入力したハードコーディングされた値を監視できます。テンプレートを使用してボリュームを作成したあと、 Cloud Manager がパラメータ値が変更されてテンプレート定義に合わせられなくなったと認識した場合は、設計したテンプレートから「ドリフト」のあるすべてのボリュームを表示できます。こうすることで、これらのボリュームを特定し、変更を加えてコンプライアンスに戻すことができます。</block>
   <block id="824b76af9549cb14fd2443aa485afb15" category="section-title">2021 年 5 月 2 日</block>
   <block id="96e3f6826df4638ccb92b90bd780b773" category="paragraph">新しく作成した各ボリュームに対してデータセンスを有効にしたり、新しく作成した各ボリュームに対して Cloud Backup を有効にしたり、作成したボリュームに対してバックアップとコンプライアンスの両方を有効にするテンプレートを作成したりできます。</block>
-  <block id="ce21e7ae4271271294ccbf54c8fd6864" category="summary">ネットアップでは、 Cloud Manager をさまざまな方法でサポートしています。ナレッジベース（ KB ）記事やコミュニティフォーラムなど、 24 時間 365 日利用可能な幅広いセルフサポートオプションをご用意しています。サポート登録には、 Web チケット処理によるリモートテクニカルサポートが含まれます。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">ヘルプを表示します</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link-macro"></block>
   <block id="cc371045494864a1be09aecf8486813b" category="summary">ネットアップが提供する「アクション」を 1 つ以上選択し、組織がリソース作成の最適化を開始するために使用できるアプリケーションテンプレートを迅速に構築します。</block>
@@ -112,7 +105,6 @@
   <block id="dad57e95fc9a5390302ad830888cbdb9" category="inline-link">クラウドバックアップ</block>
   <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="inline-link">クラウドデータの意味</block>
   <block id="45ebff704e28730c0e631bb5f09b2205" category="list-text">クラウドサービス「 action 」をテンプレートに追加する場合（など）<block ref="65043dfb781746b8fde5bfddb319eb97" category="inline-link-rx"></block> または<block ref="4af4db8698c4a0998b2c93dbadcf8efe" category="inline-link-rx"></block>をクリックして、ご使用の環境でサービスがアクティブでライセンスされていることを確認してください。</block>
-  <block id="42ad9e938d3f22547c490ccfc69261fe" category="paragraph">* AppTemplate* サービスを選択し、 * エディタ * タブをクリックして、テンプレートで使用するアクションを選択します。</block>
   <block id="ba13d007a4f76ded358c0280157f648b" category="paragraph">作成手順に従い、テンプレートによって実行されるアクションを定義します。</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="section-title">要件</block>
   <block id="4b09bdd4ca435f6a4b77b142f9481573" category="paragraph">以下の要件を読み、サポートされている構成になっていることを確認してください。</block>
@@ -120,7 +112,6 @@
   <block id="880e0da9ea31d472fa96b1ad7e4be6ad" category="list-text">コネクタがない場合は、<block ref="0e90a2191f59a8f46190195b37c75156" category="inline-link-rx"></block> AWS 、 Azure 、 GCP 向け。</block>
   <block id="45ef42d49d3545c2dc4c85b1084a47e4" category="list-text">Cloud Volumes ONTAP ボリュームテンプレートを作成する際には、 Cloud Volumes ONTAP 作業環境がユーザに利用できることを確認してください。で Cloud Volumes ONTAP システムを起動する方法を参照してください<block ref="9d7ce7d64938e2f7608d2bb2edf0463c" category="inline-link-rx"></block>、<block ref="24f9dba5182403aa08072eb715753c19" category="inline-link-rx"></block>または、のいずれかです<block ref="50ded4108906004e3a51ae63e78f7f8d" category="inline-link-rx"></block>。</block>
   <block id="b927c65793ede8840d859f745c1070b4" category="inline-link">オンプレミスの ONTAP システムを検出</block>
-  <block id="c8901a7a496874759b4b8b60b0de5c3d" category="list-text">オンプレミスの ONTAP ボリュームテンプレートを作成する場合は、オンプレミスの ONTAP 作業環境がユーザに利用できることを確認します。方法を参照してください<block ref="73a5fece0c926f1d97e300f9e1e63b86" category="inline-link-rx"></block> をクリックします。</block>
   <block id="89bbeb90a25e5540f1875c6148fc07a6" category="inline-link">Azure NetApp Files 作業環境を作成します</block>
   <block id="e6ed2b3f4bf8b70c7dffd440bfa20748" category="list-text">クラウドバックアップを使用してテンプレート内のボリュームをバックアップする場合は、環境が Cloud Backup をアクティブ化していることを確認してください。</block>
   <block id="375fb9ecf54511eed57c23439aba8fa9" category="list-text">クラウドデータセンスを使用してテンプレート内のボリュームをスキャンする場合は、クラウドデータセンスがアクティブ化されていることを確認してください。</block>
@@ -135,7 +126,6 @@
   <block id="d0285b972453920d44e9bfc537f86825" category="list-text">Cloud Backup を有効にします</block>
   <block id="0e7b1101bfe909f1f24d1bc082d8cb0b" category="paragraph">30 個の日単位バックアップ、 13 個の週単位バックアップ、 3 個の月単位バックアップを作成します（ _3 カ月保持ポリシーを使用）。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">手順</block>
-  <block id="e4b455f83d8a2cbf227e5a6b6bd7ed8c" category="list-text">* AppTemplate* サービスを選択し、 * Templates * タブをクリックして、 * Add New Template * をクリックします。</block>
   <block id="12800accdcea8213a17428d96d3f650b" category="paragraph">Select_a Template_page が表示されます。</block>
   <block id="ac454ecfe801e40640fcab274d8376c7" category="inline-image-macro">このテンプレートを使用して実行する主なアクションの選択方法を示すスクリーンショット。</block>
   <block id="badf0b64af7e4dbccc924f1b86d16441" category="paragraph"><block ref="badf0b64af7e4dbccc924f1b86d16441" category="inline-image-macro-rx" type="image"></block></block>
@@ -188,7 +178,6 @@
   <block id="0728b4f74021dc704fab300222094c8b" category="list-text">[ 適用 ] をクリックすると、 [ クラウドバックアップ ] ダイアログが保存されます。</block>
   <block id="46725495896c458f104f504d53b4b320" category="list-text">左上に、データベース * （この例では）のテンプレート名 * CVO ボリュームを入力してください。</block>
   <block id="d69be6c531037f06436630d128988a41" category="list-text">[* 設定とドリフト * ] をクリックして、このテンプレートを他の同様のテンプレートと区別できるように、より詳細な概要を提供します。したがって、テンプレート全体のドリフトを有効にしてから、 [ * 適用 * ] をクリックします。</block>
-  <block id="7d1cada9a49f8783660b223f3fef2678" category="paragraph">ドリフトを使用すると、 Cloud Manager は、このテンプレートの作成時に入力したパラメータのハードコーディング値を監視できます。</block>
   <block id="069cf34ab6ca64e85728193a5aab0a4e" category="list-text">[ テンプレートの保存 *] をクリックします。</block>
   <block id="8b8745414ffb4d1bc70671bfa839ed7d" category="paragraph">テンプレートが作成され、新しいテンプレートが表示されるテンプレートダッシュボードに戻ります。</block>
   <block id="5e0cbbeb0c7fbcd015cc8264aa380cf6" category="inline-xref">テンプレートについてユーザに説明する必要がある内容</block>
@@ -259,8 +248,6 @@
   <block id="2daf1cb573c2c61422faf64610cf9402" category="cell">クレデンシャル</block>
   <block id="64917fe8c1577c91426bd43a4aef38db" category="cell">これらは、 Cloud Volumes ONTAP クラスタ管理アカウントのクレデンシャルです。これらのクレデンシャルを使用して、 ONTAP System Manager またはその CLI を使用して Cloud Volumes ONTAP に接続できます。</block>
   <block id="2cebc28eab2cacd2695a37777c14a93f" category="cell">作業環境名</block>
-  <block id="98fed17197f2edc82ba68578c571fdbe" category="cell">Cloud Manager は、作業環境名を使用して、 Cloud Volumes ONTAP システムと Amazon EC2 インスタンスの両方に名前を付けます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。フィールド内をクリックし、 5 つのオプションのいずれかを選択します。管理者が任意の名前を入力できるようにするには、 * フリーテキスト * を選択するか、作業環境名に特定の接頭辞または接尾辞を付けるか、 _contains_certain 文字を使用するか、または入力した正規表現（ regex ）の規則に従うように指定します。</block>
-  <block id="b94b3141dd708a0d291780bdda339320" category="cell">AWS タグは、 AWS リソースのメタデータです。Cloud Manager は、 Cloud Volumes ONTAP インスタンスおよびインスタンスに関連付けられた各 AWS リソースにタグを追加します。タグの詳細については、を参照してください<block ref="9bd250e03cdf80384a24635f16673602" category="inline-link-rx"></block>。</block>
   <block id="6101eef8fd3b11affed5baa0379eb7b5" category="inline-link">AWS ワークシート</block>
   <block id="21e39bab34fec6294e31fe4e65b232c7" category="list-text">* 場所と接続 * ：に記録したネットワーク情報を入力します<block ref="837a3d1b1486e7cc7dba08a5d4a77996" category="inline-link-rx"></block>。これには、 AWS リージョン、 VPC 、サブネット、セキュリティグループが含まれます。</block>
   <block id="6f27ddf091b10f1dfd4ab13be0759ec7" category="paragraph">AWS Outpost を使用している場合は、 Outpost VPC を選択して、その Outpost に単一のノードの Cloud Volumes ONTAP システムを導入できます。エクスペリエンスは、 AWS に存在する他の VPC と同じです。</block>
@@ -383,8 +370,6 @@
   <block id="763165e5bc9a9a1c445da7d2ef9edaf1" category="inline-image-macro">テンプレートを複製する方法を示すスクリーンショット。</block>
   <block id="45a0059a48c059287929332e05648327" category="paragraph"><block ref="45a0059a48c059287929332e05648327" category="inline-image-macro-rx" type="image"></block></block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
-  <block id="4940124e8487cb4ea36f1511a195cf66" category="inline-link-macro">Cloud Manager 3.9 に関する注意事項</block>
-  <block id="c069fcc68c5dfa73ccc99924c836cae9" category="list-text"><block ref="c069fcc68c5dfa73ccc99924c836cae9" category="inline-link-macro-rx"></block></block>
   <block id="f56a22734fbef43dcef97b492e9cd352" category="summary">アクション間で値を渡す（ボリューム名など）、アクションを相互に接続する条件付き分岐（新しいボリュームでバックアップを有効にする）、およびテンプレートを使用する際のリソースのカスタマイズに役立つテンプレートを構築する場合に使用できる機能があります。</block>
   <block id="889ecb758e53f24c9efd4553bc09c14a" category="doc">テンプレートのビルディングブロック</block>
   <block id="4312f94678a5f3a99677eff317710d96" category="section-title">特殊なテンプレートコントロール</block>
@@ -395,7 +380,6 @@
   <block id="3f8e4e6365aa394b3479fdef75fe9f72" category="paragraph">このチェックボックスをオンにすると、ストレージ管理者は、テンプレートで入力した値よりも優先されます。ストレージ管理者は値を提案しますが、リソースの作成時に値をカスタマイズできます。</block>
   <block id="c1740fe5b39f93f6c892f09718e037b2" category="paragraph">オフにした場合、ユーザーは値を変更できず、管理者がリソースを展開するときにテンプレート内のハードコードされた値が常に使用されます。</block>
   <block id="c476134c72fb48531290a4040a823edc" category="section-title">ドリフトチェックボックス</block>
-  <block id="85ae8cb8d8b796e60de4989a08de70c5" category="paragraph">このチェックボックスをオンにすると、テンプレートを使用してリソースを作成するときに、 Cloud Manager がパラメータに対して入力したハードコーディングされた値を監視します。ドリフトレポートを実行すると、ドリフトで構成されたどのフィールドがテンプレート設定に適合しなくなったかを確認できます。</block>
   <block id="b24825d81b9d78c2ec0b3766ce0f0e29" category="paragraph">オフにすると、リソースが作成された後で値を任意の値に変更できます。</block>
   <block id="dc61d8962272ba87fc289d3611028a92" category="admonition">ドリフト機能を使用するには、テンプレートで一部のパラメータのドリフトを定義した後で、テンプレートのドリフト機能を有効にする必要があります。これは、テンプレートを作成する最後のステップです。ドリフトは、パラメータに対して有効になっていても、テンプレートで有効になっていない場合は機能しません。</block>
   <block id="14425fa948dd33c64b1ac596d827664d" category="section-title">フィールドで正規表現（ regex ）を使用する</block>
@@ -407,9 +391,7 @@
   <block id="49c2ea485e68d2177e58bb2d451473c8" category="paragraph">テンプレートには、前のアクションの情報を使用して、将来のアクションでフィールドにデータを入力する機能があります。たとえば、クラウドバックアップ機能を有効にするボリュームの名前を定義する際に、 Create Cloud Volumes ONTAP アクションで、ボリューム名として入力したストレージ管理者の値を使用するようにバックアップアクションを設定できます。</block>
   <block id="317d9ac287a0bb30f0b154a9372237b4" category="paragraph">AppTemplate サービスで使用できる情報には、次の 3 種類があります。</block>
   <block id="79bc4a04a5f308a67f608558bf0e314a" category="list-text">入力値 - 以前のテンプレートアクションでストレージ管理者がフィールドに入力した実際の値です。</block>
-  <block id="86d263367d069f32b10ed5bb15d5876b" category="list-text">出力値 - これは、前のテンプレートアクションからリソースを作成したあとに Cloud Manager によって生成される値です。</block>
   <block id="cb1be534cc7a13fb27acf340f07c83b6" category="list-text">独自の値を入力してください - これは入力した値であり、テンプレートの前のアクションからはアクセスされません。</block>
-  <block id="fc8fb6e55d63eccfe4d2093ef3d494bf" category="paragraph">たとえば、ボリュームでコンプライアンススキャンを有効にするには、 Cloud Data Sense サービスで、ストレージ管理者が入力したボリューム名（入力値）と、 Cloud Manager がボリュームを作成したときに生成する「ボリューム UUID 」（出力値）の両方が必要です。</block>
   <block id="536e2c2dd1b0f2e4362deffc386760c4" category="paragraph">次の図は、テンプレートのクラウドデータセンスアクションセクションでこの情報を入力する方法を示しています。</block>
   <block id="a4d99746ded90308d15ecf5dc8850229" category="inline-image-macro">前のアクションで入力した値を使用して別のアクションのフィールドに入力する方法を示す図。</block>
   <block id="eefa405d25c68122a3d10c7be99b3fed" category="paragraph"><block ref="eefa405d25c68122a3d10c7be99b3fed" category="inline-image-macro-rx" type="image"></block></block>
@@ -426,7 +408,6 @@
   <block id="c962626fb4ad9b65cc3a4217695f094c" category="paragraph">ルールは、次の 3 つの部分で構成されます。</block>
   <block id="7960c7072233e2369dad8e54b3c23d04" category="paragraph">* ソースフィールド * - 比較する値を取得する場所。</block>
   <block id="46b1885cab50ba7f852ee7e4296586b1" category="list-text">Get input value from action ：以前のテンプレートアクションのフィールドにストレージ管理者が入力した実際の値。</block>
-  <block id="2e1dd6450d9c9986cc77c74a7e699498" category="list-text">Get output value from action - 以前のテンプレートアクションからリソースを作成したあとに生成された Cloud Manager の値。</block>
   <block id="ac2e89a4baae83530e11a9c64165f130" category="list-text">値を入力 - これは入力した値であり、テンプレートの前のアクションからはアクセスされません。既存のボリュームなど、すでに存在するリソースの値を指定できます。</block>
   <block id="f7d6dca310f4edc482b1d3bd0cdfb18f" category="paragraph">* 演算子 * - 比較に使用される演算子。オプションは * 等号、 * 等しくない * 、 * より大きい * 、 * より小さい * 、 * より大きい * 、 * より大きいまたは等しい * 、 * より小さいまたは等しい * です。</block>
   <block id="67547dca721bdbf95912a7906fe534d0" category="paragraph">* フィールド値 * - 比較する実際の値。オプションは、 _Source フィールド _ のオプションと同じです。</block>
@@ -473,7 +454,6 @@
   <block id="5f29105c4fcb4fd7664c9b573f2325b4" category="paragraph">テンプレートを使用すると、 Cloud Volumes ONTAP 、 Azure NetApp Files 、およびオンプレミスの ONTAP システム用のボリュームを作成できます。</block>
   <block id="e0fb2c2abefd11630ebc42b8a6eb3570" category="list-text">テンプレートを使用して Cloud Volumes ONTAP 、オンプレミス ONTAP 、または Azure NetApp Files システム用のボリュームを作成する前に、ボリュームを導入する適切な作業環境にアクセスできることを確認してください。</block>
   <block id="e04a6c526d4b3218b5b39dab077db37c" category="list-text">テンプレートが、などのボリュームのクラウドサービスをアクティブにした場合<block ref="65043dfb781746b8fde5bfddb319eb97" category="inline-link-rx"></block> または<block ref="4af4db8698c4a0998b2c93dbadcf8efe" category="inline-link-rx"></block>をクリックして、ご使用の環境でサービスがアクティブでライセンスされていることを確認してください。</block>
-  <block id="f931f9fe2a71453ad570183c341aa8ad" category="paragraph">* AppTemplate* サービスを選択し、 * Templates * タブをクリックします。</block>
   <block id="8e11a084ad23a73bf5ea573d54dded8e" category="paragraph">テンプレートを選択し、 *Run Template* をクリックして、編集可能フィールドに値を入力し、リソースを作成します。</block>
   <block id="72e3ca24265542fce89dd834f12f4619" category="list-text">Cloud Volumes ONTAP ボリュームを作成するときは、 Cloud Volumes ONTAP の作業環境が利用可能であることを確認してください。</block>
   <block id="be34f1201bb3e74c3a66c39a92d09bee" category="list-text">オンプレミスの ONTAP ボリュームを作成する場合は、オンプレミスの ONTAP 作業環境が利用可能であることを確認します。</block>
@@ -530,11 +510,9 @@
   <block id="f3b757371a9961d5ce7c320198eb268b" category="paragraph">結果が想定どおりでない場合は、をクリックします <block ref="8e860c5cca0144ac9d126d75205476b6" category="inline-image-macro-rx" type="image"></block> をクリックし、さらに検索条件を絞り込んでください。</block>
   <block id="c6eb5da2af16b1f095636b3b5fc6a252" category="paragraph">テンプレートが実行され、検索条件で選択した各ボリュームで Cloud Backup が有効になります。</block>
   <block id="ad065cba81dd0205f37aa602c122c6aa" category="paragraph">すべてのエラーは、 _Running Your Template_page で呼び出され、必要に応じて問題を解決できます。</block>
-  <block id="ea71cf04f7239c133ac6882358bee38e" category="summary">Cloud Manager Tagging サービスを使用して、既存のリソースに割り当てられたタグを表示、追加、変更、および削除できます。これにより、リソースの管理を整理して簡単に行うことができます。</block>
   <block id="9b07b7a435eb3748887ec84eac33cf64" category="doc">リソースのタグを管理します</block>
   <block id="f02ce38105e0bd4e1492a696a42fc111" category="section-title">特定のタグを持つリソースを検索します</block>
   <block id="572b98a402ed12dbaca0370b0814a61c" category="paragraph">特定のタグを持つすべてのリソース、または特定のタグとタグキーの値を表示するには、それらのタグを検索します。すべてのリソースを検索することも、特定のリソースカテゴリ内だけを検索することもできます。</block>
-  <block id="d021504cd210ca3c99557d4026f93fe9" category="list-text">* AppTemplate* サービスを選択し、 * タグ * タブをクリックします。</block>
   <block id="8a4ccdfb1d164c3e3a6da2758ea59afa" category="list-text">必要に応じて、特定のクラウドプロバイダのクレデンシャルを [ * クレデンシャルの選択 * ] フィールドで選択します。</block>
   <block id="f58ddfd9537b922f14de15f169e66a44" category="list-text">リソースタイプフィールドで、リソースを選択します。たとえば、「 * ONTAP ： CVO ： volume * 」と入力して、すべての Cloud Volumes ONTAP ボリュームを検索します。</block>
   <block id="55048905cb51ad2998c06b578a1e485e" category="list-text">_Tag Key_field で、「 * env * 」などのようにタグを選択し、「 env 」タグを使用してボリュームの検索を制限します。</block>
@@ -590,7 +568,6 @@
   <block id="01c2aeb5ca936bbe9aa0ad9699706a64" category="paragraph"><block ref="01c2aeb5ca936bbe9aa0ad9699706a64" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c2b9a18179af322bffbbd1fc093f0e6a" category="list-text">をクリックします <block ref="ccf4df3a8e9a80d7b6ff904049041296" category="inline-image-macro-rx" type="image"></block> 削除するタグキーと値のペアで、行が削除され、 * レビューと適用 * をクリックします。</block>
   <block id="6f195138d995bb3980eb20df6cd6b372" category="list-text">_Reviewing_page で変更内容が正しい場合は、 * Save * をクリックします。タグキーと値のペアがリソースまたは選択したすべてのリソースから削除されます。</block>
-  <block id="e1f059ce610c426bc048a916e53ae32d" category="summary">Cloud Manager では、「ドリフト」機能を使用してテンプレートを使用してリソースが作成されたときに使用されたパラメータ値を監視できます。ドリフトは、変更され、テンプレート設定に適合しなくなったリソースを識別します。</block>
   <block id="738c328d0087a068339b3d63cd01f51a" category="doc">テンプレートのコンプライアンスについては、リソースを確認してください</block>
   <block id="2ab3e4cd0d86d65f9d51ef66c0c979a1" category="section-title">ドリフトの仕組み</block>
   <block id="270a79863849b0f5a1fb6e3ca8c5e8cf" category="paragraph">ドリフトは、次のような非準拠パラメータを識別します。</block>
@@ -637,9 +614,7 @@
   <block id="dda535bed967fed0495f552c6c54b14e" category="paragraph"><block ref="dda535bed967fed0495f552c6c54b14e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a9986dfbd663475bd0b9a159d82e3587" category="paragraph">* 注：レプリケーションが最初にボリュームに適用されているときに、正常性は「 False 」として返されます。これは正常な状態ではありません。数分後に、実際のレプリケーションステータスが表示されます。</block>
   <block id="91ee6aa91810fc059d494948432212cc" category="doc">AppTemplate のドキュメント</block>
-  <block id="3c10116b37b407ac79092a38ffb292e4" category="summary">ネットアップテクニカルサポートでサポートケースをオープンするには、事前に Cloud Manager にネットアップサポートサイトのアカウントを追加し、サポートに登録しておく必要があります。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">サポートに登録します</block>
-  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">Cloud Manager のすべてのドキュメント</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">リリースノート</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
   <block id="d878dbf9ab702cfef892ea35b53108d3" category="sidebar">テンプレートを使用して、リソース作成を標準化します</block>
@@ -662,7 +637,6 @@
   <block id="441c6d31d8063270a27b242c68cc0e6e" category="sidebar">既存のリソースを検出するテンプレートを実行します</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログコミュニティ</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">ネットアップコミュニティ</block>
-  <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central のブログです</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">クラウドに関する Web セミナー</block>
   <block id="983a4e7f5913304ec713a249baf7be47" category="section-title">2022 年 3 月 3 日</block>
   <block id="d92cd2c19989d78fa305aa796b16eb3e" category="paragraph">「既存のリソースを検索」アクションを使用すると、作業環境を特定してから、ボリュームの作成などの他のテンプレートアクションを使用して、既存の作業環境に対して簡単にアクションを実行できます。<block ref="9d92075da3fbaa4669bd5d845665bbc5" category="inline-link-rx"></block>。</block>
@@ -674,7 +648,6 @@
   <block id="778446633edb0e3ec577cd756d668367" category="section-title">2021 年 10 月 11 日</block>
   <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021 年 9 月 2 日</block>
   <block id="d8cd3b5af685675591328bfe617a63c8" category="section-title">2021 年 8 月 8 日</block>
-  <block id="fb68c4d66bb3415869da179d1c3cca51" category="list-text">Azure NetApp Files ボリュームテンプレートを作成する際には、 Azure NetApp Files の作業環境がユーザに割り当てられていることを確認します。方法を参照してください<block ref="476f1ab3b7492b38993b3c305f1332d8" category="inline-link-rx"></block> をクリックします。</block>
   <block id="821f9fc7a9c5e046eb762a4d185a08f7" category="paragraph">を参照してください<block ref="154a2016582f1d0d3d1ef7ccb4cc4af7" category="inline-link-rx"></block> Cloud Volumes ONTAP ボリュームテンプレートで実行する必要があるすべてのパラメータの詳細については、を参照してください。</block>
   <block id="102438db076a8d87db11f71b80bc5d27" category="list-text">[Working Environment] フィールドと [Volume Name] フィールドの下には、バックアップを有効にするボリュームを指定するために使用する 3 つの選択肢があります。を参照してください <block ref="0f494e6e7e9db827f82823d25be045fa" category="inline-link-macro-rx"></block>。</block>
   <block id="cc8cd5a43afbf50d3c76ca4927c286d1" category="paragraph">を参照してください<block ref="17218100ebd265ac766a5fc208b6c6f8" category="inline-link-rx"></block> または<block ref="e59af64db55d6d6b5c59844c08c8e1b5" category="inline-link-rx"></block> 必要な前提条件については、このテンプレートで定義する必要があるすべてのパラメータの詳細については、を参照してください。</block>
@@ -703,14 +676,10 @@
   <block id="952326f3e521cc60cf8ef420a4ebc40b" category="paragraph">AppTemplate を使用すると、テンプレートを使用して既存の作業環境にボリュームを作成できます。</block>
   <block id="310b0424f7115f87e39e306f22db9f8e" category="section-title">テンプレートの作成時に、「ドリフト」という新しい機能がオプションとして追加されました</block>
   <block id="719c876ca7b16f592c8bd26cdbb0ffaa" category="section-title">ボリュームテンプレートの作成時に Cloud Data Sense を統合できるようになりました</block>
-  <block id="fb83416536a7bb0dc17872352e0bab64" category="summary">AppTemplate サービスを使用すると、作業環境でのリソース作成を標準化できます。たとえば、「ボリュームテンプレート」内の必須パラメータをハードコーディングして、あとでストレージ管理者がテンプレートを使用してボリュームを作成するときに適用できます。これには、必要なディスクタイプ、サイズ、プロトコル、 Snapshot ポリシー、クラウドプロバイダ、 その他。作成したボリュームごとに、 Cloud Backup などの特定のサービスをオンにすることもできます。</block>
   <block id="8840e623646d3d59bdb75d58d2cbfb3c" category="doc">AppTemplate について説明します</block>
   <block id="2cc0eed5a3999c679ed14d2cb6588587" category="paragraph">AppTemplate には、次の機能と利点があります。</block>
-  <block id="c160acbed127985d3bd7c45726c6e844" category="section-title">AppTemplate の仕組み</block>
   <block id="34d0c1b964384a0752aad91c917688a4" category="paragraph">AppTemplate サービスは 3 つの部品で構成されています。テンプレートを実行した結果、使用可能なテンプレート「アクション」、カスタマイズされたアプリケーションテンプレート、および展開されたリソース。次の図は、各コンポーネント間の関係を示しています。</block>
-  <block id="0b316d343836cf391faa22682bb80037" category="paragraph">AppTemplate 機能はライセンス不要で、すべての Cloud Manager ユーザが無料で使用できます。</block>
   <block id="8f39707abf86186330a61f0aa7f57c55" category="list-text">AppTemplate サービスは、 Gov クラウドのどのリージョンでも、またはインターネットにアクセスできないサイトではサポートされていません。</block>
-  <block id="98af7a1c0ade78de5b8dcbfc4ca16024" category="summary">AppTemplate サービスを使用すると、 Cloud Manager の作業環境に対するリソース作成を標準化できます。</block>
   <block id="973d48daa10556f358647cfe1cc53216" category="sidebar">AppTemplate を使用します</block>
   <block id="dc771c253d08d9cdafc72d7919e16d98" category="sidebar">ボリュームにバックアップ、データセンス、またはレプリケーション機能を追加します</block>
   <block id="45a406745a298842b185cafcdaedc62b" category="section-title">テンプレートを使用して既存のリソースを検索する例</block>
@@ -723,23 +692,12 @@
   <block id="6fab7ff15514de4d3ca2883bd502b6e7" category="inline-link-macro">AppTemplate に関する注意事項</block>
   <block id="775a83959890feedd00e6dc592c3e60f" category="list-text"><block ref="775a83959890feedd00e6dc592c3e60f" category="inline-link-macro-rx"></block></block>
   <block id="01861a2435910cac249c0a1eaea3e27b" category="sidebar">AppTemplate ドキュメント</block>
-  <block id="aeaeee19a7c393222e407a525cf01991" category="section-title">NSS アカウントを追加します</block>
-  <block id="de2241fea60d98698faaa196ff73ee80" category="paragraph">サポートダッシュボードを使用すると、すべてのネットアップサポートサイトのアカウントを 1 箇所から追加および管理できます。</block>
-  <block id="5be2593b5948f30a15179a32daa73ee2" category="inline-link">1 名で登録します</block>
-  <block id="14b05cf61f1aba58d38b393e69b69538" category="list-text">ネットアップサポートサイトのアカウントがない場合は、<block ref="0a8e82436ea73fe635862cfba3acf101" category="inline-link-rx"></block>。</block>
-  <block id="0046efb3377274ff3215d4b30269809e" category="list-text">Cloud Manager コンソールの右上にあるヘルプアイコンをクリックし、 * Support * を選択します。</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです</block>
   <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">[*NSS Management] &gt; [Add NSS Account*] をクリックします。</block>
   <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">メッセージが表示されたら、 [* Continue （続行） ] をクリックして Microsoft ログインページにリダイレクトします。</block>
   <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">ネットアップは、サポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用しています。</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">ログインページで、ネットアップサポートサイトの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。</block>
-  <block id="f5fb4199485234c409525f430b737010" category="paragraph">Cloud Manager で NSS アカウントを使用することができます。</block>
-  <block id="b4c6a2f33e7b2a38495546b8d5cd8e84" category="paragraph">注：お客様レベルのアカウントである必要があります（ゲストや一時アカウントは使用できません）。</block>
-  <block id="fc65ebd4739f2f8ca46062a8280faea9" category="section-title">アカウントを登録してサポートを受けてください</block>
-  <block id="3e080914efe0d0ca025439fbb68d437f" category="paragraph">サポートの登録は、 Cloud Manager のサポートダッシュボードで実行できます。</block>
-  <block id="fb07bf6b7698dbe934b8b2164d915484" category="list-text">[* リソース ] タブで、 [* サポートに登録 * ] をクリックします。</block>
-  <block id="392fb0270d0d84dbc3fdf8c67da1e5ad" category="list-text">登録する NSS 資格情報を選択し、 * 登録 * をクリックします。</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">著作権に関する声明、商標、特許などにアクセスできます。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">著作権</block>
   <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
@@ -753,26 +711,135 @@
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">オープンソース</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
-  <block id="51719eefc68685ac0e2a11057a44b8be" category="paragraph">ネットアップでは、 Cloud Manager とその クラウド サービス をさまざまな方法でサポートしています。ナレッジベース（ KB ）記事やコミュニティフォーラムなど、 24 時間 365 日利用可能な幅広いセルフサポートオプションをご用意しています。サポート登録には、 Web チケット処理によるリモートテクニカルサポートが含まれます。</block>
   <block id="07d41912a6ab6b97216f8cf89e93205c" category="section-title">セルフサポート</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">次のオプションは、 1 日 24 時間、週 7 日間無料でご利用いただけます。</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">ナレッジベース</block>
   <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
-  <block id="76b571fb5edea1c1994fa0ff01f7b1e2" category="paragraph">Cloud Manager のナレッジベースで問題のトラブルシューティングに役立つ記事を検索してください。</block>
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">コミュニティ</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
-  <block id="7f3490343cad8dc3bfdb72dd5d957e8d" category="paragraph">Cloud Manager コミュニティに参加して、進行中のディスカッションに参加したり、新しいコミュニティを作成したりできます。</block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">ドキュメント</block>
-  <block id="3c313458d6e15dd2c4336e47118d0a8f" category="paragraph">現在表示している Cloud Manager のドキュメント。</block>
   <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto ： ng-cloudmanager-feedback@netapp.com [ フィードバックメール ]</block>
-  <block id="bff60abbc46aceed0f73a3a4f6cfb123" category="paragraph">お客様のご意見をお考えください。Cloud Manager の改善に役立つフィードバックを送信します。</block>
   <block id="0659d428df833a806e29e65e632d380a" category="section-title">ネットアップサポート</block>
-  <block id="c91b5a63849b8d2db01014ed33192735" category="paragraph">上記のセルフサポートオプションに加え、サポートを有効にしたあとに問題が発生した場合は、ネットアップサポートエンジニアと協力して解決できます。</block>
-  <block id="6c08c57e382a25a778455184cd9b1a4a" category="list-text">Cloud Manager で、 * Help &gt; Support * の順にクリックします。</block>
   <block id="f5052c65917d7341726235d4d4941461" category="list-text">テクニカルサポートで利用可能なオプションのいずれかを選択します。</block>
-  <block id="bece28b158ab337d9ed24b00d7d02cc7" category="list-text">[ * お問い合わせ * ] をクリックして、ネットアップ・テクニカル・サポートの電話番号を検索してください。</block>
-  <block id="efe81cff8e6f47ec59ef94167b76bf5a" category="list-text">[ * 問題 を開く * ] をクリックし、いずれかのオプションを選択して、 [ * 送信 * ] をクリックします。</block>
-  <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">ネットアップの担当者がケースを確認し、すぐに対応を開始します。</block>
   <block id="214a61ce436e46b661501acdeee5221c" category="paragraph">この時点で、ドリフトはリソース内の変更されたパラメータを識別します。リソースを手動で調整して、テンプレートに準拠させる必要があります。将来的には、リソースがコンプライアンス違反になったときに通知を送信したり、テンプレートから作成されたすべてのリソースが自動的にコンプライアンスに戻されるようにユーザーの変更を元に戻したりすることができます。</block>
   <block id="5bd5bf968b8be74cc15838b062223bc7" category="paragraph">この時点で、リソースをテンプレートに合わせて戻すために、手動で調整を行う必要があります。 <block ref="070f7b254d8faecc6fc5a699202bdab9" category="inline-link-macro-rx"></block>。</block>
+  <block id="cfd52dcb30bb7d2ea88bc2c66e2ccc0f" category="summary">BlueXPを使用すると'タグを_existing_resourcesに適用して'これらのリソースの編成と管理を容易にすることができますタグは、リソースをグループ化してアプリケーション、環境、リージョン、課金コード、クラウドプロバイダを識別するために使用できるメタデータです。 その他。</block>
+  <block id="b30d9d9c3aca3c78264405a3976afc34" category="paragraph">BlueXP（旧Cloud Manager）では、タグを_existing_resourcesに適用して、これらのリソースの編成と管理を支援できます。タグは、リソースをグループ化してアプリケーション、環境、リージョン、課金コード、クラウドプロバイダを識別するために使用できるメタデータです。 その他。</block>
+  <block id="8b560c81adceb205c323088796c3a9c7" category="inline-link-macro">作成したBlueXPテンプレート</block>
+  <block id="2e163db3e69e348e895ac4042c0f4c9c" category="paragraph">作業環境または Azure NetApp Files ボリュームを作成するときに、タグキーと値のペアを _new_resources に追加できます。でタグキーと値のペアを定義することもできます <block ref="cf5b7c6993b005a6e69e2b6094f6daa8" category="inline-link-macro-rx"></block> ストレージ管理者や DevOps エンジニアの方に最適です。</block>
+  <block id="7ed5899669a5929914b723a2baef182d" category="paragraph">リソースにタグを付ける機能にはライセンスは不要で、アカウント管理者またはワークスペース管理者の役割を持つすべてのBlueXPユーザーが無料で使用できます。</block>
+  <block id="d912e080eacd169b9c6ec8ad804b0fe2" category="paragraph">BlueXPバージョン3.9.10以上を使用してコネクタを作成した場合は、すべて設定されます。以前のバージョンのBlueXPを使用してコネクタを作成した場合は、AWS EC2インスタンスにタグを付けるためにBlueXP IAMロールに必要な権限をいくつか追加する必要があります。</block>
+  <block id="61e852c379d0f3c7c2f47bcd0152539d" category="paragraph">BlueXPバージョン3.9.10以上を使用してコネクタを作成した場合は、すべて設定されます。以前のバージョンのBlueXPを使用してコネクタを作成した場合は、Azureリソースにタグを付けるために、BlueXP Operator IAMロールに必要な権限をいくつか追加する必要があります。</block>
+  <block id="2dd9329059e344c5425db239b998fb7b" category="summary">AppTemplateサービスを使用すると、BlueXP作業環境のリソース作成を標準化できます。</block>
+  <block id="81736c3492216167017a2d56ef452f6f" category="paragraph">[*正常性]&gt;[修正]を選択し、[*エディタ*]タブをクリックして、テンプレートで使用するアクションを選択します。</block>
+  <block id="e30afa6af477c023130a06261e3f1227" category="list-text">オンプレミスの ONTAP ボリュームテンプレートを作成する場合は、オンプレミスの ONTAP 作業環境がユーザに利用できることを確認します。方法を参照してください<block ref="73a5fece0c926f1d97e300f9e1e63b86" category="inline-link-rx"></block> BlueXPでは、</block>
+  <block id="592b06abb0acdfe2b240cddf86e10637" category="list-text">Azure NetApp Files ボリュームテンプレートを作成する際には、 Azure NetApp Files の作業環境がユーザに割り当てられていることを確認します。方法を参照してください<block ref="476f1ab3b7492b38993b3c305f1332d8" category="inline-link-rx"></block> BlueXPでは、</block>
+  <block id="44fbc3f04f1c80f38f04a2c9ae828fad" category="list-text">[*正常性]&gt;[修正]を選択し、[*テンプレート*]タブをクリックして、[*新しいテンプレートの追加*]をクリックします。</block>
+  <block id="0107177951fcfb1e8290634ec2f0b1ad" category="paragraph">ドリフトを使用すると、BlueXPでは、このテンプレートの作成時に入力したハードコードされた値を監視できます。</block>
+  <block id="14938059a03b38f1f630bba556c15624" category="cell">BlueXPでは、作業環境名を使用してCloud Volumes ONTAP システムとAmazon EC2インスタンスの両方に名前を付けます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。フィールド内をクリックし、 5 つのオプションのいずれかを選択します。管理者が任意の名前を入力できるようにするには、 * フリーテキスト * を選択するか、作業環境名に特定の接頭辞または接尾辞を付けるか、 _contains_certain 文字を使用するか、または入力した正規表現（ regex ）の規則に従うように指定します。</block>
+  <block id="42b463e9a7149a42c8aa33ac96a9611d" category="cell">AWS タグは、 AWS リソースのメタデータです。BlueXPは、Cloud Volumes ONTAP インスタンスとそのインスタンスに関連付けられている各AWSリソースにタグを追加します。タグの詳細については、を参照してください<block ref="9bd250e03cdf80384a24635f16673602" category="inline-link-rx"></block>。</block>
+  <block id="243263104c829e77835d632f591230d5" category="summary">ネットアップテクニカルサポートでサポートケースをオープンするには、まずNetApp Support Site アカウントをBlueXPに追加し、サポートに登録する必要があります。</block>
+  <block id="8bf30fadf784022b073adb9233678a71" category="paragraph">ネットアップテクニカルサポートでサポートケースをオープンするには、まずNetApp Support Site （NSS）アカウントをBlueXPに追加し、サポートに登録する必要があります。</block>
+  <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">サポート登録の概要</block>
+  <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">サポート資格を有効にする登録には、次の2つの形式があります。</block>
+  <block id="2322ca552c2b0ebe090c8485519246a8" category="list-text">BlueXPアカウントIDサポートサブスクリプションの登録(BlueXPの[サポートリソース]ページにある20桁の960xxxxxxxxxシリアル番号)。</block>
+  <block id="23fdcbefa6d9cd877be7ceb7a18bb936" category="paragraph">これは、BlueXP内のすべてのサービスのシングルサポートサブスクリプションIDとして機能します。各BlueXPアカウントレベルのサポート契約が登録されている必要があります。</block>
+  <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">クラウドプロバイダのマーケットプレイスでのサブスクリプションに関連付けられているCloud Volumes ONTAP のシリアル番号を登録している（909201xxxxxxxxのシリアル番号）。</block>
+  <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">これらのシリアル番号は、通常PAY_GOシリアル番号と呼ばれ、Cloud Volumes ONTAP の導入時にBlueXPによって生成されます。</block>
+  <block id="9d4125dc88bb9db6eb4be939905761ce" category="paragraph">両方のタイプのシリアル番号を登録することで、サポートチケットのオープンやケースの自動生成などの機能を利用できます。</block>
+  <block id="98bc603dcb6d5a57d540b13b541fa41a" category="paragraph">登録方法は、新規のお客様か既存のお客様かパートナーかによって異なります。</block>
+  <block id="e5646198d2e01aab2cec9ef946f9c53a" category="list-text">既存のお客様またはパートナー</block>
+  <block id="76928f97884b4332b83c5be9b99d93d3" category="paragraph">ネットアップの既存のお客様またはパートナー様は、NetApp Support Site （NSS）SSOアカウントを使用して上記の登録を実行することができます。サポートダッシュボードでは、BlueXPには、NSSアカウントを追加できる*NSS Management*ページがあります。NSSアカウントを追加すると、これらのシリアル番号が自動的に登録されます。</block>
+  <block id="4e6af37fb81d50483d832d4de6e2b26a" category="inline-xref">NSSアカウントを追加する方法について説明します</block>
+  <block id="8d80298f51b7ff2da78e26e60195c7a3" category="paragraph"><block ref="cbec7c1a4a2acff5e84457dd449ac01d" category="inline-xref-macro-rx"></block>。</block>
+  <block id="1c91f3adc957364cb01d33e100ee1ea3" category="list-text">初めて導入する場合は</block>
+  <block id="679f2cae4657f177cc89458d49c97e5f" category="paragraph">ネットアップを初めてご利用になる場合は、ネットアップのサポート登録サイトで、BlueXPアカウントのシリアル番号の登録を1回だけ完了する必要があります。この登録を完了し、新しいNSSアカウントを作成したら、BlueXPでこのアカウントを使用して自動登録を行うことができます。</block>
+  <block id="00fc9d0c515c69ea2c368521453d982e" category="inline-xref">ネットアップへの登録方法をご確認ください</block>
+  <block id="97454ce87333f7ebd50ee38b8126fb39" category="paragraph"><block ref="37544f11913357c4e8c8a4ec607ae247" category="inline-xref-macro-rx"></block>。</block>
+  <block id="a92ec860f505b318fd0f0eba6165d607" category="section-title">NSSアカウントをBlueXPに追加します</block>
+  <block id="77bdda0b5be7d2725f2b5941d74db0e2" category="paragraph">サポートダッシュボードを使用すると、NetApp Support Site アカウントを追加して管理し、Cloud Managerで使用できます。</block>
+  <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">お客様レベルのアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することもできます。</block>
+  <block id="4fde72c535fd0cd463dbeb49347cdfae" category="list-text">パートナーアカウントまたはリセラーアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加できますが、お客様レベルのアカウントと一緒に追加することはできません。</block>
+  <block id="1afe19576f77bb0073c93359ed2cbb18" category="list-text">BlueXPコンソールの右上にある[ヘルプ]アイコンをクリックし、[*Support*]を選択します。</block>
+  <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">これらのアクションにより、BlueXPはライセンスのダウンロード、ソフトウェアのアップグレード検証、および将来のサポート登録などの目的でNSSアカウントを使用できます。</block>
+  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">次の点に注意してください。</block>
+  <block id="0f0a0d646a020cf3a65ce82ada4cfb01" category="list-text">お客様レベルのアカウントである必要があります（ゲストや一時アカウントは使用できません）。</block>
+  <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">3つの水平ドットのアイコン</block>
+  <block id="ff67299785d475e87002751aa6ab5eb8" category="list-text">ログインに成功すると、ネットアップはNSSのユーザ名を保存します。これはシステムで生成されたIDで、Eメールにマッピングされます。[*NSS Management*]ページで、から電子メールを表示できます <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> メニュー。</block>
+  <block id="505da61efe6bebebbaf092da18f64613" category="list-text">ログイン認証情報トークンを更新する必要がある場合は、の[認証情報の更新*]オプションも使用できます <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> メニュー。このオプションを使用すると、再度ログインするように求められます。</block>
+  <block id="ad56c7289bc13dcf4f78c285f7f03878" category="section-title">ネットアップに登録してください</block>
+  <block id="f1bac79c2c71fbd93863b9fbd718094c" category="paragraph">ネットアップサポートへの登録方法は、NetApp Support Site （NSS）アカウントがあるかどうかによって異なります。</block>
+  <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">NSSアカウントをお持ちの既存のお客様</block>
+  <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">NSSアカウントをお持ちのネットアップのお客様は、BlueXPからサポートに登録するだけで済みます。</block>
+  <block id="25b94e7b58140f12be91fa8fd935fa59" category="list-text">NSSアカウントをまだ追加していない場合は、BlueXPに追加します。</block>
+  <block id="819aff12752b7e6a1828e755c7664de7" category="list-text">[*リソース]ページで、[*サポートに登録*]をクリックします。</block>
+  <block id="e8a3d9970b8fc1d92caaf33d9e116bd4" category="inline-image-macro">アカウントのシリアル番号と[サポートに登録]オプションを示すスクリーンショット</block>
+  <block id="113f9cd7bac6f4faa6b8d58e3e099a8e" category="paragraph"><block ref="113f9cd7bac6f4faa6b8d58e3e099a8e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">NSSアカウントを持たない既存のお客様</block>
+  <block id="cc1d3c161bcf25e6445c2fc771647849" category="paragraph">既存のライセンスとシリアル番号をお持ちで、_no-NSSアカウントをお持ちのネットアップのお客様は、NSSアカウントを作成するだけで十分です。</block>
+  <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetApp Support Site ユーザー登録フォーム</block>
+  <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">を実行してNetApp Support Site アカウントを作成します<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
+  <block id="d61c9f72493817776f392db42ac446a2" category="list-text">適切なユーザレベルを選択してください。通常は*ネットアップのお客様/エンドユーザ*がこれに該当します。</block>
+  <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">必ず、上記のシリアル番号フィールドに使用されているBlueXPアカウントのシリアル番号(960xxxx)をコピーしてください。これにより、アカウント処理が高速化されます。</block>
+  <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">ネットアップのソリューションを初めて導入する場合は</block>
+  <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">ネットアップ製品を初めてご利用になり、NSSアカウントをお持ちでない場合は、以下の手順に従ってください。</block>
+  <block id="59dd2a274c2c6a3cc5b3dce08109019d" category="list-text">Support Registrationのページで、Cloud ManagerアカウントIDのシリアル番号を確認します。</block>
+  <block id="ef5e63bb6b6827440a13cc2ec7e9cf56" category="paragraph"><block ref="ef5e63bb6b6827440a13cc2ec7e9cf56" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">ネットアップサポート登録サイト</block>
+  <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">に移動します<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> 「*ネットアップ登録のお客様ではありません*」を選択します。</block>
+  <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">必須フィールドに入力します（赤いアスタリスクのフィールド）。</block>
+  <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">[*製品ライン*（Product Line *）]フィールドで、[* Cloud Manager *]を選択し、該当する課金プロバイダーを選択します。</block>
+  <block id="1192dec4cc2b923397748a651cef178f" category="list-text">前述の手順2からCloud Managerアカウントのシリアル番号をコピーし、セキュリティチェックを完了して、ネットアップのグローバルデータプライバシーポリシーを読み、確認します。</block>
+  <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">この安全なトランザクションを完了するために、メールボックスに電子メールがすぐに送信されます。確認メールが数分で届かない場合は、必ずスパムフォルダを確認してください。</block>
+  <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">Eメールからアクションを確認します。</block>
+  <block id="201080500e946070a2e4873042507c77" category="paragraph">確認ではネットアップにリクエストが送信され、NetApp Support Site アカウントを作成することを推奨します。</block>
+  <block id="d6cb31c22f8f843a781cccec33157281" category="list-text">シリアル番号のフィールドには、上記のCloud Managerアカウントのシリアル番号（960xxxx）を必ずコピーしてください。これにより、アカウント処理が高速化されます。</block>
+  <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">このプロセスについては、ネットアップからご連絡ください。これは、新規ユーザ向けの1回限りのオンボーディング演習です。</block>
+  <block id="1c0e45ef07d0dbc13ca2394d5e285fd7" category="paragraph">NetApp Support Site アカウントを作成したら、BlueXPに移動して、このNSSアカウントを追加して今後の登録を行うことができます。</block>
+  <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">ネットアップでは、さまざまな方法でBlueXPをサポートしています。ナレッジベース（ KB ）記事やコミュニティフォーラムなど、 24 時間 365 日利用可能な幅広いセルフサポートオプションをご用意しています。サポート登録には、 Web チケット処理によるリモートテクニカルサポートが含まれます。</block>
+  <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">ネットアップでは、BlueXPとその クラウド サービス をさまざまな方法でサポートしています。ナレッジベース（ KB ）記事やコミュニティフォーラムなど、 24 時間 365 日利用可能な幅広いセルフサポートオプションをご用意しています。サポート登録には、 Web チケット処理によるリモートテクニカルサポートが含まれます。</block>
+  <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">BlueXPナレッジベースで問題のトラブルシューティングに役立つ記事を検索します。</block>
+  <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">BlueXPコミュニティに参加して、進行中のディスカッションをフォローしたり、新しいディスカッションを作成したりできます。</block>
+  <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">現在表示しているBlueXPのマニュアル。</block>
+  <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">お客様のご意見をお考えください。フィードバックを送信して、BlueXPの改善に役立ててください。</block>
+  <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">上記のセルフサポートオプションに加え、サポートを有効にしたあとで問題が発生した場合は、ネットアップサポートの担当者と相談して解決できます。</block>
+  <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">サポートに登録する方法について説明します</block>
+  <block id="1012a287397c66025d7748edf06a36e2" category="paragraph">[ケースの作成]機能を使用するには、まず、BlueXPアカウントIDのシリアル番号(例960xxxx）にネットアップが付属 <block ref="3349e4b3d05f646f2f1421bee7c2ad26" category="inline-link-macro-rx"></block>。</block>
+  <block id="6254a4afeeb76765a127fe74d31c1b3d" category="list-text">BlueXPで、[ヘルプ]、[サポート]の順にクリックします。</block>
+  <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">電話の相手と話したい場合は、「*お電話」をクリックしてください。netapp.comのページに移動し、電話番号が表示されます。</block>
+  <block id="bf5bc6ab0f95f17f4e98c9d766b8c11d" category="list-text">[*ケースの作成*]をクリックして、ネットアップサポートスペシャリストのチケットを開きます。</block>
+  <block id="b53e0a259f4a0c8e7da80d6c94e26c84" category="list-text">* NetApp Support Site アカウント*：サポートケースをオープンしたユーザーに関連付けられている該当のNSSアカウントを選択します。この担当者は、以下に記載する追加のEメールに加えて、ネットアップから連絡を受け取る主要担当者となります。</block>
+  <block id="d950fb930d7f7e6bfdda1b91b4639a02" category="paragraph">NSSアカウントが表示されない場合は、BlueXPのサポートセクションにある*NSS Management*タブに移動して追加できます。</block>
+  <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*Service*:問題 が関連付けられているサービスを選択します。たとえば、サービス内のワークフローまたは機能を備えたテクニカルサポート問題 に固有のBlueXPなどです。</block>
+  <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*作業環境*：ストレージに該当する場合は、* Cloud Volumes ONTAP *または*オンプレミス*を選択し、関連する作業環境を選択します。</block>
+  <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">作業環境のリストは、サービスの上部バナーで選択したBlueXPアカウント、ワークスペース、コネクタの範囲内にあります。</block>
+  <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*ケース優先度*：ケースの優先度を選択します。優先度は、[低]、[中]、[高]、[クリティカル]のいずれかになります。</block>
+  <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">これらの優先度の詳細を確認するには、フィールド名の横にある情報アイコンの上にマウスポインタを合わせます。</block>
+  <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*事象の説明 *：実行したエラーメッセージやトラブルシューティング手順など、問題の詳細な概要 を入力します。</block>
+  <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">*その他のメールアドレス*：この問題 を他のユーザーに知らせる場合は、追加のメールアドレスを入力します。</block>
+  <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">ネットアップサポートでケースを作成できるケースの作成フォームのスクリーンショット。</block>
+  <block id="a2ff30886e1baf1e7d5045b5fc24f5b9" category="paragraph"><block ref="a2ff30886e1baf1e7d5045b5fc24f5b9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">ポップアップにサポートケース番号が表示されます。ネットアップのサポート担当者がケースを確認し、すぐに対応させていただきます。</block>
+  <block id="04e15da1deae9568b4dcda64fbb0c8d5" category="paragraph">サポートケースの履歴を確認するには、[*設定]、[タイムライン*]の順にクリックして、[サポートケースの作成]という名前のアクションを探します。 右端のボタンをクリックすると、アクションを展開して詳細を表示できます。</block>
+  <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">ケースを作成しようとすると、次のエラーメッセージが表示される場合があります。</block>
+  <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">"選択したサービスに対してケースを作成する権限がありません"</block>
+  <block id="fa6b601b2fb4e3e5c7b466ecb8bd70ac" category="paragraph">このエラーは、NSSアカウントとそれに関連付けられているレコードの会社が、BlueXPアカウントのシリアル番号(例960xxxx）または動作環境のシリアル番号。[ケースの作成]フォームの上部にあるNSSアカウントの一覧を確認して、適切な一致を見つけることができます。または、次のいずれかのオプションを使用してサポートを依頼することもできます。</block>
+  <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">製品内のチャットを使用します</block>
+  <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">テクニカル以外のケースをに送信します<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
+  <block id="a687989eefccb6d7024bfaee46859103" category="paragraph">[*正常性]&gt;[修正]を選択し、[*テンプレート*]タブをクリックします。</block>
+  <block id="65b46511d02a19c141330a17641ebc2f" category="summary">AppTemplateサービスを使用すると、BlueXPの作業環境でリソース作成を標準化できます。たとえば、「ボリュームテンプレート」内の必須パラメータをハードコーディングして、あとでストレージ管理者がテンプレートを使用してボリュームを作成するときに適用できます。これには、必要なディスクタイプ、サイズ、プロトコル、 Snapshot ポリシー、クラウドプロバイダ、 その他。作成したボリュームごとに、 Cloud Backup などの特定のサービスをオンにすることもできます。</block>
+  <block id="6f5f9a149e1cd9abec2bd8310110be5e" category="paragraph">AppTemplateサービスを使用すると、BlueXP（旧Cloud Manager）の作業環境でのリソース作成を標準化できます。たとえば、「ボリュームテンプレート」内の必須パラメータをハードコーディングして、あとでストレージ管理者がテンプレートを使用してボリュームを作成するときに適用できます。これには、必要なディスクタイプ、サイズ、プロトコル、 Snapshot ポリシー、クラウドプロバイダ、 その他。作成したボリュームごとに、 Cloud Backup などの特定のサービスをオンにすることもできます。</block>
+  <block id="b02190159d307046a1fc115e2234c430" category="section-title">AppTemplateの仕組み</block>
+  <block id="928cf9c83840b963ee70f31eae6f5478" category="paragraph">AppTemplate機能はライセンス不要で、BlueXPのすべてのユーザーが無料で使用できます。</block>
+  <block id="d2d3ce785dba13fa31c8dfdc4f170942" category="paragraph">このチェックボックスをオンにすると、テンプレートを使用してリソースを作成するときにパラメータに入力したハードコード値がBlueXPによって監視されます。ドリフトレポートを実行すると、ドリフトで構成されたどのフィールドがテンプレート設定に適合しなくなったかを確認できます。</block>
+  <block id="362fe13e1711f8ee61db2bea123b8a0d" category="list-text">出力値-これは、前のテンプレートアクションからリソースを作成した後にBlueXPが生成する値です。</block>
+  <block id="1faebed438b9f49efa46643ad9907fb7" category="paragraph">たとえば、ボリュームでコンプライアンススキャンを有効にするには、ストレージ管理者が入力するボリューム名（入力値）と、ボリュームの作成時にBlueXPで生成されるボリュームUUID（出力値）の両方がCloud Data Senseサービスに必要です。</block>
+  <block id="57b9871adc92cb08516da8d18bf96f74" category="list-text">Get output value from action：前のテンプレートアクションからリソースを作成した後に生成されたBlueXPの値。</block>
+  <block id="5dd11df101133565c34a0a5cfef5f86e" category="summary">BlueXPでは'ドリフト機能を使用してテンプレートを使用してリソースを作成したときに使用されたパラメータ値を監視できますドリフトは、変更され、テンプレート設定に適合しなくなったリソースを識別します。</block>
+  <block id="6d28d54ad9c4f6685bb752801088510b" category="summary">BlueXP Taggingサービスを使用すると、既存のリソースに割り当てられているタグを表示、追加、変更、および削除できます。これにより、リソースの管理を整理して簡単に行うことができます。</block>
+  <block id="10b56653c6ddbf81d7d4419364238254" category="list-text">[* Health]&gt;[Remediation *]を選択し、[* Tags]タブをクリックします。</block>
+  <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">BlueXPに関する注意事項</block>
+  <block id="e8a6d0f19a957eac14b9917a6c92899b" category="list-text"><block ref="e8a6d0f19a957eac14b9917a6c92899b" category="inline-link-rx"></block></block>
+  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXPブログ</block>
+  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">BlueXPのすべてのマニュアル</block>
 </blocks>

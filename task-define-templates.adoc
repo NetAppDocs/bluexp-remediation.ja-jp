@@ -30,7 +30,7 @@ summary: ネットアップが提供する「アクション」を 1 つ以上�
 
 
 [role="quick-margin-para"]
-* AppTemplate* サービスを選択し、 * エディタ * タブをクリックして、テンプレートで使用するアクションを選択します。
+[*正常性]>[修正]を選択し、[*エディタ*]タブをクリックして、テンプレートで使用するアクションを選択します。
 
 [role="quick-margin-para"]
 作成手順に従い、テンプレートによって実行されるアクションを定義します。
@@ -43,8 +43,8 @@ summary: ネットアップが提供する「アクション」を 1 つ以上�
 
 * コネクタがない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクターの作成方法を参照してください"^] AWS 、 Azure 、 GCP 向け。
 * Cloud Volumes ONTAP ボリュームテンプレートを作成する際には、 Cloud Volumes ONTAP 作業環境がユーザに利用できることを確認してください。で Cloud Volumes ONTAP システムを起動する方法を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["AWS"^]、 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["Azure"^]または、のいずれかです https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["GCP"^]。
-* オンプレミスの ONTAP ボリュームテンプレートを作成する場合は、オンプレミスの ONTAP 作業環境がユーザに利用できることを確認します。方法を参照してください https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["オンプレミスの ONTAP システムを検出"^] をクリックします。
-* Azure NetApp Files ボリュームテンプレートを作成する際には、 Azure NetApp Files の作業環境がユーザに割り当てられていることを確認します。方法を参照してください https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Azure NetApp Files 作業環境を作成します"^] をクリックします。
+* オンプレミスの ONTAP ボリュームテンプレートを作成する場合は、オンプレミスの ONTAP 作業環境がユーザに利用できることを確認します。方法を参照してください https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["オンプレミスの ONTAP システムを検出"^] BlueXPでは、
+* Azure NetApp Files ボリュームテンプレートを作成する際には、 Azure NetApp Files の作業環境がユーザに割り当てられていることを確認します。方法を参照してください https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Azure NetApp Files 作業環境を作成します"^] BlueXPでは、
 * クラウドバックアップを使用してテンプレート内のボリュームをバックアップする場合は、環境が Cloud Backup をアクティブ化していることを確認してください。
 * クラウドデータセンスを使用してテンプレート内のボリュームをスキャンする場合は、クラウドデータセンスがアクティブ化されていることを確認してください。
 * テンプレートでレプリケーションを有効にする場合、オンプレミスの ONTAP ボリューム用のテンプレートを使用するには、 ONTAP クラスタにアクティブな SnapMirror ライセンスが必要です。
@@ -75,7 +75,7 @@ AWS 環境のボリュームを 100GB のストレージで設定し、 Snapshot
 
 
 .手順
-. * AppTemplate* サービスを選択し、 * Templates * タブをクリックして、 * Add New Template * をクリックします。
+. [*正常性]>[修正]を選択し、[*テンプレート*]タブをクリックして、[*新しいテンプレートの追加*]をクリックします。
 +
 Select_a Template_page が表示されます。
 
@@ -162,14 +162,14 @@ image:screenshot_create_template_add_action.png["作成したボリュームに�
 . 左上に、データベース * （この例では）のテンプレート名 * CVO ボリュームを入力してください。
 . [* 設定とドリフト * ] をクリックして、このテンプレートを他の同様のテンプレートと区別できるように、より詳細な概要を提供します。したがって、テンプレート全体のドリフトを有効にしてから、 [ * 適用 * ] をクリックします。
 +
-ドリフトを使用すると、 Cloud Manager は、このテンプレートの作成時に入力したパラメータのハードコーディング値を監視できます。
+ドリフトを使用すると、BlueXPでは、このテンプレートの作成時に入力したハードコードされた値を監視できます。
 
 . [ テンプレートの保存 *] をクリックします。
 
 
 テンプレートが作成され、新しいテンプレートが表示されるテンプレートダッシュボードに戻ります。
 
-を参照してください <<What to do after you have created the template,テンプレートについてユーザに説明する必要がある内容>>。
+を参照してください  to do after you have created the template,テンプレートについてユーザに説明する必要がある内容。
 
 
 
@@ -180,7 +180,7 @@ Azure NetApp Files ボリュームのテンプレートは、 Cloud Volumes ONTA
 を参照してください https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf-volumes.html#creating-volumes["Azure NetApp Files ボリュームをプロビジョニングする方法"^] ANF ボリュームテンプレートで実行する必要があるすべてのパラメータの詳細については、を参照してください。
 
 .手順
-. * AppTemplate* サービスを選択し、 * Templates * タブをクリックして、 * Add New Template * をクリックします。
+. [*正常性]>[修正]を選択し、[*テンプレート*]タブをクリックして、[*新しいテンプレートの追加*]をクリックします。
 +
 Select_a Template_page が表示されます。
 
@@ -263,14 +263,14 @@ image:screenshot_create_template_define_action_anf.png["入力する必要があ
 . テンプレートに使用する名前を左上に入力します。
 . [* 設定とドリフト * ] をクリックして、このテンプレートを他の同様のテンプレートと区別できるように、より詳細な概要を提供します。したがって、テンプレート全体のドリフトを有効にしてから、 [ * 適用 * ] をクリックします。
 +
-ドリフトを使用すると、 Cloud Manager は、このテンプレートの作成時に入力したパラメータのハードコーディング値を監視できます。
+ドリフトを使用すると、BlueXPでは、このテンプレートの作成時に入力したハードコードされた値を監視できます。
 
 . [ テンプレートの保存 *] をクリックします。
 
 
 テンプレートが作成され、新しいテンプレートが表示されるテンプレートダッシュボードに戻ります。
 
-を参照してください <<What to do after you have created the template,テンプレートについてユーザに説明する必要がある内容>>。
+を参照してください  to do after you have created the template,テンプレートについてユーザに説明する必要がある内容。
 
 
 
@@ -279,7 +279,7 @@ image:screenshot_create_template_define_action_anf.png["入力する必要があ
 を参照してください https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-provisioning-ontap.html#creating-volumes-for-ontap-clusters["オンプレミスの ONTAP ボリュームをプロビジョニングする方法"^] オンプレミスの ONTAP ボリュームテンプレートで実行する必要があるすべてのパラメータの詳細については、を参照してください。
 
 .手順
-. * AppTemplate* サービスを選択し、 * Templates * タブをクリックして、 * Add New Template * をクリックします。
+. [*正常性]>[修正]を選択し、[*テンプレート*]タブをクリックして、[*新しいテンプレートの追加*]をクリックします。
 +
 Select_a Template_page が表示されます。
 
@@ -361,14 +361,14 @@ image:screenshot_create_template_define_action_onprem.png["入力する必要が
 . 左上にテンプレート名を入力します。
 . [* 設定とドリフト * ] をクリックして、このテンプレートを他の同様のテンプレートと区別できるように、より詳細な概要を提供します。したがって、テンプレート全体のドリフトを有効にしてから、 [ * 適用 * ] をクリックします。
 +
-ドリフトを使用すると、 Cloud Manager は、このテンプレートの作成時に入力したパラメータのハードコーディング値を監視できます。
+ドリフトを使用すると、BlueXPでは、このテンプレートの作成時に入力したハードコードされた値を監視できます。
 
 . [ テンプレートの保存 *] をクリックします。
 
 
 テンプレートが作成され、新しいテンプレートが表示されるテンプレートダッシュボードに戻ります。
 
-を参照してください <<What to do after you have created the template,テンプレートについてユーザに説明する必要がある内容>>。
+を参照してください  to do after you have created the template,テンプレートについてユーザに説明する必要がある内容。
 
 
 
@@ -386,7 +386,7 @@ image:screenshot_create_template_define_action_onprem.png["入力する必要が
 を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html#launching-a-single-node-cloud-volumes-ontap-system-in-aws["AWS でシングルノードの Cloud Volumes ONTAP システムを起動する方法"^] または https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html#launching-a-cloud-volumes-ontap-ha-pair-in-aws["AWS での Cloud Volumes ONTAP HA ペア"^] 必要な前提条件については、このテンプレートで定義する必要があるすべてのパラメータの詳細については、を参照してください。
 
 .手順
-. * AppTemplate* サービスを選択し、 * Templates * タブをクリックして、 * Add New Template * をクリックします。
+. [*正常性]>[修正]を選択し、[*テンプレート*]タブをクリックして、[*新しいテンプレートの追加*]をクリックします。
 +
 Select_a Template_page が表示されます。
 
@@ -421,10 +421,10 @@ image:screenshot_create_template_cvo_env_aws1.png["入力が必要な空の Clou
 | クレデンシャル | これらは、 Cloud Volumes ONTAP クラスタ管理アカウントのクレデンシャルです。これらのクレデンシャルを使用して、 ONTAP System Manager またはその CLI を使用して Cloud Volumes ONTAP に接続できます。 
 
 
-| 作業環境名 | Cloud Manager は、作業環境名を使用して、 Cloud Volumes ONTAP システムと Amazon EC2 インスタンスの両方に名前を付けます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。フィールド内をクリックし、 5 つのオプションのいずれかを選択します。管理者が任意の名前を入力できるようにするには、 * フリーテキスト * を選択するか、作業環境名に特定の接頭辞または接尾辞を付けるか、 _contains_certain 文字を使用するか、または入力した正規表現（ regex ）の規則に従うように指定します。 
+| 作業環境名 | BlueXPでは、作業環境名を使用してCloud Volumes ONTAP システムとAmazon EC2インスタンスの両方に名前を付けます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。フィールド内をクリックし、 5 つのオプションのいずれかを選択します。管理者が任意の名前を入力できるようにするには、 * フリーテキスト * を選択するか、作業環境名に特定の接頭辞または接尾辞を付けるか、 _contains_certain 文字を使用するか、または入力した正規表現（ regex ）の規則に従うように指定します。 
 
 
-| タグ | AWS タグは、 AWS リソースのメタデータです。Cloud Manager は、 Cloud Volumes ONTAP インスタンスおよびインスタンスに関連付けられた各 AWS リソースにタグを追加します。タグの詳細については、を参照してください https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html["AWS ドキュメント：「 Tagging your Amazon EC2 Resources"^]。 
+| タグ | AWS タグは、 AWS リソースのメタデータです。BlueXPは、Cloud Volumes ONTAP インスタンスとそのインスタンスに関連付けられている各AWSリソースにタグを追加します。タグの詳細については、を参照してください https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html["AWS ドキュメント：「 Tagging your Amazon EC2 Resources"^]。 
 |===
 . * 場所と接続 * ：に記録したネットワーク情報を入力します https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-planning-your-config.html#aws-network-information-worksheet["AWS ワークシート"^]。これには、 AWS リージョン、 VPC 、サブネット、セキュリティグループが含まれます。
 +
@@ -449,18 +449,18 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 +
 テンプレートの値が正しく入力されている場合は、「 Create Working Environment in AWS （単一ノード）」ボックスに緑のチェックマークが追加されます。
 
-. このテンプレートに別の操作を追加して、この作業環境用のボリュームを作成することもできます。その場合は、をクリックします image:button_plus_sign_round.png["プラスボタン"] そのアクションを追加します。方法を参照してください <<Create a template for a Cloud Volumes ONTAP volume,Cloud Volumes ONTAP ボリュームのテンプレートを作成します>> を参照してください。
+. このテンプレートに別の操作を追加して、この作業環境用のボリュームを作成することもできます。その場合は、をクリックします image:button_plus_sign_round.png["プラスボタン"] そのアクションを追加します。方法を参照してください  a template for a Cloud Volumes ONTAP volume,Cloud Volumes ONTAP ボリュームのテンプレートを作成します を参照してください。
 . 左上にテンプレート名を入力します。
 . [* 設定とドリフト * ] をクリックして、このテンプレートを他の同様のテンプレートと区別できるように、より詳細な概要を提供します。したがって、テンプレート全体のドリフトを有効にしてから、 [ * 適用 * ] をクリックします。
 +
-ドリフトを使用すると、 Cloud Manager は、このテンプレートの作成時に入力したパラメータのハードコーディング値を監視できます。
+ドリフトを使用すると、BlueXPでは、このテンプレートの作成時に入力したハードコードされた値を監視できます。
 
 . [ テンプレートの保存 *] をクリックします。
 
 
 テンプレートが作成され、新しいテンプレートが表示されるテンプレートダッシュボードに戻ります。
 
-を参照してください <<What to do after you have created the template,テンプレートについてユーザに説明する必要がある内容>>。
+を参照してください  to do after you have created the template,テンプレートについてユーザに説明する必要がある内容。
 
 
 
@@ -478,7 +478,7 @@ NOTE: この時点で、 Cloud Volumes ONTAP 、オンプレミス ONTAP 、 Azu
 現在の _ 既存のリソースを検索 _ アクション機能を使用すると、現在クラウドバックアップまたはクラウドデータセンスが有効になっていない Cloud Volumes ONTAP およびオンプレミス ONTAP 作業環境上のボリュームを検索できます。特定のボリュームで Cloud Backup を有効にすると、その作業環境のデフォルトポリシーとして設定したバックアップポリシーも設定されるため、作業環境の以降のすべてのボリュームで同じバックアップポリシーを使用できます。
 
 .手順
-. * AppTemplate* サービスを選択し、 * Templates * タブをクリックして、 * Add New Template * をクリックします。
+. [*正常性]>[修正]を選択し、[*テンプレート*]タブをクリックして、[*新しいテンプレートの追加*]をクリックします。
 +
 Select_a Template_page が表示されます。
 
@@ -544,13 +544,13 @@ image:screenshot_define_find_resource_search_criteria.png["既存のリソース
 +
 image:screenshot_template_add_backup_action.png["テンプレートにクラウドバックアップアクションを追加する手順を示すスクリーンショット。"]
 
-. で説明したように、バックアップ条件を定義できます <<Add Backup functionality to a volume,ボリュームにバックアップ機能を追加する>> これにより、テンプレートは、既存のリソースを検索アクションで選択したボリュームに正しいバックアップポリシーを適用します。
+. で説明したように、バックアップ条件を定義できます  Backup functionality to a volume,ボリュームにバックアップ機能を追加する これにより、テンプレートは、既存のリソースを検索アクションで選択したボリュームに正しいバックアップポリシーを適用します。
 . [ 適用 ] をクリックして、 [ バックアップ ] アクションに加えたカスタマイズを保存し、完了したら [ テンプレートの保存 ] をクリックします。
 
 
 テンプレートが作成され、新しいテンプレートが表示されるテンプレートダッシュボードに戻ります。
 
-を参照してください <<What to do after you have created the template,テンプレートについてユーザに説明する必要がある内容>>。
+を参照してください  to do after you have created the template,テンプレートについてユーザに説明する必要がある内容。
 
 
 
@@ -559,7 +559,7 @@ image:screenshot_template_add_backup_action.png["テンプレートにクラウ�
 既存のリソースを検索アクションを使用すると ' 作業環境を検索し ' ボリュームの作成などの他のテンプレートアクションを使用して ' 既存の作業環境に対して簡単にアクションを実行できます
 
 .手順
-. * AppTemplate* サービスを選択し、 * Templates * タブをクリックして、 * Add New Template * をクリックします。
+. [*正常性]>[修正]を選択し、[*テンプレート*]タブをクリックして、[*新しいテンプレートの追加*]をクリックします。
 +
 Select_a Template_page が表示されます。
 
@@ -595,7 +595,7 @@ image:screenshot_define_find_work_env.png["入力が必要な既存リソース�
 
 テンプレートが作成され、新しいテンプレートが表示されるテンプレートダッシュボードに戻ります。
 
-を参照してください <<What to do after you have created the template,テンプレートについてユーザに説明する必要がある内容>>。
+を参照してください  to do after you have created the template,テンプレートについてユーザに説明する必要がある内容。
 
 
 

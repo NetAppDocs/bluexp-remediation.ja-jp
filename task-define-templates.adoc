@@ -22,16 +22,20 @@ summary: ネットアップが提供する「アクション」を 1 つ以上�
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
-.<span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png"[] Alt="one "></span> 必要な前提条件を確認します
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] 必要な前提条件を確認する
+[role="quick-margin-list"]
 * ユーザがテンプレートを使用して Cloud Volumes ONTAP 、オンプレミス ONTAP 、または Azure NetApp Files システム用のボリュームを作成する前に、ボリュームを導入する適切な作業環境にアクセスできることを確認してください。
 
 
+[role="quick-margin-list"]
 * クラウドサービス「 action 」をテンプレートに追加する場合（など） https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["クラウドバックアップ"^] または https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["クラウドデータの意味"^]をクリックして、ご使用の環境でサービスがアクティブでライセンスされていることを確認してください。
 
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] Application Templates サービスを起動します
 [role="quick-margin-para"]
 [*正常性]>[修正]を選択し、[*エディタ*]タブをクリックして、テンプレートで使用するアクションを選択します。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] 「アクション」を選択し、パラメーターを定義して、テンプレートを作成します
 [role="quick-margin-para"]
 作成手順に従い、テンプレートによって実行されるアクションを定義します。
 
@@ -167,9 +171,10 @@ image:screenshot_create_template_add_action.png["作成したボリュームに�
 . [ テンプレートの保存 *] をクリックします。
 
 
+.結果
 テンプレートが作成され、新しいテンプレートが表示されるテンプレートダッシュボードに戻ります。
 
-を参照してください  to do after you have created the template,テンプレートについてユーザに説明する必要がある内容。
+を参照してください <<テンプレートの作成後の作業,テンプレートについてユーザに説明する必要がある内容>>。
 
 
 
@@ -268,9 +273,10 @@ image:screenshot_create_template_define_action_anf.png["入力する必要があ
 . [ テンプレートの保存 *] をクリックします。
 
 
+.結果
 テンプレートが作成され、新しいテンプレートが表示されるテンプレートダッシュボードに戻ります。
 
-を参照してください  to do after you have created the template,テンプレートについてユーザに説明する必要がある内容。
+を参照してください <<テンプレートの作成後の作業,テンプレートについてユーザに説明する必要がある内容>>。
 
 
 
@@ -366,9 +372,10 @@ image:screenshot_create_template_define_action_onprem.png["入力する必要が
 . [ テンプレートの保存 *] をクリックします。
 
 
+.結果
 テンプレートが作成され、新しいテンプレートが表示されるテンプレートダッシュボードに戻ります。
 
-を参照してください  to do after you have created the template,テンプレートについてユーザに説明する必要がある内容。
+を参照してください <<テンプレートの作成後の作業,テンプレートについてユーザに説明する必要がある内容>>。
 
 
 
@@ -449,7 +456,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 +
 テンプレートの値が正しく入力されている場合は、「 Create Working Environment in AWS （単一ノード）」ボックスに緑のチェックマークが追加されます。
 
-. このテンプレートに別の操作を追加して、この作業環境用のボリュームを作成することもできます。その場合は、をクリックします image:button_plus_sign_round.png["プラスボタン"] そのアクションを追加します。方法を参照してください  a template for a Cloud Volumes ONTAP volume,Cloud Volumes ONTAP ボリュームのテンプレートを作成します を参照してください。
+. このテンプレートに別の操作を追加して、この作業環境用のボリュームを作成することもできます。その場合は、をクリックします image:button_plus_sign_round.png["プラスボタン"] そのアクションを追加します。方法を参照してください <<Cloud Volumes ONTAP ボリュームのテンプレートを作成します,Cloud Volumes ONTAP ボリュームのテンプレートを作成します>> を参照してください。
 . 左上にテンプレート名を入力します。
 . [* 設定とドリフト * ] をクリックして、このテンプレートを他の同様のテンプレートと区別できるように、より詳細な概要を提供します。したがって、テンプレート全体のドリフトを有効にしてから、 [ * 適用 * ] をクリックします。
 +
@@ -458,9 +465,10 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 . [ テンプレートの保存 *] をクリックします。
 
 
+.結果
 テンプレートが作成され、新しいテンプレートが表示されるテンプレートダッシュボードに戻ります。
 
-を参照してください  to do after you have created the template,テンプレートについてユーザに説明する必要がある内容。
+を参照してください <<テンプレートの作成後の作業,テンプレートについてユーザに説明する必要がある内容>>。
 
 
 
@@ -544,13 +552,14 @@ image:screenshot_define_find_resource_search_criteria.png["既存のリソース
 +
 image:screenshot_template_add_backup_action.png["テンプレートにクラウドバックアップアクションを追加する手順を示すスクリーンショット。"]
 
-. で説明したように、バックアップ条件を定義できます  Backup functionality to a volume,ボリュームにバックアップ機能を追加する これにより、テンプレートは、既存のリソースを検索アクションで選択したボリュームに正しいバックアップポリシーを適用します。
+. で説明したように、バックアップ条件を定義できます <<ボリュームにバックアップ機能を追加します,ボリュームにバックアップ機能を追加する>> これにより、テンプレートは、既存のリソースを検索アクションで選択したボリュームに正しいバックアップポリシーを適用します。
 . [ 適用 ] をクリックして、 [ バックアップ ] アクションに加えたカスタマイズを保存し、完了したら [ テンプレートの保存 ] をクリックします。
 
 
+.結果
 テンプレートが作成され、新しいテンプレートが表示されるテンプレートダッシュボードに戻ります。
 
-を参照してください  to do after you have created the template,テンプレートについてユーザに説明する必要がある内容。
+を参照してください <<テンプレートの作成後の作業,テンプレートについてユーザに説明する必要がある内容>>。
 
 
 
@@ -593,9 +602,10 @@ image:screenshot_define_find_work_env.png["入力が必要な既存リソース�
 . 左上にテンプレート名を入力し、 [ テンプレートの保存 ] をクリックします
 
 
+.結果
 テンプレートが作成され、新しいテンプレートが表示されるテンプレートダッシュボードに戻ります。
 
-を参照してください  to do after you have created the template,テンプレートについてユーザに説明する必要がある内容。
+を参照してください <<テンプレートの作成後の作業,テンプレートについてユーザに説明する必要がある内容>>。
 
 
 

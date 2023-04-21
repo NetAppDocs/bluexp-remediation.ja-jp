@@ -87,7 +87,7 @@ image:screenshot_template_drift_report_one_resource.png["単一リソースの�
 
 === BlueXPレプリケーションの健全性の詳細がドリフトレポートに表示されます
 
-いつ link:task-define-templates.html#add-replication-functionality-to-a-volume["テンプレートを使用したボリュームでのBlueXPレプリケーションの有効化"]では、 ［ レプリケーションの正常性監視を有効にする ］ フィールドでドリフトを有効にすることにより、ドリフトレポートに詳細なレプリケーション情報を表示できます。ドリフトレポートを有効にすると、BlueXPレプリケーション関係の健常性が正常かどうか（ドリフト）、およびSnapMirrorの遅延時間、ステータス、前回の転送時間が表示されます。
+いつ link:task-define-templates.html#add-bluexp-classification-functionality-to-a-volume["テンプレートを使用したボリュームでのBlueXPレプリケーションの有効化"]では、 ［ レプリケーションの正常性監視を有効にする ］ フィールドでドリフトを有効にすることにより、ドリフトレポートに詳細なレプリケーション情報を表示できます。ドリフトレポートを有効にすると、BlueXPレプリケーション関係の健常性が正常かどうか（ドリフト）、およびSnapMirrorの遅延時間、ステータス、前回の転送時間が表示されます。
 
 このスクリーンショットは、ドリフトレポートで異常な SnapMirror 関係のレプリケーションの詳細を示しています。
 

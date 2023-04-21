@@ -182,7 +182,7 @@ image:screenshot_create_template_add_action.png["作成したボリュームに�
 
 Azure NetApp Files ボリュームのテンプレートは、 Cloud Volumes ONTAP ボリュームのテンプレートを作成する場合と同じ方法で作成します。
 
-を参照してください https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf-volumes.html#creating-volumes["Azure NetApp Files ボリュームをプロビジョニングする方法"^] ANF ボリュームテンプレートで実行する必要があるすべてのパラメータの詳細については、を参照してください。
+を参照してください https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-create-volumes.html#create-volumes["Azure NetApp Files ボリュームをプロビジョニングする方法"^] ANF ボリュームテンプレートで実行する必要があるすべてのパラメータの詳細については、を参照してください。
 
 .手順
 . [*正常性]>[修正]を選択し、[*テンプレート*]タブをクリックして、[*新しいテンプレートの追加*]をクリックします。
@@ -695,7 +695,7 @@ image:screenshot_template_replication_policy.png["関係のBlueXPレプリケー
 +
 .. を選択します https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication-policies.html#types-of-replication-policies["レプリケーションポリシー"^] を使用します。
 .. 1 回限りのコピーまたは繰り返し実行するレプリケーションスケジュールを選択します。
-.. 遅延時間、ステータス、および前回の転送時間に加えて、 SnapMirror 関係のレプリケーションの健常性もドリフトレポートに含める場合は、レプリケーションの健常性ステータスの監視を有効にします。 link:task-check-template-compliance.html#replication-health-details-in-the-drift-report["ドリフトレポートでは、このような内容を確認できます"]。
+.. 遅延時間、ステータス、および前回の転送時間に加えて、 SnapMirror 関係のレプリケーションの健常性もドリフトレポートに含める場合は、レプリケーションの健常性ステータスの監視を有効にします。 link:task-check-template-compliance.html#bluexp-replication-health-details-in-the-drift-report["ドリフトレポートでは、このような内容を確認できます"]。
 .. 転送速度の上限を設定するかどうかを選択し、データの転送速度の上限（ 1 秒あたりのキロバイト数）を入力します。固定値を入力するか、または最小値と最大値を指定して、ストレージ管理者にその範囲の値を選択させることができます。
 
 

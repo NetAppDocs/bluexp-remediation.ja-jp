@@ -148,7 +148,6 @@
   <block id="0723f0287083e700309ab63bd37a0c33" category="section-title">Azure NetApp Files ボリュームのテンプレートを作成します</block>
   <block id="38c68ceb833297ed3631cc6cc44141ab" category="paragraph">Azure NetApp Files ボリュームのテンプレートは、 Cloud Volumes ONTAP ボリュームのテンプレートを作成する場合と同じ方法で作成します。</block>
   <block id="98165316f4a6a7eb3b2eea00a7c71656" category="inline-link">Azure NetApp Files ボリュームをプロビジョニングする方法</block>
-  <block id="1dcec9f35c7e20c4011388d6173a9a3e" category="paragraph">を参照してください<block ref="71642e13367a6341a10e13f459821e6e" category="inline-link-rx"></block> ANF ボリュームテンプレートで実行する必要があるすべてのパラメータの詳細については、を参照してください。</block>
   <block id="31ea9a5156da1667ca8c913660cb04e8" category="paragraph"><block ref="31ea9a5156da1667ca8c913660cb04e8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b1198c02b1425b74b6391ffd99cbc74b" category="list-text">[ 空白のテンプレート ] を選択し、 [ 開始 ] をクリックします。</block>
   <block id="ddc839fd59d3af096b5f24caa0aac73e" category="list-text">作成するリソースのタイプとして * Azure NetApp Files でボリュームを作成 * を選択し、 * 適用 * をクリックします。</block>
@@ -296,7 +295,6 @@
   <block id="23647b4aee667229f438bac6d37c6f14" category="list-text">を選択します<block ref="fce626f96b8a582bd914af9774e3f4bd" category="inline-link-rx"></block> を使用します。</block>
   <block id="28b7ceda6afe52e7cddb056ae1cc1b42" category="list-text">1 回限りのコピーまたは繰り返し実行するレプリケーションスケジュールを選択します。</block>
   <block id="a890fcd17657bbd0255d609a9ac66f87" category="inline-link-macro">ドリフトレポートでは、このような内容を確認できます</block>
-  <block id="550aba8dd2351fcca6220e9726d1b0b4" category="list-text">遅延時間、ステータス、および前回の転送時間に加えて、 SnapMirror 関係のレプリケーションの健常性もドリフトレポートに含める場合は、レプリケーションの健常性ステータスの監視を有効にします。 <block ref="e9afe1d61d7f4e2024b782abd0cbb1af" category="inline-link-macro-rx"></block>。</block>
   <block id="a17ec67a32a0998705df91c25c3b8420" category="list-text">転送速度の上限を設定するかどうかを選択し、データの転送速度の上限（ 1 秒あたりのキロバイト数）を入力します。固定値を入力するか、または最小値と最大値を指定して、ストレージ管理者にその範囲の値を選択させることができます。</block>
   <block id="e03c4d2a8455ec2482acf1f509382257" category="section-title">テンプレートの作成後の作業</block>
   <block id="856a9d1850ea33e764f9c6e201455be4" category="paragraph">テンプレートを作成したら、新しい作業環境およびボリュームを作成する際にテンプレートを使用するようストレージ管理者に通知する必要があります。</block>
@@ -774,7 +772,6 @@
   <block id="e7ec4c4152826f2deedfea467894a855" category="paragraph"><block ref="e7ec4c4152826f2deedfea467894a855" category="inline-image-macro-rx" type="image"></block></block>
   <block id="af859a8aacc30e0bb1648f64ed76f23d" category="section-title">BlueXPレプリケーションの健全性の詳細がドリフトレポートに表示されます</block>
   <block id="dccc80768bfca83f2c18a964a2ada6e0" category="inline-link-macro">テンプレートを使用したボリュームでのBlueXPレプリケーションの有効化</block>
-  <block id="9dd134a3f05a90dc02c4af5ebcb3faef" category="paragraph">いつ <block ref="079d9da8cb6e56b01a7d0344b4200bdf" category="inline-link-macro-rx"></block>では、 ［ レプリケーションの正常性監視を有効にする ］ フィールドでドリフトを有効にすることにより、ドリフトレポートに詳細なレプリケーション情報を表示できます。ドリフトレポートを有効にすると、BlueXPレプリケーション関係の健常性が正常かどうか（ドリフト）、およびSnapMirrorの遅延時間、ステータス、前回の転送時間が表示されます。</block>
   <block id="ff1a821ec32f5470f851de8ef3edd6a9" category="summary">BlueXP修正サービス（AppTemplate）を使用すると、BlueXP作業環境向けに標準的なリソース作成を行うことができます。</block>
   <block id="510f57bbfca743348ff245cb08dc02e3" category="doc">BlueXPの問題解決に関するドキュメント</block>
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
@@ -849,4 +846,7 @@
   <block id="89bd41d8bc97392a23a93ae863b454bb" category="sidebar">BlueXPの修復機能を使用</block>
   <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">新機能</block>
   <block id="bdada2beda611e5479ba79eddd7f3b9f" category="sidebar">バックアップ、分類、またはレプリケーション機能をボリュームに追加します</block>
+  <block id="3c66700164b4cb085d6e086bf6b7d73b" category="paragraph">いつ <block ref="438903b5e6182d9d4cc41396268e5cbc" category="inline-link-macro-rx"></block>では、 ［ レプリケーションの正常性監視を有効にする ］ フィールドでドリフトを有効にすることにより、ドリフトレポートに詳細なレプリケーション情報を表示できます。ドリフトレポートを有効にすると、BlueXPレプリケーション関係の健常性が正常かどうか（ドリフト）、およびSnapMirrorの遅延時間、ステータス、前回の転送時間が表示されます。</block>
+  <block id="c28223c3f7a03804f44448c7561c5f02" category="paragraph">を参照してください<block ref="6525ab64efdc6d693874df3da6739f52" category="inline-link-rx"></block> ANF ボリュームテンプレートで実行する必要があるすべてのパラメータの詳細については、を参照してください。</block>
+  <block id="8abfe8e6c06581937c37ec49be54c6d7" category="list-text">遅延時間、ステータス、および前回の転送時間に加えて、 SnapMirror 関係のレプリケーションの健常性もドリフトレポートに含める場合は、レプリケーションの健常性ステータスの監視を有効にします。 <block ref="1eb00ed04881df5d17ae6b01acb7f8fb" category="inline-link-macro-rx"></block>。</block>
 </blocks>

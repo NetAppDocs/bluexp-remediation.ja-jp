@@ -68,32 +68,6 @@
   <block id="6eed6fdcaa0bf2c22f0c8e78ff686d29" category="inline-link-macro">Cloud Volumes ONTAP 作業環境用のテンプレートの作成方法については、を参照してください</block>
   <block id="98b343467576e58f6658965bc67f83c1" category="paragraph">新しい「リソース検索」アクションを使用すると、 Cloud Backup を有効にするすべてのボリュームを特定し、 Cloud Backup アクションを使用してそれらのボリュームのバックアップを有効にできます。</block>
   <block id="049ebb609707e4c76f578eb98777ffdc" category="inline-link-macro">リソースタグ付けの詳細については、こちらをご覧ください</block>
-  <block id="addd83032f7bc85573c2d778fbce152b" category="inline-link-macro">テンプレートのコピーを作成する方法については、を参照してください</block>
-  <block id="d8297eba97a5465d726b7dfc48cc13ea" category="paragraph">既存のテンプレートと非常によく似た新しいテンプレートを作成する場合、複製を作成すると時間を大幅に節約できます。複製を新しい名前で作成し、テンプレートを一意にする結合アイテムを変更するだけです。 <block ref="f91157bfd2bb5cbf5e539da6f97e4710" category="inline-link-macro-rx"></block>。</block>
-  <block id="0cb0eeda22a2ab5a3af95e330a22a74c" category="paragraph">作業環境、 Storage VM 、およびボリューム名を特定する変数を事前に選択しておく必要があります。これで、この情報がテンプレートに追加されました。これにより、新しく作成したボリュームへの Cloud Backup 、 Cloud Compliance 、および Replication のサービスの追加が簡単になります。</block>
-  <block id="db1b81be614bd9a5ca7dc44b22c02310" category="inline-link-macro">ラベルを付けることができる GCP リソースを表示します</block>
-  <block id="e4e712eb035bdea737277dd1b8993a0a" category="paragraph">Cloud Manager Tagging サービスを使用して、 GCP リソースのラベルを管理できるようになりました。リソースに適用されている GCP ラベルとラベル値を表示したり、管理している他の GCP リソースにそれらのラベルを適用したりできます。 <block ref="409286efa16f3a61c8f6160b0cdd3b73" category="inline-link-macro-rx"></block>。</block>
-  <block id="b4b08857877112938961aaa3e2a131f2" category="inline-link-macro">タグ付け可能な Azure リソースを確認する</block>
-  <block id="44e0789645e569abc1d8998ab3015e3d" category="paragraph">リソースに適用されている Azure のタグとタグの値を確認し、それらのタグを管理している他の Azure リソースに適用することができます。 <block ref="566291be7033a26e1b235b2a2d2ef8ff" category="inline-link-macro-rx"></block>。</block>
-  <block id="984956ca6b0ab2e60f484c9bada495b5" category="inline-link-macro">Cloud Volumes ONTAP 作業環境のテンプレートを作成します</block>
-  <block id="05ef6a32f83373b0aaaab04a0cfb067e" category="paragraph">現時点では AWS 環境のみがサポートされ、シングルノードクラスタのみがサポートされます。方法を参照してください <block ref="b3c0e34ddc6f02981e8f634895a0f3cf" category="inline-link-macro-rx"></block>。</block>
-  <block id="adb5f80ec3b6f1b0d9ad3b40327218db" category="paragraph">タグ付けを使用すると、さまざまなリソースをグループ化してアプリケーション、リージョン、または部門を特定し、自動化を実行したり、特定の部門や地域にコストを割り当てることができます。</block>
-  <block id="587a3b529ee36768600b3185997270b8" category="inline-link-macro">タグ付けの詳細をご覧ください</block>
-  <block id="87c0200a60cc25f90f7d11c9af5852e4" category="paragraph">EC2 インスタンスに適用されている AWS のタグとタグの値を表示して、それらのタグを管理している他の EC2 インスタンスに適用することができます。 <block ref="78bc354b5bc36ea6c1a33109df4c795e" category="inline-link-macro-rx"></block>。</block>
-  <block id="148ac7400035f34ce9532083a87fe872" category="section-title">2021 年 7 月 13 日</block>
-  <block id="367ca1b4aadef246752fe5dc9dbfa720" category="inline-link-macro">作成するボリュームにデータをレプリケートします</block>
-  <block id="bd78b220c8f6ffb11029e676aca762e1" category="inline-link">レプリケーションサービス</block>
-  <block id="18b66794f04012b531d4cc5914f5f8f3" category="paragraph">これで、必要なテンプレートを追加できます <block ref="6738ace5df735ae0ff117275f600ff2e" category="inline-link-macro-rx"></block> を使用して別のボリュームに移動します<block ref="0cbc5a9fd380783b2e1491fb4decd0c8" category="inline-link-rx"></block>。</block>
-  <block id="b97e650c4494f3305ee0ac31ef6caa19" category="paragraph">他のネットアップストレージシステムにデータをレプリケートし、セカンダリデータを継続的に更新することで、データは最新の状態に保たれ、必要なときにいつでも使用できます。</block>
-  <block id="8b521b3330e37ed57ab6eea2702514ff" category="inline-link-macro">ドリフトレポートをダウンロードする方法</block>
-  <block id="d995a583774874e6dfba85f30dc14514" category="paragraph">このようにして、これらのボリュームを特定し、ボリュームをコンプライアンスに戻す誰かを割り当てることができます。を参照してください <block ref="3861ce04d0fce9eae63955cfc17ca34d" category="inline-link-macro-rx"></block>。</block>
-  <block id="b2c5f55555590a4c06851e0098a9fbbd" category="paragraph">Cloud Manager の新機能を使用すると、既存の ONTAP リソースにタグを適用して、リソースを整理および管理できるようになります。タグは、リソースをグループ化してアプリケーション、環境、リージョン、課金コード、クラウドプロバイダを識別するために使用できるメタデータです。 その他。</block>
-  <block id="bef30da0bb60a2c21060e5694267abfe" category="paragraph"><block ref="78bc354b5bc36ea6c1a33109df4c795e" category="inline-link-macro-rx"></block>。</block>
-  <block id="945fb8f32f58d1cc36cb9f1e9e4c6fe5" category="section-title">2021 年 6 月 7 日</block>
-  <block id="a1b4bb66baa87c6181574db8b88c8d3d" category="paragraph">たとえば、ネットアップの Storage Efficiency を有効にして Cloud Volumes ONTAP ボリュームを作成した場合、そのボリュームで Cloud Backup も有効になります。Storage Efficiency が有効になっていない場合、 Cloud Backup は有効になりません。</block>
-  <block id="011741db456ebe1ea2d73d2c43f93efc" category="paragraph">この機能を使用すると、 Cloud Manager で、テンプレート内のパラメータに入力したハードコーディングされた値を監視できます。テンプレートを使用してボリュームを作成したあと、 Cloud Manager がパラメータ値が変更されてテンプレート定義に合わせられなくなったと認識した場合は、設計したテンプレートから「ドリフト」のあるすべてのボリュームを表示できます。こうすることで、これらのボリュームを特定し、変更を加えてコンプライアンスに戻すことができます。</block>
-  <block id="824b76af9549cb14fd2443aa485afb15" category="section-title">2021 年 5 月 2 日</block>
-  <block id="96e3f6826df4638ccb92b90bd780b773" category="paragraph">新しく作成した各ボリュームに対してデータセンスを有効にしたり、新しく作成した各ボリュームに対して Cloud Backup を有効にしたり、作成したボリュームに対してバックアップとコンプライアンスの両方を有効にするテンプレートを作成したりできます。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">ヘルプを表示します</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link-macro"></block>
   <block id="cc371045494864a1be09aecf8486813b" category="summary">ネットアップが提供する「アクション」を 1 つ以上選択し、組織がリソース作成の最適化を開始するために使用できるアプリケーションテンプレートを迅速に構築します。</block>
@@ -101,20 +75,13 @@
   <block id="06ad314b340900d226b1196e1fe289e9" category="section-title">クイックスタート</block>
   <block id="91e06e9a9ef97681b798e2e5e007ba97" category="paragraph">これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。</block>
   <block id="53eecd7f53fddfec88f1dbaf29600d72" category="list-text">ユーザがテンプレートを使用して Cloud Volumes ONTAP 、オンプレミス ONTAP 、または Azure NetApp Files システム用のボリュームを作成する前に、ボリュームを導入する適切な作業環境にアクセスできることを確認してください。</block>
-  <block id="dad57e95fc9a5390302ad830888cbdb9" category="inline-link">クラウドバックアップ</block>
-  <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="inline-link">クラウドデータの意味</block>
-  <block id="45ebff704e28730c0e631bb5f09b2205" category="list-text">クラウドサービス「 action 」をテンプレートに追加する場合（など）<block ref="65043dfb781746b8fde5bfddb319eb97" category="inline-link-rx"></block> または<block ref="4af4db8698c4a0998b2c93dbadcf8efe" category="inline-link-rx"></block>をクリックして、ご使用の環境でサービスがアクティブでライセンスされていることを確認してください。</block>
   <block id="ba13d007a4f76ded358c0280157f648b" category="paragraph">作成手順に従い、テンプレートによって実行されるアクションを定義します。</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="section-title">要件</block>
   <block id="4b09bdd4ca435f6a4b77b142f9481573" category="paragraph">以下の要件を読み、サポートされている構成になっていることを確認してください。</block>
   <block id="23e0e07c56fc07b2d6bc44d30e5187d4" category="inline-link">コネクターの作成方法を参照してください</block>
   <block id="880e0da9ea31d472fa96b1ad7e4be6ad" category="list-text">コネクタがない場合は、<block ref="0e90a2191f59a8f46190195b37c75156" category="inline-link-rx"></block> AWS 、 Azure 、 GCP 向け。</block>
-  <block id="45ef42d49d3545c2dc4c85b1084a47e4" category="list-text">Cloud Volumes ONTAP ボリュームテンプレートを作成する際には、 Cloud Volumes ONTAP 作業環境がユーザに利用できることを確認してください。で Cloud Volumes ONTAP システムを起動する方法を参照してください<block ref="9d7ce7d64938e2f7608d2bb2edf0463c" category="inline-link-rx"></block>、<block ref="24f9dba5182403aa08072eb715753c19" category="inline-link-rx"></block>または、のいずれかです<block ref="50ded4108906004e3a51ae63e78f7f8d" category="inline-link-rx"></block>。</block>
   <block id="b927c65793ede8840d859f745c1070b4" category="inline-link">オンプレミスの ONTAP システムを検出</block>
   <block id="89bbeb90a25e5540f1875c6148fc07a6" category="inline-link">Azure NetApp Files 作業環境を作成します</block>
-  <block id="e6ed2b3f4bf8b70c7dffd440bfa20748" category="list-text">クラウドバックアップを使用してテンプレート内のボリュームをバックアップする場合は、環境が Cloud Backup をアクティブ化していることを確認してください。</block>
-  <block id="375fb9ecf54511eed57c23439aba8fa9" category="list-text">クラウドデータセンスを使用してテンプレート内のボリュームをスキャンする場合は、クラウドデータセンスがアクティブ化されていることを確認してください。</block>
-  <block id="b2db245c1e7b0de62f61003787ba3eb2" category="list-text">テンプレートでレプリケーションを有効にする場合、オンプレミスの ONTAP ボリューム用のテンプレートを使用するには、 ONTAP クラスタにアクティブな SnapMirror ライセンスが必要です。</block>
   <block id="ec83027c05d71f4e7343616a10e8b48e" category="section-title">テンプレートを使用してリソースを作成する例</block>
   <block id="54efaa09fa271348667d3925486f25d8" category="paragraph">リソーステンプレートを使用して、新しいボリュームや新しい Cloud Volumes ONTAP 作業環境を作成できます。</block>
   <block id="030a036b48378de1f3003036be2d3597" category="section-title">Cloud Volumes ONTAP ボリュームのテンプレートを作成します</block>
@@ -122,7 +89,6 @@
   <block id="e9e4c331008e320c9b03b119f438ec84" category="paragraph">この例では、「データベース用の CVO ボリューム」という名前のテンプレートを作成し、次の 2 つのアクションを含めます。</block>
   <block id="6115c1aa690e31fcf33eef72f8accb32" category="list-text">Cloud Volumes ONTAP ボリュームを作成します</block>
   <block id="4611422bf9a4ff570849e7d651f9c0a2" category="paragraph">AWS 環境のボリュームを 100GB のストレージで設定し、 Snapshot ポリシーを「 default 」に設定し、 Storage Efficiency を有効にします。</block>
-  <block id="d0285b972453920d44e9bfc537f86825" category="list-text">Cloud Backup を有効にします</block>
   <block id="0e7b1101bfe909f1f24d1bc082d8cb0b" category="paragraph">30 個の日単位バックアップ、 13 個の週単位バックアップ、 3 個の月単位バックアップを作成します（ _3 カ月保持ポリシーを使用）。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">手順</block>
   <block id="12800accdcea8213a17428d96d3f650b" category="paragraph">Select_a Template_page が表示されます。</block>
@@ -169,12 +135,10 @@
   <block id="ee33f204180d62cfb217e1aec2a2f775" category="paragraph">を参照してください<block ref="51ba3de2fe0f2a8abd8380ab98f33811" category="inline-link-rx"></block> 概要については、およびを参照してください<block ref="d98e4cd2c7e92258651d80578af83733" category="inline-link-rx"></block> をクリックして、環境が階層化用に設定されていることを確認してください。</block>
   <block id="dcbae1cdee8a3f08d129ff3de6884125" category="list-text">このアクションに必要なパラメーターを定義したら、 * 適用 * をクリックする。</block>
   <block id="7566e7b2ebc49252e3a55e0d5dd8d796" category="paragraph">テンプレートの値が正しく入力されている場合は、 [ ボリュームを Cloud Volumes ONTAP に作成 ] ボックスに緑のチェックマークが追加されます。</block>
-  <block id="edabbad74c4bab7275b00df22d1795fb" category="list-text">Enable Cloud Backup on Volume * ボックスをクリックします。 Cloud Backup on Volume Action Definition_Dialog が表示され、 Cloud Backup の詳細を入力できます。</block>
   <block id="e7b2940e4c4ae2261e85a3d7a22c8cb5" category="inline-image-macro">作成したボリュームに追加できるその他の操作を示すスクリーンショット。</block>
   <block id="1d52e1ed02fe4b810c04939e74af1f18" category="paragraph"><block ref="1d52e1ed02fe4b810c04939e74af1f18" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f558391a06df755ed33bfad6325d0441" category="list-text">3 カ月保持 * バックアップ・ポリシーを選択し、 30 個の日単位、 13 個の週単位、 3 個の月単位バックアップを作成します。</block>
   <block id="ee90c4ccb63dcb129be28139926904d8" category="inline-xref">これらのフィールドの入力方法</block>
-  <block id="0728b4f74021dc704fab300222094c8b" category="list-text">[ 適用 ] をクリックすると、 [ クラウドバックアップ ] ダイアログが保存されます。</block>
   <block id="46725495896c458f104f504d53b4b320" category="list-text">左上に、データベース * （この例では）のテンプレート名 * CVO ボリュームを入力してください。</block>
   <block id="d69be6c531037f06436630d128988a41" category="list-text">[* 設定とドリフト * ] をクリックして、このテンプレートを他の同様のテンプレートと区別できるように、より詳細な概要を提供します。したがって、テンプレート全体のドリフトを有効にしてから、 [ * 適用 * ] をクリックします。</block>
   <block id="069cf34ab6ca64e85728193a5aab0a4e" category="list-text">[ テンプレートの保存 *] をクリックします。</block>
@@ -217,7 +181,6 @@
   <block id="18801e3c62d625d360e2e7ea2b62c1b7" category="list-text">テンプレートに使用する名前を左上に入力します。</block>
   <block id="56b6bad4ad8b3fcc1c2572a38f72bbbc" category="section-title">オンプレミスの ONTAP ボリューム用のテンプレートを作成します</block>
   <block id="d3a13fb50cc9406d1e6091d1a798ff8a" category="inline-link">オンプレミスの ONTAP ボリュームをプロビジョニングする方法</block>
-  <block id="2ae042576bd53fa925dc0c175ec115a2" category="paragraph">を参照してください<block ref="66f502a6d6407b2e7db3bd3d647a7434" category="inline-link-rx"></block> オンプレミスの ONTAP ボリュームテンプレートで実行する必要があるすべてのパラメータの詳細については、を参照してください。</block>
   <block id="abea42b586bcc6693bfcf53290293b41" category="paragraph">[ 新規アクションの追加（ _Add New Action_） ] ページが表示されます。</block>
   <block id="4f58f599c7e133b39a2f56df4f449c81" category="inline-image-macro">新しいアクションの追加ページで主なアクションを選択する方法を示すスクリーンショット。</block>
   <block id="b9a9d1475979d9d1c4cd0440dd88810d" category="paragraph"><block ref="b9a9d1475979d9d1c4cd0440dd88810d" category="inline-image-macro-rx" type="image"></block></block>
@@ -248,7 +211,6 @@
   <block id="64917fe8c1577c91426bd43a4aef38db" category="cell">これらは、 Cloud Volumes ONTAP クラスタ管理アカウントのクレデンシャルです。これらのクレデンシャルを使用して、 ONTAP System Manager またはその CLI を使用して Cloud Volumes ONTAP に接続できます。</block>
   <block id="2cebc28eab2cacd2695a37777c14a93f" category="cell">作業環境名</block>
   <block id="6101eef8fd3b11affed5baa0379eb7b5" category="inline-link">AWS ワークシート</block>
-  <block id="21e39bab34fec6294e31fe4e65b232c7" category="list-text">* 場所と接続 * ：に記録したネットワーク情報を入力します<block ref="837a3d1b1486e7cc7dba08a5d4a77996" category="inline-link-rx"></block>。これには、 AWS リージョン、 VPC 、サブネット、セキュリティグループが含まれます。</block>
   <block id="6f27ddf091b10f1dfd4ab13be0759ec7" category="paragraph">AWS Outpost を使用している場合は、 Outpost VPC を選択して、その Outpost に単一のノードの Cloud Volumes ONTAP システムを導入できます。エクスペリエンスは、 AWS に存在する他の VPC と同じです。</block>
   <block id="e01401f96474df4861317e5b4493deca" category="list-text">* 認証方法 * ：使用する SSH 認証方法として、パスワードまたはキーペアを選択します。</block>
   <block id="94b720129da1fad395a78adb9dd8004f" category="list-text">* データ暗号化 * ：データ暗号化なし、または AWS で管理する暗号化を選択します。</block>
@@ -257,7 +219,6 @@
   <block id="2dff4bc0654f658707793fc687e4a17f" category="paragraph"><block ref="aab3f238743393f06eea77a640671e14" category="inline-link-rx"></block>。</block>
   <block id="84fee0ef7a3aad23dfb27e9c3b17b961" category="list-text">* 充電方法 * ：このシステムで使用する充電オプションを指定します。</block>
   <block id="9dbd3ac8bddbf4313a163e34e79476bf" category="inline-link">これらの充電方法について説明します</block>
-  <block id="c2e9e869bf938477d84b552043f7a81a" category="paragraph"><block ref="0cc5783cded63ddb149e3f9f53e8f86e" category="inline-link-rx"></block>。</block>
   <block id="8ac4cd210de5bd5fe91a871c186e8be3" category="list-text">* ネットアップサポートサイトのアカウント * ：ネットアップサポートサイトのアカウントを選択します。</block>
   <block id="f6b1eeef6a894819bc1138daa571ecaa" category="list-text">* 構成済みパッケージ *: 作業環境で作成されたボリュームのいくつかの要因を決定する 4 つの構成済みパッケージのいずれかを選択します</block>
   <block id="cb2bbd3723ec0171f93e30cb1d35ebc4" category="list-text">* SMB 構成 * ：この作業環境で SMB を使用してボリュームを導入する場合は、 CIFS サーバと関連する構成要素をセットアップできます。</block>
@@ -274,7 +235,6 @@
   <block id="d453807788f3b6bbd3ea47f9cbe56875" category="list-text">* アクション名 * ：デフォルト値の代わりに、カスタマイズされたアクション名を入力します。たとえば、「 Cluster ABC で大容量ボリュームを検索してバックアップを有効にする」などです。</block>
   <block id="463c18d84d5e845ea1d485923b7349ce" category="list-text">* リソースタイプ： * 検索するリソースのタイプを選択します。この場合は、「 * Volumes in Cloud Volumes ONTAP * 」を選択します。</block>
   <block id="7d61d7a876b512b9951ebcd6b058cc77" category="paragraph">このアクションに必要なエントリは、これだけです。「 * Continue * 」をクリックすると、環境内のすべての Cloud Volumes ONTAP システム上のすべてのボリュームのリストが表示されます。</block>
-  <block id="af2373ef86f3287751a203259821db48" category="paragraph">代わりに、 Cloud Backup アクションを適用する結果（この場合はボリューム）の数を減らすために、いくつかのフィルタを入力することを推奨します。</block>
   <block id="759a269bf5c05fa6647b728a4b6acab7" category="list-text">_Context_area では、特定の作業環境とその作業環境に関するその他の詳細を選択できます。</block>
   <block id="70b9fbef4c70dff460de52b0d7c1eb40" category="inline-image-macro">既存リソースの検索テンプレートに適用できるコンテキストフィルタを示すスクリーンショット。</block>
   <block id="7a978f856247996229928441e0d8ef1d" category="paragraph"><block ref="7a978f856247996229928441e0d8ef1d" category="inline-image-macro-rx" type="image"></block></block>
@@ -292,8 +252,6 @@
   <block id="902215290e82837ad3918c6de3db9e64" category="paragraph">完成した既存のリソースを検索アクションがエディタウィンドウに表示されます</block>
   <block id="9979d1ff76d2ea7068844b0cfd0bdb76" category="list-text">プラス記号をクリックして別のアクションを追加し、 * ボリュームでクラウドバックアップを有効にする * を選択して、 * 適用 * をクリックします。</block>
   <block id="7ebacdda898134e4d1b0a44a8ce8b373" category="paragraph">[Enable Cloud Backup on Volume_action_] がウィンドウに追加されます。</block>
-  <block id="bbc24d39829a188624fd31cd99972f84" category="inline-image-macro">テンプレートにクラウドバックアップアクションを追加する手順を示すスクリーンショット。</block>
-  <block id="a4cbf43d9463d6f510a4d2c7af8800f2" category="paragraph"><block ref="a4cbf43d9463d6f510a4d2c7af8800f2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="629026899287206b23bf1b8d05d2e57c" category="inline-xref">ボリュームにバックアップ機能を追加する</block>
   <block id="0864e2983319d781f957de96128569d4" category="list-text">で説明したように、バックアップ条件を定義できます <block ref="567736f0dbefe603b86c06be6821957e" category="inline-xref-macro-rx"></block> これにより、テンプレートは、既存のリソースを検索アクションで選択したボリュームに正しいバックアップポリシーを適用します。</block>
   <block id="2cd168ea59a502ef9e27e6003134ad57" category="list-text">[ 適用 ] をクリックして、 [ バックアップ ] アクションに加えたカスタマイズを保存し、完了したら [ テンプレートの保存 ] をクリックします。</block>
@@ -308,9 +266,7 @@
   <block id="e4b9d87ee0a05c6ace352d34259ff623" category="list-text">[* Continue * （続行） ] をクリックして設定を保存し、 [* Done * （完了 * ） ] をクリックします。</block>
   <block id="04589f02205d83ab5273554763f29cef" category="list-text">左上にテンプレート名を入力し、 [ テンプレートの保存 ] をクリックします</block>
   <block id="1c2460f99ff766a130c121d2511fc817" category="section-title">テンプレートを使用してサービスを有効にする例</block>
-  <block id="411375f96ccfa37e0dbc3d0cc4f2819d" category="paragraph">サービステンプレートを使用すると、新しく作成したボリュームで Cloud Backup 、 Cloud Data Sense 、 Replication （ SnapMirror ）の各サービスをアクティブ化できます。</block>
   <block id="d09587f155f4de501e417ae05bd6c246" category="section-title">ボリュームにバックアップ機能を追加します</block>
-  <block id="1ccabcbf7b43011ff18a0521cbf426d2" category="paragraph">ボリュームテンプレートを作成する場合、を使用して定期的にボリュームのバックアップを作成するテンプレートにを追加できます<block ref="65043dfb781746b8fde5bfddb319eb97" category="inline-link-rx"></block> サービス</block>
   <block id="8e50b75e57684da1ad2c63f7281c1bb2" category="admonition">この操作は Azure NetApp Files ボリュームには適用されません。</block>
   <block id="cc7c4a3dbe40e7192b900e2b4a3f22d4" category="inline-image-macro">ボリュームのバックアップ機能を有効にするページのスクリーンショット。</block>
   <block id="3a5623787eadb0de7109dbf1472e4723" category="paragraph"><block ref="3a5623787eadb0de7109dbf1472e4723" category="inline-image-macro-rx" type="image"></block></block>
@@ -319,36 +275,23 @@
   <block id="45c479a3827985134b6c11fc5b56fe19" category="inline-link-macro">[ コンテキスト（ Context ） ] フィールドに入力する</block>
   <block id="55ec93141dffeda07c8ca26ba1fa8f75" category="paragraph">別のボリュームのバックアップを作成する場合は、それらの詳細を手動で入力できます。方法を参照してください <block ref="be096e16163144495d696eb6dce624e2" category="inline-link-macro-rx"></block> をクリックして、別のボリュームを指定します。</block>
   <block id="1af1dabe0aa1f41e5209035cdc7e766d" category="list-text">[ 適用 ] をクリックして変更を保存します。</block>
-  <block id="b5c5217c35ca5ffa37ec218b349e4d8e" category="section-title">データセンス機能をボリュームに追加します</block>
-  <block id="7da7de40922950422b249e15e2c3102a" category="paragraph">ボリュームテンプレートを作成するときに、を使用してボリュームのコンプライアンスと分類をスキャンするテンプレートにを追加できます<block ref="4af4db8698c4a0998b2c93dbadcf8efe" category="inline-link-rx"></block> サービス</block>
   <block id="b6af640e26399bc8467a4465b802ea47" category="inline-image-macro">ボリュームのスキャン機能を有効にするページのスクリーンショット。</block>
   <block id="3f95813bf3f9fe4ef1653df2a79b2b7d" category="paragraph"><block ref="3f95813bf3f9fe4ef1653df2a79b2b7d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="273ef973fddf0605397f60b2a725e43e" category="list-text">* コンテキスト * ：デフォルトでは、作業環境、ボリューム名、ボリューム UUID 、ボリュームパス、およびプロトコルの変数が入力されます。これは、この同じテンプレートで以前に作成したボリュームのデータをスキャンすることを示します。これが必要な場合は、すべて設定されています。</block>
   <block id="38c9050a05ab7ae3bc16a77a1ce8e787" category="paragraph">別のボリュームのデータをスキャンする場合は、それらの詳細を手動で入力できます。方法を参照してください <block ref="be096e16163144495d696eb6dce624e2" category="inline-link-macro-rx"></block> をクリックして、別のボリュームを指定します。</block>
-  <block id="e0c791fcd9f870d36b0118528bd195c2" category="section-title">ボリュームにレプリケーション機能を追加します</block>
-  <block id="8c340dc334134096f68b880b42a8692c" category="inline-link">レプリケーション</block>
-  <block id="8dcc2a374ce8c093526cc5152324230d" category="paragraph">レプリケーション機能は、ソースボリュームの選択、デスティネーションボリュームの選択、レプリケーション設定の定義の 3 つの部分で構成されます。各セクションについて以下で説明します。</block>
   <block id="4da2d6a9396d0b82185925638b423b25" category="list-text">* ソースの詳細 * ：レプリケートするソースボリュームの詳細を入力します。</block>
-  <block id="cfae220ef6bc70299c0d06988e12e0b6" category="inline-image-macro">レプリケーションソースボリュームの場所を定義するページのスクリーンショット。</block>
-  <block id="db81be12438b4e3c3bdf3beca6e831f7" category="paragraph"><block ref="db81be12438b4e3c3bdf3beca6e831f7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a91218a8b9b25c1cc8cec554d31e45c0" category="list-text">デフォルトでは、作業環境、 Storage VM 、およびボリュームについて、最初の 3 つの変数が入力されます。これは、同じテンプレートで以前に作成したボリュームをレプリケートすることを示します。これが必要な場合は、すべて設定されています。</block>
   <block id="7983c642c200e679fc182d6cda6332be" category="paragraph">別のボリュームをレプリケートする場合は、それらの詳細を手動で入力できます。方法を参照してください <block ref="be096e16163144495d696eb6dce624e2" category="inline-link-macro-rx"></block> をクリックして、別のボリュームを指定します。</block>
-  <block id="f5eccf7ec10f562fd7945167b11881ca" category="list-text">レプリケーションを実行するには、ソースとデスティネーションの作業環境がそれぞれのクラスタ間 LIF を介して接続されている必要があります。ソース作業環境のクラスタ間 LIF の IP アドレスを入力します。</block>
   <block id="174102b086067ead19a50d7ce2f8211a" category="paragraph">この情報を取得するには、作業環境をダブルクリックし、メニューアイコンをクリックして、 [ 情報 ] をクリックします。</block>
   <block id="af686206beaeefe98fe2a5a5cac4ffec" category="list-text">* デスティネーションの詳細 * ：レプリケーション処理によって作成されるデスティネーションボリュームの詳細を入力します。</block>
-  <block id="c5c1dec1eb73121500306c6b9b8bd6c6" category="inline-image-macro">レプリケーションのデスティネーションボリュームの場所を定義するページのスクリーンショット。</block>
-  <block id="5cf0c8384bbad7232646ccbe04ed32b0" category="paragraph"><block ref="5cf0c8384bbad7232646ccbe04ed32b0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="99b3d3bf418d271f350304cf1acdcd45" category="list-text">ボリュームを作成する作業環境を選択します。</block>
   <block id="faccd2324eec8e1960bb88fd7aa8cdb6" category="list-text">ボリュームを配置する Storage VM を選択します。</block>
   <block id="34a5bd93b44b1a265bd952eb2c9f4c52" category="list-text">ボリュームを（オンプレミスの ONTAP クラスタではなく） Cloud Volumes ONTAP クラスタにレプリケートする場合は、デスティネーションプロバイダ（ AWS 、 Azure 、 GCP ）を指定する必要があります。</block>
   <block id="744304af5427c93a0de90b14d5d0a697" category="list-text">ボリュームを Cloud Volumes ONTAP クラスタにレプリケートするときに、デスティネーションボリュームでボリューム階層化が有効になっているかどうかを指定することができます。</block>
   <block id="8658f363929ef58e4d7bb3ba3dfa8f72" category="list-text">デスティネーションボリューム名について、フィールドをクリックし、 5 つのオプションのいずれかを選択します。任意の名前を入力するには、 * Free Text * を選択します。ボリューム名に特定のプレフィックスまたはサフィックスを付けるか、 _contains_certain 文字を指定するか、または入力した正規表現（ regex ）のルールに従うように指定することもできます。</block>
-  <block id="5fa8f034006e1b96b6e2a47890b3ae33" category="list-text">レプリケーションを実行するには、ソースとデスティネーションの作業環境がそれぞれのクラスタ間 LIF を介して接続されている必要があります。デスティネーション作業環境のクラスタ間 LIF の IP アドレスを入力します。</block>
   <block id="7fcd5d25a42a71b6edb4a94ce9593493" category="list-text">ボリュームを配置するアグリゲートを選択します。</block>
   <block id="cd5d05c14061b6263cc650d83d3d5659" category="list-text">ボリュームを（オンプレミスの ONTAP クラスタではなく） Cloud Volumes ONTAP クラスタにレプリケートする場合は、新しいボリュームに使用するディスクのタイプを指定する必要があります。</block>
   <block id="4d10b6637923bf1b343d93d2f5f97467" category="list-text">* レプリケーションの詳細 * ：レプリケーション操作のタイプと頻度に関する詳細を入力します。</block>
-  <block id="e735bf2a268997d317453aed9b1e1464" category="inline-image-macro">関係のレプリケーション設定を定義するページのスクリーンショット。</block>
-  <block id="6903a733d838513debd657e6e4b52918" category="paragraph"><block ref="6903a733d838513debd657e6e4b52918" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2e05b02199241577d21f467e3a216fc1" category="inline-link">レプリケーションポリシー</block>
   <block id="23647b4aee667229f438bac6d37c6f14" category="list-text">を選択します<block ref="fce626f96b8a582bd914af9774e3f4bd" category="inline-link-rx"></block> を使用します。</block>
   <block id="28b7ceda6afe52e7cddb056ae1cc1b42" category="list-text">1 回限りのコピーまたは繰り返し実行するレプリケーションスケジュールを選択します。</block>
@@ -387,20 +330,14 @@
   <block id="8618076424bfb56bff4b8d378642afb7" category="paragraph"><block ref="8618076424bfb56bff4b8d378642afb7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bd79c94f5c040103b6ee92a27142a209" category="paragraph">たとえば、ボリューム名の正規表現として「 ^[a-zA-Z][0-9aa-zA-Za-z_]{0,149}$ 」と入力すると、「 _The name 」はアルファベットで始まる必要があります。使用できる文字は、数字、アルファベット、またはアンダースコアのみで、 150 文字以下である必要があります。</block>
   <block id="d9b7b2a8c18514b566365444476ee67b" category="section-title">テンプレートアクション間で値を渡す</block>
-  <block id="49c2ea485e68d2177e58bb2d451473c8" category="paragraph">テンプレートには、前のアクションの情報を使用して、将来のアクションでフィールドにデータを入力する機能があります。たとえば、クラウドバックアップ機能を有効にするボリュームの名前を定義する際に、 Create Cloud Volumes ONTAP アクションで、ボリューム名として入力したストレージ管理者の値を使用するようにバックアップアクションを設定できます。</block>
-  <block id="317d9ac287a0bb30f0b154a9372237b4" category="paragraph">AppTemplate サービスで使用できる情報には、次の 3 種類があります。</block>
   <block id="79bc4a04a5f308a67f608558bf0e314a" category="list-text">入力値 - 以前のテンプレートアクションでストレージ管理者がフィールドに入力した実際の値です。</block>
   <block id="cb1be534cc7a13fb27acf340f07c83b6" category="list-text">独自の値を入力してください - これは入力した値であり、テンプレートの前のアクションからはアクセスされません。</block>
-  <block id="536e2c2dd1b0f2e4362deffc386760c4" category="paragraph">次の図は、テンプレートのクラウドデータセンスアクションセクションでこの情報を入力する方法を示しています。</block>
   <block id="a4d99746ded90308d15ecf5dc8850229" category="inline-image-macro">前のアクションで入力した値を使用して別のアクションのフィールドに入力する方法を示す図。</block>
   <block id="eefa405d25c68122a3d10c7be99b3fed" category="paragraph"><block ref="eefa405d25c68122a3d10c7be99b3fed" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1e7ffb254a56e57a7a94185e202f98b7" category="section-title">条件を使用して、ロジックステートメントに基づいて異なるアクションを実行します</block>
   <block id="933e850f0252230afcc3081c478f82cb" category="paragraph">条件は、テンプレートに対して、ストレージ管理者がテンプレートを実行したときに条件が true であるか false であるかに応じて、異なる操作を実行するように指示します。条件を追加するには、 * 論理 IF * アクションを選択します。</block>
   <block id="80f465f960c99f0bf9c9dda68bd2ff80" category="inline-image-macro">テンプレートに条件文を追加する方法のスクリーンショット。</block>
   <block id="2f732de965d52c1cf23ba8cc9dbdc7b1" category="paragraph"><block ref="2f732de965d52c1cf23ba8cc9dbdc7b1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e7972af994bafc7ee1059b02b60c648d" category="paragraph">たとえば、ボリュームの容量が 50GB を超える場合、そのボリュームで Cloud Backup を有効にするようにガイドラインを適用できます。ボリュームの容量が小さい場合、 Cloud Backup は有効になりません。これは、次のようにテンプレートに実装できます。</block>
-  <block id="af1dd10b1395740a8581cea239cb13fc" category="inline-image-macro">条件付きで Cloud Backup を有効にするためにテンプレートで条件を使用する方法を示すスクリーンショット。</block>
-  <block id="81943cf2af4bc753aa5e517503f627e6" category="paragraph"><block ref="81943cf2af4bc753aa5e517503f627e6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d94635611474af73ec85b190b28449bd" category="paragraph">条件は次の 2 つの部分で構成されます</block>
   <block id="01928da743a4e955b96a5b859c5f4bc4" category="list-text">ルール - チェックする項目が true または false のいずれかであることを示します。</block>
   <block id="07876d2610f838d9cb19ae7aeadd98be" category="list-text">AND / OR ステートメント - 複数のルールを使用して、追加のアクションを追加するかどうかをさらに細かく指定できます。</block>
@@ -416,7 +353,6 @@
   <block id="313a2072e1da794cb340b46d310d902f" category="paragraph">このステートメントは、 &lt; ルール 1 &gt; または（ &lt; ルール 2 &gt; および &lt; ルール 3 &gt; ）の順に評価されます。</block>
   <block id="29c77a5a00dda7efae90c176f1eaa37b" category="paragraph">テンプレートを使用することで、ストレージ管理者は、データベース、 E メール、ストリーミングサービスなど、導入する各アプリケーションのワークロード要件に合わせて最適化されたボリュームを簡単に作成できます。また、各ボリュームがアプリケーションごとに最適に作成されていることを確認すれば、ストレージアーキテクトの負担が軽減されます。</block>
   <block id="3a07949495aa0f10524a38b2f8b42ff9" category="list-text">インフラの設計と開発を自動化し、改善します</block>
-  <block id="628898f2daed85c109f1e353f32ae510" category="list-text">クラウドバックアップやクラウドデータセンスなど、さまざまな NetApp クラウドサービスを 1 箇所でアクティブ化できます</block>
   <block id="b56e74814d72e13b8bd9eb4561010dba" category="list-text">変更され、テンプレートに適合しなくなったリソースを特定します（「ドリフト」機能を使用）。</block>
   <block id="535863b7811f106bde3e7f273a118764" category="inline-link-macro">ドリフトの詳細については、こちらをご覧ください</block>
   <block id="04d8b8693a17205c619758eaa8d300e2" category="section-title">使用可能なテンプレートアクション</block>
@@ -428,10 +364,6 @@
   <block id="4850ffe766acbb8beb6c7c24ebcfaf4b" category="list-text">Cloud Volumes ONTAP 作業環境の作成（ AWS 上のシングルノードまたは HA システム）</block>
   <block id="d1287a3b275ab8ba01a5fff6e4888348" category="list-text">特定の基準を満たす既存のリソースを検索する（既存のリソースに「サービス」アクションを適用できるようにする）</block>
   <block id="de66c35536cd0fdc78f33d76a51b81ab" category="paragraph">* サービスアクション： *</block>
-  <block id="c7f54fc101fff8114fd0bab318e81454" category="list-text">アクティブ化します<block ref="65043dfb781746b8fde5bfddb319eb97" category="inline-link-rx"></block> ボリューム（ Azure NetApp Files には該当しません）</block>
-  <block id="b691f77f5b87583a1ecac4f114cb70cf" category="list-text">アクティブ化します<block ref="4af4db8698c4a0998b2c93dbadcf8efe" category="inline-link-rx"></block> ボリューム</block>
-  <block id="99869d72f8362c5cb7e7d08bc7a9ad39" category="list-text">アクティブ化します<block ref="f2bb37938a60ba7c308705367c1f4d0b" category="inline-link-rx"></block> ボリューム（ Azure NetApp Files には該当しません）</block>
-  <block id="1872302bd774dd65cb025cb6c760357c" category="paragraph">たとえば、 Cloud Volumes ONTAP ボリュームを作成するテンプレートを作成できます。または、 Cloud Volumes ONTAP ボリュームを作成してから、そのボリュームで Cloud Backup を有効にします。または、 Cloud Volumes ONTAP ボリュームを作成し、そのボリュームで Cloud Backup_or_Cloud Data Sense を有効にします。</block>
   <block id="3fb67d827d434a38ea3f2b8aca181ada" category="paragraph">ネットアップは、時間の経過とともにアクションを追加します。</block>
   <block id="f5afa7cf8be08a4f697b8293dad144b2" category="inline-image-macro">アプリケーションテンプレートの作成と使用に関連するさまざまなユーザーのダイアグラム。</block>
   <block id="ecfa39b6560418cfe2345a90c8e7e31b" category="paragraph"><block ref="ecfa39b6560418cfe2345a90c8e7e31b" category="inline-image-macro-rx" type="image"></block></block>
@@ -443,21 +375,15 @@
   <block id="480b6a5d9ee4db8a0ae283b6de8df01f" category="list-text">ストレージ管理者は、テンプレートを使用して、使用するアプリケーションに合わせて最適化されたリソースを作成します。</block>
   <block id="f8f85ac75a9d32ac7e4bd19a88c88489" category="paragraph">たとえば、データベース用に作成したボリュームテンプレートを使用して、 Oracle データベースに使用するボリュームを作成します。</block>
   <block id="537f35739e01ac333f01ac9b4cbc3e9f" category="list-text">このサービスは、ストレージアーキテクトが決定した「ドリフト」機能を使用して、テンプレートで定義されている特定のリソース設定を追跡します。</block>
-  <block id="2aa9db43c73bb2f52c729395f9446dd5" category="admonition">テンプレートを使用すると、作成したリソースにクラウドサービスを適用できます。たとえば、すべてのボリュームで Cloud Backup を有効にします。この場合、バックアップサービスと、バックアップファイルで使用されるオブジェクトストレージスペースの使用コストが発生します。</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">制限</block>
   <block id="5853165343224a78fee94389519a9b28" category="list-text">テンプレートを使用して既存のアグリゲートに Cloud Volumes ONTAP ボリュームを作成することはできません。新しいアグリゲートに新しいボリュームが作成されます。</block>
-  <block id="cbabd9bfcb3ce90ea05504c320db481e" category="summary">組織が構築したアプリケーションテンプレートの中から 1 つ選択して、特定のワークロードとアプリケーションに最適化された作業環境またはボリュームを作成します。また、テンプレートを使用して、ボリュームまたは既存のボリュームで Cloud Backup 、 Cloud Data Sense 、 Replication （ SnapMirror ）をアクティブ化することもできます。</block>
   <block id="2d26910773af1a0f9d4d48400c5c93b1" category="doc">テンプレートを使用してリソースを作成または変更する</block>
-  <block id="c66b8415e6c06857c4a2df8e4beb665d" category="inline-link">レプリケーション（ SnapMirror ）</block>
-  <block id="9552710f5d08d8e046e5e38b40dd0754" category="paragraph">組織が構築したアプリケーションテンプレートの中から 1 つ選択して、特定のワークロードとアプリケーションに最適化された作業環境またはボリュームを作成します。また、テンプレートを使用してアクティブ化することもできます<block ref="65043dfb781746b8fde5bfddb319eb97" category="inline-link-rx"></block>、<block ref="4af4db8698c4a0998b2c93dbadcf8efe" category="inline-link-rx"></block>および<block ref="7b4b255123bb321e706fd8a6488dad10" category="inline-link-rx"></block> をクリックします。</block>
   <block id="5f29105c4fcb4fd7664c9b573f2325b4" category="paragraph">テンプレートを使用すると、 Cloud Volumes ONTAP 、 Azure NetApp Files 、およびオンプレミスの ONTAP システム用のボリュームを作成できます。</block>
   <block id="e0fb2c2abefd11630ebc42b8a6eb3570" category="list-text">テンプレートを使用して Cloud Volumes ONTAP 、オンプレミス ONTAP 、または Azure NetApp Files システム用のボリュームを作成する前に、ボリュームを導入する適切な作業環境にアクセスできることを確認してください。</block>
-  <block id="e04a6c526d4b3218b5b39dab077db37c" category="list-text">テンプレートが、などのボリュームのクラウドサービスをアクティブにした場合<block ref="65043dfb781746b8fde5bfddb319eb97" category="inline-link-rx"></block> または<block ref="4af4db8698c4a0998b2c93dbadcf8efe" category="inline-link-rx"></block>をクリックして、ご使用の環境でサービスがアクティブでライセンスされていることを確認してください。</block>
   <block id="8e11a084ad23a73bf5ea573d54dded8e" category="paragraph">テンプレートを選択し、 *Run Template* をクリックして、編集可能フィールドに値を入力し、リソースを作成します。</block>
   <block id="72e3ca24265542fce89dd834f12f4619" category="list-text">Cloud Volumes ONTAP ボリュームを作成するときは、 Cloud Volumes ONTAP の作業環境が利用可能であることを確認してください。</block>
   <block id="be34f1201bb3e74c3a66c39a92d09bee" category="list-text">オンプレミスの ONTAP ボリュームを作成する場合は、オンプレミスの ONTAP 作業環境が利用可能であることを確認します。</block>
   <block id="05c907c9bac7ddec874ec0fcb09aad0c" category="list-text">Azure NetApp Files ボリュームを作成するときは、 Azure NetApp Files の作業環境が利用可能であることを確認してください。</block>
-  <block id="a499c28f4eb5f5209b3bea27baae8295" category="list-text">テンプレートが、などのボリュームのクラウドサービスをアクティブにした場合 <block ref="65043dfb781746b8fde5bfddb319eb97" category="inline-link-rx"></block>、<block ref="4af4db8698c4a0998b2c93dbadcf8efe" category="inline-link-rx"></block>または<block ref="7b4b255123bb321e706fd8a6488dad10" category="inline-link-rx"></block>をクリックして、ご使用の環境でサービスがアクティブでライセンスされていることを確認してください。</block>
   <block id="b2da214653ffb084521bfa6c178ff811" category="section-title">ボリュームテンプレートを選択して実行します</block>
   <block id="7e74b3cdfd5537c5b51af1069f462892" category="paragraph">テンプレートを選択して実行し、新しいボリュームを作成する方法は複数あります。</block>
   <block id="41ff95e1ea070071cb2436d312ea3115" category="list-text">作業環境からボリュームテンプレートを実行します</block>
@@ -466,7 +392,6 @@
   <block id="1d4cf496ca25a3cab66cbc73d2b1c000" category="inline-link">Cloud Volumes ONTAP ボリュームをプロビジョニングする方法</block>
   <block id="96483bf24dd5d282884c28a8c230bfde" category="inline-link">Azure NetApp Files ボリュームをプロビジョニングする方法</block>
   <block id="df4a9164b01ccf35f74c9520638ad0b7" category="inline-link">オンプレミスの ONTAP ボリュームをプロビジョニングする方法</block>
-  <block id="34b8afcdd2d501d158f8dfa46a70068b" category="list-text"><block ref="34b8afcdd2d501d158f8dfa46a70068b" category="inline-link-rx"></block></block>
   <block id="c07fd60a71244d7a4ab72c83beb068d6" category="section-title">作業環境からボリュームテンプレートを実行します</block>
   <block id="2342f0281f4d2a90f7477ed651c18e7f" category="paragraph">既存の作業環境にボリュームを追加するには '_Working Environment_page および _Volume Details_page を使用します</block>
   <block id="847533f76f2539591f2ed541ef5ef72e" category="list-text">作業環境ページまたは _ ボリューム詳細 _ ページで、 * テンプレートからボリュームを追加 * をクリックします。</block>
@@ -499,15 +424,12 @@
   <block id="f208614ddd4a42d1fe01800107447f9d" category="inline-image-macro">テンプレートから作業環境を作成するために定義する必要があるパラメータを示すスクリーンショット。</block>
   <block id="c1f52c2315cb68ab5da30355d493efa8" category="paragraph"><block ref="c1f52c2315cb68ab5da30355d493efa8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="798178653cd4f1b33a2dc3600f51d489" category="section-title">既存のリソースを検出するテンプレートを選択して実行します</block>
-  <block id="8d320e289935a3bc0309b4430f10862f" category="paragraph">特定のリソース（ボリュームなど）を検出するテンプレートを実行し、それらのリソース（ Cloud Backup など）に対してクラウドサービスを有効にすることができます（この機能を使用してテンプレートを作成している場合）。テンプレートの実行中に若干の調整を加えて、クラウドサービスを適切なリソースにのみ適用することができます。</block>
   <block id="f256ffa6b4a4136dfb85dcf69983ada2" category="paragraph"><block ref="f256ffa6b4a4136dfb85dcf69983ada2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="026ba222ebdf2fd2c82a0d12c610c566" category="paragraph">_Run Template_page が表示され、テンプレートで定義された検索がすぐに実行されて、条件に一致するボリュームが検索されます。</block>
   <block id="89c185a4d78a8567859db775ed13246b" category="list-text">返されたボリュームのリストを _Volume Results_area に表示します。</block>
   <block id="b1fcd481a40253a09785803da0077de9" category="inline-image-macro">リソース検索条件から返されたボリュームを示すスクリーンショット。</block>
   <block id="1dc5726bf39154cb21baff6b494f9fad" category="paragraph"><block ref="1dc5726bf39154cb21baff6b494f9fad" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ca98aa84984d29ab9e65eedb02a68ba7" category="list-text">期待どおりの結果が得られた場合は、テンプレートの _Enable Cloud Backup on Volume_part の条件を使用して、 Cloud Backup を有効にする各ボリュームのチェックボックスをオンにし、 * Run Template * をクリックします。</block>
   <block id="f3b757371a9961d5ce7c320198eb268b" category="paragraph">結果が想定どおりでない場合は、をクリックします <block ref="8e860c5cca0144ac9d126d75205476b6" category="inline-image-macro-rx" type="image"></block> をクリックし、さらに検索条件を絞り込んでください。</block>
-  <block id="c6eb5da2af16b1f095636b3b5fc6a252" category="paragraph">テンプレートが実行され、検索条件で選択した各ボリュームで Cloud Backup が有効になります。</block>
   <block id="ad065cba81dd0205f37aa602c122c6aa" category="paragraph">すべてのエラーは、 _Running Your Template_page で呼び出され、必要に応じて問題を解決できます。</block>
   <block id="9b07b7a435eb3748887ec84eac33cf64" category="doc">リソースのタグを管理します</block>
   <block id="f02ce38105e0bd4e1492a696a42fc111" category="section-title">特定のタグを持つリソースを検索します</block>
@@ -578,11 +500,8 @@
   <block id="65439c70b898804017251c3d89e4b9a1" category="paragraph"><block ref="65439c70b898804017251c3d89e4b9a1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a89edd795717fc5788fde97a150cdbfd" category="list-text">ストレージ管理者は、テンプレートを実行してボリュームを作成します。</block>
   <block id="702cc5e5b03abb2b13b06653993301cd" category="list-text">ストレージ管理者がボリュームを編集し、 Snapshot コピーは無効にします。</block>
-  <block id="e0ea1e6e9a11e8802d9e17bd8c65420e" category="list-text">すべてのテンプレートでドリフトチェックを実行し、 AppTemplates サービスは Snapshot コピーテンプレートの設定とボリューム内の現在の設定を比較します。準拠していない値にはフラグが付けられ、間違った設定を修正できます。</block>
   <block id="6f1e06cdf469f6c9e2d5664f82d4cd46" category="section-title">ドリフトダッシュボード</block>
   <block id="eb00a81284bf83afa086db3e1e91383f" category="paragraph">ドリフトダッシュボードには、テンプレートを使用して作成されたリソース（ボリュームなど）の総数、テンプレートに準拠している数、未準拠（ドリフト済み）の数、およびドリフトを使用して作成された数が表示されます。</block>
-  <block id="55173c154995f28e9df46343a9ce0561" category="inline-image-macro">AppTemplates サービスのドリフトダッシュボードのスクリーンショット。</block>
-  <block id="a7e6e26f0a43b99c8a207a6d0a7bc773" category="paragraph"><block ref="a7e6e26f0a43b99c8a207a6d0a7bc773" category="inline-image-macro-rx" type="image"></block></block>
   <block id="812ce4d3a07734d12cdaa3ed2010e22f" category="list-text">各列の上部にあるコントロールを使用して、結果を数値またはアルファベット順にソートできます。</block>
   <block id="0359e3c0b32dfd6306bd3d50e3c2de03" category="list-text">。 <block ref="3fd7363714f2e2423924118bfd6b7147" category="inline-image-macro-rx" type="image"></block> テンプレート名、ドリフトポリシーとステータス、アクションタイプで結果をフィルタできます。例：</block>
   <block id="dc2aed6b9b1f1b0a6c08ee34faba057f" category="inline-image-macro">フィルタウィジェットを使用してリソースのリストを絞り込む方法を示すスクリーンショット。</block>
@@ -605,14 +524,10 @@
   <block id="ecbe0476f7995436a619fbec67b150ea" category="inline-image-macro">単一リソースのドリフトレポートのスクリーンショット。</block>
   <block id="e278cbaa988c388eb4f070a874cc7c84" category="paragraph"><block ref="e278cbaa988c388eb4f070a874cc7c84" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f5aeece6a8367e0a2a950b59ac5d280f" category="paragraph">テンプレートから作成されたリソースのドリフトレポートを表示するには、をクリックします <block ref="6ba48bcb767669a826177023eada095d" category="inline-image-macro-rx" type="image"></block> をクリックして .csv ファイルをダウンロードします。ドリフトレポートには、ページで現在フィルタリングされている内容が反映されます。ページにフィルタを適用しないかぎり、すべてのリソースが表示されるわけではありません。</block>
-  <block id="534c380a5cdca5610f18de17fa526847" category="section-title">ドリフトレポートでレプリケーションの健全性の詳細を確認します</block>
-  <block id="b5363a8f8717713698cd5f0ade6c4a83" category="inline-link-macro">テンプレートを使用したボリュームでのレプリケーションの有効化</block>
-  <block id="6bb92fc8b301ed81b081eeb63f8c277d" category="paragraph">いつ <block ref="eef24c085d3101627e03570b2ef27e8a" category="inline-link-macro-rx"></block>では、 ［ レプリケーションの正常性監視を有効にする ］ フィールドでドリフトを有効にすることにより、ドリフトレポートに詳細なレプリケーション情報を表示できます。ドリフトレポートが有効になると、 SnapMirror 遅延時間、ステータス、および前回の転送時間に加えて、レプリケーション関係の健常性が正常であるか正常でない（ドリフトされた）かが表示されます。</block>
   <block id="6ffc1ecbaefdcfbed3ede7fdb124aa93" category="paragraph">このスクリーンショットは、ドリフトレポートで異常な SnapMirror 関係のレプリケーションの詳細を示しています。</block>
   <block id="16c2c563a9c70bc38dcd5058d89852a7" category="inline-image-macro">ドリフトレポートのスクリーンショット。正常な状態でない SnapMirror 関係のレプリケーションの詳細を示しています。</block>
   <block id="dda535bed967fed0495f552c6c54b14e" category="paragraph"><block ref="dda535bed967fed0495f552c6c54b14e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a9986dfbd663475bd0b9a159d82e3587" category="paragraph">* 注：レプリケーションが最初にボリュームに適用されているときに、正常性は「 False 」として返されます。これは正常な状態ではありません。数分後に、実際のレプリケーションステータスが表示されます。</block>
-  <block id="91ee6aa91810fc059d494948432212cc" category="doc">AppTemplate のドキュメント</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">サポートに登録します</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">リリースノート</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
@@ -623,7 +538,6 @@
   <block id="0460583622f03a52d7693094d6fa2452" category="sidebar">概念</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
   <block id="35f98b47133ad8954f63b25aef2dad3a" category="sidebar">タグ付けの詳細はこちら</block>
-  <block id="5fef629b836b60819e0c0ce49cd2b9d7" category="sidebar">新機能</block>
   <block id="12b8ed36a576a6d4769c8d350b438a8a" category="sidebar">テンプレートを作成します</block>
   <block id="59cccee54a9c1422dca33d7662d37b76" category="sidebar">Cloud Volumes ONTAP 作業環境</block>
   <block id="f829fef4575b38109cd246bafbd6718e" category="sidebar">Cloud Volumes ONTAP ボリューム</block>
@@ -641,56 +555,22 @@
   <block id="d92cd2c19989d78fa305aa796b16eb3e" category="paragraph">「既存のリソースを検索」アクションを使用すると、作業環境を特定してから、ボリュームの作成などの他のテンプレートアクションを使用して、既存の作業環境に対して簡単にアクションを実行できます。<block ref="9d92075da3fbaa4669bd5d845665bbc5" category="inline-link-rx"></block>。</block>
   <block id="9f1c9f721b531a16a189c619276f3969" category="paragraph">AWS での Cloud Volumes ONTAP 作業環境の作成は、既存のサポートが拡張されて、シングルノードシステムに加えて高可用性システムも作成できるようになりました。<block ref="35471ca8d19c78b8fa96525b636e5efc" category="inline-link-rx"></block>。</block>
   <block id="17fc50243c5a80f407e83d268bcab18e" category="section-title">2022 年 2 月 9 日</block>
-  <block id="8b4368f9c9aad8f44dd1b5ba1d4d746a" category="paragraph">現在サポートされているのは、 Cloud Volumes ONTAP 上のボリュームとオンプレミスの ONTAP システムです。<block ref="f7210026d1a7cf546c7270b9d8e104cc" category="inline-link-rx"></block>。</block>
   <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">2021 年 10 月 31 日</block>
   <block id="00b4c4979fe8d65dc663ea7c82a1b1c2" category="paragraph"><block ref="ddc85a18edb3f9e32810e603b7ef9eb7" category="inline-link-rx"></block>。</block>
-  <block id="778446633edb0e3ec577cd756d668367" category="section-title">2021 年 10 月 11 日</block>
-  <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021 年 9 月 2 日</block>
-  <block id="d8cd3b5af685675591328bfe617a63c8" category="section-title">2021 年 8 月 8 日</block>
   <block id="821f9fc7a9c5e046eb762a4d185a08f7" category="paragraph">を参照してください<block ref="154a2016582f1d0d3d1ef7ccb4cc4af7" category="inline-link-rx"></block> Cloud Volumes ONTAP ボリュームテンプレートで実行する必要があるすべてのパラメータの詳細については、を参照してください。</block>
   <block id="102438db076a8d87db11f71b80bc5d27" category="list-text">[Working Environment] フィールドと [Volume Name] フィールドの下には、バックアップを有効にするボリュームを指定するために使用する 3 つの選択肢があります。を参照してください <block ref="0f494e6e7e9db827f82823d25be045fa" category="inline-link-macro-rx"></block>。</block>
   <block id="cc8cd5a43afbf50d3c76ca4927c286d1" category="paragraph">を参照してください<block ref="17218100ebd265ac766a5fc208b6c6f8" category="inline-link-rx"></block> または<block ref="e59af64db55d6d6b5c59844c08c8e1b5" category="inline-link-rx"></block> 必要な前提条件については、このテンプレートで定義する必要があるすべてのパラメータの詳細については、を参照してください。</block>
-  <block id="e91e8aaf9f11e77bfda39b40027b045f" category="paragraph">ボリュームテンプレートを作成するときに、を使用してボリューム内のデータを別のボリュームにレプリケートするテンプレートにを追加できます<block ref="f2bb37938a60ba7c308705367c1f4d0b" category="inline-link-rx"></block> サービスデータは、 Cloud Volumes ONTAP クラスタまたはオンプレミスの ONTAP クラスタにレプリケートできます。</block>
   <block id="2be95708ec7ad744a5fa35812c4330a3" category="list-text"><block ref="2be95708ec7ad744a5fa35812c4330a3" category="inline-link-rx"></block></block>
   <block id="ed7e85ad682d7c827abfc065cc610813" category="list-text"><block ref="ed7e85ad682d7c827abfc065cc610813" category="inline-link-rx"></block></block>
-  <block id="1b5e9cae3a94402e9b6da6ef4080d155" category="summary">AppTemplate と Tagging の新機能について説明します。</block>
-  <block id="19ec922e883af01ef71b60b0644f1764" category="doc">AppTemplate と Tagging の新機能</block>
   <block id="400480e0d45c783abec0a0fffbb005a6" category="section-title">テンプレートを作成して、特定の作業環境を検索できるようになりました</block>
   <block id="411448f8702bbfa858b0a2ba2ee94014" category="section-title">AWS で Cloud Volumes ONTAP HA 作業環境を作成できる</block>
   <block id="f1f7e50301c1e57e30e795fa8928ee8f" category="section-title">テンプレートを作成して特定の既存ボリュームを検索し、 Cloud Backup を有効にすることができます</block>
   <block id="70c889b200c3ef8dbb491ca542d1d091" category="section-title">これで、同期関係にタグを付けて、簡単にアクセスできるように関係をグループ化または分類できます</block>
-  <block id="b2792e486aa7d3697e8cdc3061fee8eb" category="section-title">既存のテンプレートの複製を作成できるようになりました</block>
-  <block id="bd54d700336d620d317331b08aa02c25" category="section-title">テンプレートを使用して作成したボリュームでサービスを有効にする方がはるかに簡単になりました</block>
-  <block id="6642a926337ad7312f290ed116119905" category="section-title">サポートが追加され、特定の GCP リソースにラベルを付けることができます</block>
-  <block id="d79a83633ad92c383dcbb0a13e0bcb54" category="section-title">これで、タグ付けサービスを使用して Azure リソースのタグを管理できるようになりました</block>
-  <block id="1625471915e0f870bd60f61204e44adb" category="section-title">これで、 AWS EC2 リソースのタグを追加で設定できます</block>
-  <block id="f83d30e0e720fff7c6bf6e63a011b32f" category="section-title">テンプレートを使用して Cloud Volumes ONTAP 作業環境を作成できるようになりました</block>
-  <block id="2c0be6f7358124aa37df859a713d308c" category="section-title">新しい機能を使用すると、ボリュームテンプレート内のボリュームにタグを追加できます</block>
-  <block id="bc7511a95a277ec462af40b1c9446eff" category="section-title">Cloud Manager で AWS EC2 インスタンスからタグを管理できるようになりました</block>
-  <block id="6fddf82f19600242e06b00b39fe5b65e" category="section-title">テンプレートを定義するときに Replication サービスを使用するためのサポートが追加されました</block>
-  <block id="f506872ede8f49b310b1f217dfbecce5" category="section-title">テンプレート設定から、「ドリフト」されたすべてのボリュームを含むレポートをダウンロードします</block>
-  <block id="5113dc13004941ed2e6dd508ad063909" category="section-title">新しいタグ付けサービスがリリースされました</block>
-  <block id="294787c0f0d7e3e2190db5b2d601b396" category="section-title">これで、ユーザーがテンプレートを実行しているときに、条件付きで特定のアクションを有効にできます</block>
-  <block id="be1e169d75e8b12c690c295e44c3528f" category="section-title">テンプレートを使用してオンプレミスの ONTAP システムにボリュームを作成できるようになりました</block>
-  <block id="952326f3e521cc60cf8ef420a4ebc40b" category="paragraph">AppTemplate を使用すると、テンプレートを使用して既存の作業環境にボリュームを作成できます。</block>
-  <block id="310b0424f7115f87e39e306f22db9f8e" category="section-title">テンプレートの作成時に、「ドリフト」という新しい機能がオプションとして追加されました</block>
-  <block id="719c876ca7b16f592c8bd26cdbb0ffaa" category="section-title">ボリュームテンプレートの作成時に Cloud Data Sense を統合できるようになりました</block>
-  <block id="8840e623646d3d59bdb75d58d2cbfb3c" category="doc">AppTemplate について説明します</block>
-  <block id="2cc0eed5a3999c679ed14d2cb6588587" category="paragraph">AppTemplate には、次の機能と利点があります。</block>
-  <block id="34d0c1b964384a0752aad91c917688a4" category="paragraph">AppTemplate サービスは 3 つの部品で構成されています。テンプレートを実行した結果、使用可能なテンプレート「アクション」、カスタマイズされたアプリケーションテンプレート、および展開されたリソース。次の図は、各コンポーネント間の関係を示しています。</block>
-  <block id="8f39707abf86186330a61f0aa7f57c55" category="list-text">AppTemplate サービスは、 Gov クラウドのどのリージョンでも、またはインターネットにアクセスできないサイトではサポートされていません。</block>
-  <block id="973d48daa10556f358647cfe1cc53216" category="sidebar">AppTemplate を使用します</block>
-  <block id="dc771c253d08d9cdafc72d7919e16d98" category="sidebar">ボリュームにバックアップ、データセンス、またはレプリケーション機能を追加します</block>
   <block id="45a406745a298842b185cafcdaedc62b" category="section-title">テンプレートを使用して既存のリソースを検索する例</block>
   <block id="f7322605429ac37b6517eaccfdebcdfe" category="paragraph">既存のリソースを検索 _action を使用すると、特定の作業環境を検索したり、さまざまなフィルタを使用して既存のボリュームを検索したりできるため、検索対象を目的のリソースだけに絞り込むことができます。正しいリソースが見つかったら、作業環境にボリュームを追加するか、作成されたボリュームでクラウドサービスを有効にすることができます。</block>
-  <block id="18bc86c303dfcce839364dfb6f86c8d7" category="admonition">この時点で、 Cloud Volumes ONTAP 、オンプレミス ONTAP 、 Azure NetApp Files システム内にボリュームを見つけることができます。また、 Cloud Volumes ONTAP とオンプレミスの ONTAP でクラウドバックアップを有効にすることもできます。追加のリソースとサービスは、後で利用可能になります。</block>
   <block id="38e15ec3e6bd73e018349ed1f0bf12bb" category="section-title">既存のボリュームを検索し、クラウドサービスをアクティブ化</block>
-  <block id="80252c15af311783e16e6d31bb72ca0b" category="paragraph">現在の _ 既存のリソースを検索 _ アクション機能を使用すると、現在クラウドバックアップまたはクラウドデータセンスが有効になっていない Cloud Volumes ONTAP およびオンプレミス ONTAP 作業環境上のボリュームを検索できます。特定のボリュームで Cloud Backup を有効にすると、その作業環境のデフォルトポリシーとして設定したバックアップポリシーも設定されるため、作業環境の以降のすべてのボリュームで同じバックアップポリシーを使用できます。</block>
   <block id="ad47acd6a839d467d8e7d8cc0ab575bb" category="list-text">詳細領域では、ボリューム名、ボリュームサイズの範囲、およびボリュームに割り当てられているタグを選択できます。</block>
   <block id="75aa65993e3f52840fc5b343dbb63651" category="paragraph">タグの場合、特定のタグキー / 値ペアを含むボリュームのみが結果に表示されるように、検索をさらに絞り込むことができます。</block>
-  <block id="6fab7ff15514de4d3ca2883bd502b6e7" category="inline-link-macro">AppTemplate に関する注意事項</block>
-  <block id="775a83959890feedd00e6dc592c3e60f" category="list-text"><block ref="775a83959890feedd00e6dc592c3e60f" category="inline-link-macro-rx"></block></block>
-  <block id="01861a2435910cac249c0a1eaea3e27b" category="sidebar">AppTemplate ドキュメント</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです</block>
   <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">[*NSS Management] &gt; [Add NSS Account*] をクリックします。</block>
@@ -712,7 +592,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">次のオプションは、 1 日 24 時間、週 7 日間無料でご利用いただけます。</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">ナレッジベース</block>
-  <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">コミュニティ</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">ドキュメント</block>
@@ -720,13 +599,11 @@
   <block id="214a61ce436e46b661501acdeee5221c" category="paragraph">この時点で、ドリフトはリソース内の変更されたパラメータを識別します。リソースを手動で調整して、テンプレートに準拠させる必要があります。将来的には、リソースがコンプライアンス違反になったときに通知を送信したり、テンプレートから作成されたすべてのリソースが自動的にコンプライアンスに戻されるようにユーザーの変更を元に戻したりすることができます。</block>
   <block id="5bd5bf968b8be74cc15838b062223bc7" category="paragraph">この時点で、リソースをテンプレートに合わせて戻すために、手動で調整を行う必要があります。 <block ref="070f7b254d8faecc6fc5a699202bdab9" category="inline-link-macro-rx"></block>。</block>
   <block id="cfd52dcb30bb7d2ea88bc2c66e2ccc0f" category="summary">BlueXPを使用すると'タグを_existing_resourcesに適用して'これらのリソースの編成と管理を容易にすることができますタグは、リソースをグループ化してアプリケーション、環境、リージョン、課金コード、クラウドプロバイダを識別するために使用できるメタデータです。 その他。</block>
-  <block id="b30d9d9c3aca3c78264405a3976afc34" category="paragraph">BlueXP（旧Cloud Manager）では、タグを_existing_resourcesに適用して、これらのリソースの編成と管理を支援できます。タグは、リソースをグループ化してアプリケーション、環境、リージョン、課金コード、クラウドプロバイダを識別するために使用できるメタデータです。 その他。</block>
   <block id="8b560c81adceb205c323088796c3a9c7" category="inline-link-macro">作成したBlueXPテンプレート</block>
   <block id="2e163db3e69e348e895ac4042c0f4c9c" category="paragraph">作業環境または Azure NetApp Files ボリュームを作成するときに、タグキーと値のペアを _new_resources に追加できます。でタグキーと値のペアを定義することもできます <block ref="cf5b7c6993b005a6e69e2b6094f6daa8" category="inline-link-macro-rx"></block> ストレージ管理者や DevOps エンジニアの方に最適です。</block>
   <block id="7ed5899669a5929914b723a2baef182d" category="paragraph">リソースにタグを付ける機能にはライセンスは不要で、アカウント管理者またはワークスペース管理者の役割を持つすべてのBlueXPユーザーが無料で使用できます。</block>
   <block id="d912e080eacd169b9c6ec8ad804b0fe2" category="paragraph">BlueXPバージョン3.9.10以上を使用してコネクタを作成した場合は、すべて設定されます。以前のバージョンのBlueXPを使用してコネクタを作成した場合は、AWS EC2インスタンスにタグを付けるためにBlueXP IAMロールに必要な権限をいくつか追加する必要があります。</block>
   <block id="61e852c379d0f3c7c2f47bcd0152539d" category="paragraph">BlueXPバージョン3.9.10以上を使用してコネクタを作成した場合は、すべて設定されます。以前のバージョンのBlueXPを使用してコネクタを作成した場合は、Azureリソースにタグを付けるために、BlueXP Operator IAMロールに必要な権限をいくつか追加する必要があります。</block>
-  <block id="2dd9329059e344c5425db239b998fb7b" category="summary">AppTemplateサービスを使用すると、BlueXP作業環境のリソース作成を標準化できます。</block>
   <block id="81736c3492216167017a2d56ef452f6f" category="paragraph">[*正常性]&gt;[修正]を選択し、[*エディタ*]タブをクリックして、テンプレートで使用するアクションを選択します。</block>
   <block id="e30afa6af477c023130a06261e3f1227" category="list-text">オンプレミスの ONTAP ボリュームテンプレートを作成する場合は、オンプレミスの ONTAP 作業環境がユーザに利用できることを確認します。方法を参照してください<block ref="73a5fece0c926f1d97e300f9e1e63b86" category="inline-link-rx"></block> BlueXPでは、</block>
   <block id="592b06abb0acdfe2b240cddf86e10637" category="list-text">Azure NetApp Files ボリュームテンプレートを作成する際には、 Azure NetApp Files の作業環境がユーザに割り当てられていることを確認します。方法を参照してください<block ref="476f1ab3b7492b38993b3c305f1332d8" category="inline-link-rx"></block> BlueXPでは、</block>
@@ -814,13 +691,8 @@
   <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">製品内のチャットを使用します</block>
   <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">テクニカル以外のケースをに送信します<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
   <block id="a687989eefccb6d7024bfaee46859103" category="paragraph">[*正常性]&gt;[修正]を選択し、[*テンプレート*]タブをクリックします。</block>
-  <block id="65b46511d02a19c141330a17641ebc2f" category="summary">AppTemplateサービスを使用すると、BlueXPの作業環境でリソース作成を標準化できます。たとえば、「ボリュームテンプレート」内の必須パラメータをハードコーディングして、あとでストレージ管理者がテンプレートを使用してボリュームを作成するときに適用できます。これには、必要なディスクタイプ、サイズ、プロトコル、 Snapshot ポリシー、クラウドプロバイダ、 その他。作成したボリュームごとに、 Cloud Backup などの特定のサービスをオンにすることもできます。</block>
-  <block id="6f5f9a149e1cd9abec2bd8310110be5e" category="paragraph">AppTemplateサービスを使用すると、BlueXP（旧Cloud Manager）の作業環境でのリソース作成を標準化できます。たとえば、「ボリュームテンプレート」内の必須パラメータをハードコーディングして、あとでストレージ管理者がテンプレートを使用してボリュームを作成するときに適用できます。これには、必要なディスクタイプ、サイズ、プロトコル、 Snapshot ポリシー、クラウドプロバイダ、 その他。作成したボリュームごとに、 Cloud Backup などの特定のサービスをオンにすることもできます。</block>
-  <block id="b02190159d307046a1fc115e2234c430" category="section-title">AppTemplateの仕組み</block>
-  <block id="928cf9c83840b963ee70f31eae6f5478" category="paragraph">AppTemplate機能はライセンス不要で、BlueXPのすべてのユーザーが無料で使用できます。</block>
   <block id="d2d3ce785dba13fa31c8dfdc4f170942" category="paragraph">このチェックボックスをオンにすると、テンプレートを使用してリソースを作成するときにパラメータに入力したハードコード値がBlueXPによって監視されます。ドリフトレポートを実行すると、ドリフトで構成されたどのフィールドがテンプレート設定に適合しなくなったかを確認できます。</block>
   <block id="362fe13e1711f8ee61db2bea123b8a0d" category="list-text">出力値-これは、前のテンプレートアクションからリソースを作成した後にBlueXPが生成する値です。</block>
-  <block id="1faebed438b9f49efa46643ad9907fb7" category="paragraph">たとえば、ボリュームでコンプライアンススキャンを有効にするには、ストレージ管理者が入力するボリューム名（入力値）と、ボリュームの作成時にBlueXPで生成されるボリュームUUID（出力値）の両方がCloud Data Senseサービスに必要です。</block>
   <block id="57b9871adc92cb08516da8d18bf96f74" category="list-text">Get output value from action：前のテンプレートアクションからリソースを作成した後に生成されたBlueXPの値。</block>
   <block id="5dd11df101133565c34a0a5cfef5f86e" category="summary">BlueXPでは'ドリフト機能を使用してテンプレートを使用してリソースを作成したときに使用されたパラメータ値を監視できますドリフトは、変更され、テンプレート設定に適合しなくなったリソースを識別します。</block>
   <block id="6d28d54ad9c4f6685bb752801088510b" category="summary">BlueXP Taggingサービスを使用すると、既存のリソースに割り当てられているタグを表示、追加、変更、および削除できます。これにより、リソースの管理を整理して簡単に行うことができます。</block>
@@ -897,4 +769,84 @@
   <block id="452cd4df7b0d5eb1156519a2f3b0206b" category="paragraph">これはシステムによって生成されたIDで、電子メールにマッピングされます。[*NSS Management*]ページで、から電子メールを表示できます <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> メニュー。</block>
   <block id="fd02e84624a2fdfd58787131aa2820b5" category="list-text">ログイン認証情報トークンを更新する必要がある場合は、の[認証情報の更新*]オプションも使用できます <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> メニュー。</block>
   <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">このオプションを使用すると、再度ログインするように求められます。これらのアカウントのトークンは90日後に期限切れになります。このことを通知する通知が投稿されます。</block>
+  <block id="372533b812476a88b7d5ef31e459c351" category="list-text">すべてのテンプレートに対してドリフトチェックを実行すると、BlueXP修正サービスによってSnapshotコピーテンプレートの設定がボリューム内の現在の設定と比較されます。準拠していない値にはフラグが付けられ、間違った設定を修正できます。</block>
+  <block id="cd8046669abc4a37bf25067917da6cf9" category="inline-image-macro">BlueXP修正サービスのドリフトダッシュボードのスクリーンショット。</block>
+  <block id="e7ec4c4152826f2deedfea467894a855" category="paragraph"><block ref="e7ec4c4152826f2deedfea467894a855" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="af859a8aacc30e0bb1648f64ed76f23d" category="section-title">BlueXPレプリケーションの健全性の詳細がドリフトレポートに表示されます</block>
+  <block id="dccc80768bfca83f2c18a964a2ada6e0" category="inline-link-macro">テンプレートを使用したボリュームでのBlueXPレプリケーションの有効化</block>
+  <block id="9dd134a3f05a90dc02c4af5ebcb3faef" category="paragraph">いつ <block ref="079d9da8cb6e56b01a7d0344b4200bdf" category="inline-link-macro-rx"></block>では、 ［ レプリケーションの正常性監視を有効にする ］ フィールドでドリフトを有効にすることにより、ドリフトレポートに詳細なレプリケーション情報を表示できます。ドリフトレポートを有効にすると、BlueXPレプリケーション関係の健常性が正常かどうか（ドリフト）、およびSnapMirrorの遅延時間、ステータス、前回の転送時間が表示されます。</block>
+  <block id="ff1a821ec32f5470f851de8ef3edd6a9" category="summary">BlueXP修正サービス（AppTemplate）を使用すると、BlueXP作業環境向けに標準的なリソース作成を行うことができます。</block>
+  <block id="510f57bbfca743348ff245cb08dc02e3" category="doc">BlueXPの問題解決に関するドキュメント</block>
+  <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
+  <block id="2603b912f5fde0329947b49c922b5a4d" category="summary">組織が構築したアプリケーションテンプレートの中から 1 つ選択して、特定のワークロードとアプリケーションに最適化された作業環境またはボリュームを作成します。テンプレートを使用して、ボリュームまたは既存のボリュームでBlueXPのバックアップとリカバリ、BlueXPの分類、BlueXPのレプリケーション（SnapMirror）をアクティブ化することもできます。</block>
+  <block id="ede1cce9f240fed5ecc4264bd699cee1" category="inline-link">BlueXPのバックアップとリカバリ</block>
+  <block id="4cc849f381058f76f6b72a1c4279393d" category="inline-link">BlueXPの分類</block>
+  <block id="3ffe2e9dffcfea6ba0652c1f11e54fc1" category="inline-link">BlueXPレプリケーション</block>
+  <block id="9ca35cb1b30a084cd819111a15c64e77" category="paragraph">組織が構築したアプリケーションテンプレートの中から 1 つ選択して、特定のワークロードとアプリケーションに最適化された作業環境またはボリュームを作成します。また、テンプレートを使用してアクティブ化することもできます<block ref="2b39f52a9715f26b8fe862bdca0f5ff1" category="inline-link-rx"></block>、<block ref="2c710310de596aa5a81877d014205606" category="inline-link-rx"></block>および<block ref="85f98efc20d83de4c171ca5859337904" category="inline-link-rx"></block> をクリックします。</block>
+  <block id="7753d3ec576dc9efc0f80fc6b9f48f97" category="list-text">テンプレートが、などのボリュームのクラウドサービスをアクティブにした場合<block ref="2b39f52a9715f26b8fe862bdca0f5ff1" category="inline-link-rx"></block> または<block ref="2c710310de596aa5a81877d014205606" category="inline-link-rx"></block>をクリックして、ご使用の環境でサービスがアクティブでライセンスされていることを確認してください。</block>
+  <block id="07975f258f3cd721da70af18c68fa13b" category="list-text">テンプレートが、などのボリュームのクラウドサービスをアクティブにした場合 <block ref="2b39f52a9715f26b8fe862bdca0f5ff1" category="inline-link-rx"></block>、<block ref="2c710310de596aa5a81877d014205606" category="inline-link-rx"></block>または<block ref="85f98efc20d83de4c171ca5859337904" category="inline-link-rx"></block>をクリックして、ご使用の環境でサービスがアクティブでライセンスされていることを確認してください。</block>
+  <block id="4bf3ac864f59b573779a4b8a188e0a66" category="list-text"><block ref="4bf3ac864f59b573779a4b8a188e0a66" category="inline-link-rx"></block></block>
+  <block id="51fa4f80c02ff60f7bc1abbc7d99d4bc" category="paragraph">特定のリソース（ボリュームなど）を検出するテンプレートを実行し、そのリソースでクラウドサービス（BlueXPのバックアップとリカバリなど）を有効にすることができます（この機能を使用してテンプレートを作成済みの場合）。テンプレートの実行中に若干の調整を加えて、クラウドサービスを適切なリソースにのみ適用することができます。</block>
+  <block id="44af46a339b6fd8425ddaac900e73f6f" category="list-text">想定どおりの結果が得られたら、テンプレートの_Enable Cloud Backup on Volume_partにある条件に従って、BlueXPのバックアップとリカバリを有効にする各ボリュームのチェックボックスを選択し、*[テンプレートの実行]*をクリックします。</block>
+  <block id="08ea921bf1012f71a17a32a3fc1b9db6" category="paragraph">テンプレートが実行され、検索条件で選択した各ボリュームでBlueXPのバックアップとリカバリが有効になります。</block>
+  <block id="67fcd325c1008f4842433ab60267ce04" category="paragraph">テンプレートには、前のアクションの情報を使用して、将来のアクションでフィールドにデータを入力する機能があります。たとえば、BlueXPのバックアップとリカバリ機能を有効にするボリュームの名前を定義する場合は、ストレージ管理者がCloud Volumes ONTAP の作成操作で入力した値をボリュームの名前として使用するように、バックアップ操作で指定できます。</block>
+  <block id="1414dbf601cc2d8b389d90d0181fa2f3" category="paragraph">BlueXP修正サービスで使用できる情報には、次の3種類があります。</block>
+  <block id="13d21f84cc6b91e10f2cd7acb6c7bdac" category="paragraph">たとえば、ボリュームでコンプライアンススキャンを有効にするには、BlueXP分類サービスで、ストレージ管理者が入力した「ボリューム名」（入力値）と、ボリュームの作成時にBlueXPで生成される「ボリュームUUID」（出力値）の両方が必要です。</block>
+  <block id="4034767319b5f3df4aea5544dd69e564" category="paragraph">次の図は、テンプレートのBlueXP分類アクションセクションにこの情報を入力する方法を示しています。</block>
+  <block id="5e78b88524f6c807a9f2ad88b3f0fb57" category="paragraph">たとえば、ボリュームの容量が50GBを超える場合は、そのボリュームでBlueXPのバックアップとリカバリを有効にする必要があるというガイドラインがあるとします。ボリュームの容量が小さい場合、BlueXPのバックアップとリカバリは有効になりません。これは、次のようにテンプレートに実装できます。</block>
+  <block id="33c54d424758d4a84004512c33514f85" category="inline-image-macro">BlueXPのバックアップとリカバリを条件付きで有効にするために、テンプレートで条件を使用する方法を示すスクリーンショット。</block>
+  <block id="140d54cd657106e902568fa28a521cf1" category="paragraph"><block ref="140d54cd657106e902568fa28a521cf1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b8266a139fe859025b8bb875c44b1bed" category="list-text">クラウドサービス「 action 」をテンプレートに追加する場合（など）<block ref="2b39f52a9715f26b8fe862bdca0f5ff1" category="inline-link-rx"></block> または<block ref="2c710310de596aa5a81877d014205606" category="inline-link-rx"></block>をクリックして、ご使用の環境でサービスがアクティブでライセンスされていることを確認してください。</block>
+  <block id="8f8ea6f463cacff960686b6bd6b3f4a4" category="list-text">Cloud Volumes ONTAP ボリュームテンプレートを作成する際には、 Cloud Volumes ONTAP 作業環境がユーザに利用できることを確認してください。で Cloud Volumes ONTAP システムを起動する方法を参照してください<block ref="d48c7204d9a23e0c67e4c63c028fc359" category="inline-link-rx"></block>、<block ref="9980b328a51ea35645f26e6738018d49" category="inline-link-rx"></block>または、のいずれかです<block ref="a2f34fbb7d4cd43b6878f17806ecc00a" category="inline-link-rx"></block>。</block>
+  <block id="c9e47ca1ece3aae1869d6fa91d72f8f3" category="list-text">BlueXPのバックアップとリカバリを使用してテンプレート内のボリュームをバックアップする場合は、環境でBlueXPのバックアップとリカバリをアクティブ化していることを確認してください。</block>
+  <block id="7164aa607c641bad321d653f0f2ef878" category="list-text">BlueXP分類を使用してテンプレート内のボリュームをスキャンする場合は、環境でBlueXP分類がアクティブ化されていることを確認してください。</block>
+  <block id="56521c58c116e921a830091c61343aca" category="list-text">オンプレミスのONTAP ボリューム用のテンプレートでBlueXPレプリケーションを有効にする場合は、ONTAP クラスタにアクティブなSnapMirrorライセンスが必要です。</block>
+  <block id="4addbe3fd43e1a48fd8eb999d5f3b487" category="list-text">BlueXPのバックアップとリカバリを有効にする</block>
+  <block id="3c8e33af6e4bd2a2c497b3d87616506c" category="list-text">[Enable Cloud Backup on Volume]*ボックスをクリックします。BlueXPのバックアップとリカバリの詳細を入力できるように、[_Enable Cloud Backup on Volume Action Definition_Dialog]が表示されます。</block>
+  <block id="552bef51024addf6c4f5c63929d33718" category="list-text">[適用]*をクリックすると、BlueXPのバックアップとリカバリのダイアログが保存されます。</block>
+  <block id="70bc2a664a24295c9ac1f72d4ea305cd" category="paragraph">を参照してください<block ref="0c661e3930f1e020e8f43c7a637ae58f" category="inline-link-rx"></block> オンプレミスの ONTAP ボリュームテンプレートで実行する必要があるすべてのパラメータの詳細については、を参照してください。</block>
+  <block id="81a8daeda4f6298d9acccfee2722a672" category="list-text">* 場所と接続 * ：に記録したネットワーク情報を入力します<block ref="57c247bbef8ebe341e2b4a4759be3e19" category="inline-link-rx"></block>。これには、 AWS リージョン、 VPC 、サブネット、セキュリティグループが含まれます。</block>
+  <block id="3ef29b3dd75ee64739cfbad76da157f1" category="paragraph"><block ref="f9418073b88f5d36a2be20e415620719" category="inline-link-rx"></block>。</block>
+  <block id="e5454149dbf8c23363be8d25a5702a73" category="admonition">この時点で、 Cloud Volumes ONTAP 、オンプレミス ONTAP 、 Azure NetApp Files システム内にボリュームを見つけることができます。また、Cloud Volumes ONTAP ボリュームとオンプレミスのONTAP ボリュームでBlueXPのバックアップとリカバリを有効にすることもできます。追加のリソースとサービスは、後で利用可能になります。</block>
+  <block id="2cb7e274b08a1ada929bdde1e5182fac" category="paragraph">current_Find Existing Resources_action機能を使用すると、現在BlueXPのバックアップとリカバリや分類が有効になっていないCloud Volumes ONTAP およびオンプレミスのONTAP 作業環境上のボリュームを検索できます。特定のボリュームでBlueXPのバックアップとリカバリを有効にすると、その作業環境のデフォルトポリシーとして設定したバックアップポリシーも設定されます。これにより、作業環境の今後のすべてのボリュームで同じバックアップポリシーを使用できるようになります。</block>
+  <block id="a691937f2bedfbe485e0a5632a3e18ff" category="paragraph">代わりに、いくつかのフィルタに入力して、BlueXPのバックアップとリカバリのアクションを適用する結果（この場合はボリューム）を少なくすることを推奨します。</block>
+  <block id="9bd30f7c4c3061ea1452d2bb94d3ccb5" category="inline-image-macro">BlueXPのバックアップとリカバリのアクションをテンプレートに追加する手順を示すスクリーンショット。</block>
+  <block id="c94523d9a61bd23630ae699468b59912" category="paragraph"><block ref="c94523d9a61bd23630ae699468b59912" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="27361520eb7e5cef0ef9294b8be31f53" category="paragraph">サービステンプレートを使用すると、新しく作成したボリュームで、BlueXPのバックアップとリカバリ、BlueXP分類、またはBlueXPレプリケーション（SnapMirror）サービスをアクティブ化できます。</block>
+  <block id="2379567db82c15355e3be04068b7b974" category="paragraph">ボリュームテンプレートを作成する場合、を使用して定期的にボリュームのバックアップを作成するテンプレートにを追加できます<block ref="2b39f52a9715f26b8fe862bdca0f5ff1" category="inline-link-rx"></block> サービス</block>
+  <block id="a38d0b0e90841cea024d72c117a2426b" category="section-title">BlueXPの分類機能をボリュームに追加します</block>
+  <block id="9c586aa01408a40b2537cb097a8ab12b" category="paragraph">ボリュームテンプレートを作成するときに、を使用してボリュームのコンプライアンスと分類をスキャンするテンプレートにを追加できます<block ref="2c710310de596aa5a81877d014205606" category="inline-link-rx"></block> サービス</block>
+  <block id="85f23a277d881512b055e09978ab9bb3" category="section-title">BlueXPレプリケーション機能をボリュームに追加します</block>
+  <block id="cd74e17bd5681fa22dbf78c857904d85" category="paragraph">ボリュームテンプレートを作成するときに、を使用してボリューム内のデータを別のボリュームにレプリケートするテンプレートにを追加できます<block ref="85f98efc20d83de4c171ca5859337904" category="inline-link-rx"></block> サービスデータは、 Cloud Volumes ONTAP クラスタまたはオンプレミスの ONTAP クラスタにレプリケートできます。</block>
+  <block id="dd9f9bc105ce1ce8a95ece4914938335" category="paragraph">BlueXPレプリケーション機能は、ソースボリュームの選択、デスティネーションボリュームの選択、レプリケーション設定の定義の3つの部分で構成されます。各セクションについて以下で説明します。</block>
+  <block id="0ea58076a2176d7f136c88f75243998b" category="inline-image-macro">BlueXPレプリケーションのソースボリュームの場所を定義するページのスクリーンショット。</block>
+  <block id="8d46514284e4823c32c3dc4f228097be" category="paragraph"><block ref="8d46514284e4823c32c3dc4f228097be" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="735ed24f376bc25cac548556f145fddd" category="list-text">BlueXPレプリケーションを使用するには、ソースとデスティネーションの作業環境がそれぞれのクラスタ間LIFを介して接続されている必要があります。ソース作業環境のクラスタ間 LIF の IP アドレスを入力します。</block>
+  <block id="bf9302d5ec948558541e41a62beedd9c" category="inline-image-macro">BlueXPレプリケーションのデスティネーションボリュームの場所を定義するページのスクリーンショット。</block>
+  <block id="96fbe8bac41fbc54b4d3dc5810151c73" category="paragraph"><block ref="96fbe8bac41fbc54b4d3dc5810151c73" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="52f5e1349d4967b257361efa47dda020" category="list-text">BlueXPレプリケーションを使用するには、ソースとデスティネーションの作業環境がそれぞれのクラスタ間LIFを介して接続されている必要があります。デスティネーション作業環境のクラスタ間 LIF の IP アドレスを入力します。</block>
+  <block id="a88290295d6f404ecce4fa651a053f2b" category="inline-image-macro">関係のBlueXPレプリケーション設定を定義するページのスクリーンショット。</block>
+  <block id="caa72fb108e3bc60f82a1df87c43573d" category="paragraph"><block ref="caa72fb108e3bc60f82a1df87c43573d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a544a99893c9e6b1097d852c3f8c8436" category="summary">BlueXP修正サービスを使用すると、作業環境でのリソース作成をBlueXPで標準化できます。たとえば、「ボリュームテンプレート」内の必須パラメータをハードコーディングして、あとでストレージ管理者がテンプレートを使用してボリュームを作成するときに適用できます。これには、必要なディスクタイプ、サイズ、プロトコル、 Snapshot ポリシー、クラウドプロバイダ、 その他。作成されたすべてのボリュームに対して、BlueXPのバックアップとリカバリなどの特定のサービスを有効にすることもできます。</block>
+  <block id="b5b4d5d12eb80fff06c501695b37c685" category="doc">BlueXPの修正プログラムについて説明します</block>
+  <block id="1032d262f842b007c559af1cf0e96a67" category="paragraph">BlueXPの修正プログラムには、次の機能とメリットがあります。</block>
+  <block id="e3aea2348dd4f146b5c5f81c162d1f44" category="list-text">BlueXPのバックアップとリカバリやBlueXPの分類など、さまざまなネットアップクラウドサービスをアクティブ化するための単一の場所を提供します</block>
+  <block id="323cdb54390926759b1ef2c2f8b3d501" category="list-text">アクティブ化します<block ref="2b39f52a9715f26b8fe862bdca0f5ff1" category="inline-link-rx"></block> ボリューム（ Azure NetApp Files には該当しません）</block>
+  <block id="a42ceab68fd0ff5bf4b503951f8c32ed" category="list-text">アクティブ化します<block ref="2c710310de596aa5a81877d014205606" category="inline-link-rx"></block> ボリューム</block>
+  <block id="12dab2db205f6f073384ed24600f3294" category="list-text">アクティブ化します<block ref="85f98efc20d83de4c171ca5859337904" category="inline-link-rx"></block> ボリューム（ Azure NetApp Files には該当しません）</block>
+  <block id="7cd3aca74bfb8a3594c0b5243d8efcd6" category="paragraph">たとえば、 Cloud Volumes ONTAP ボリュームを作成するテンプレートを作成できます。または、Cloud Volumes ONTAP ボリュームが作成され、そのボリュームでBlueXPのバックアップとリカバリが有効になります。これでCloud Volumes ONTAP ボリュームが作成され、そのボリュームでBlueXPのバックアップとrecovery_and_BlueXP分類が有効になります。</block>
+  <block id="affd4f6eb73b60f9a6a799c009261a82" category="section-title">BlueXPの修復の仕組み</block>
+  <block id="4b77b7c05fa8d98f83a3beb44bf88064" category="paragraph">BlueXP修正サービスは3つのパートで構成されます。テンプレートを実行した結果、使用可能なテンプレート「アクション」、カスタマイズされたアプリケーションテンプレート、および展開されたリソース。次の図は、各コンポーネント間の関係を示しています。</block>
+  <block id="71b4565980fc9926e76b80d4954934b3" category="paragraph">BlueXPの修正機能にライセンスは不要で、すべてのBlueXPユーザが無料で使用できます。</block>
+  <block id="cee48f920658308cb7e4b5d3a7f4b59c" category="admonition">テンプレートを使用すると、作成したリソースにクラウドサービスを適用できます。たとえば、すべてのボリュームでBlueXPのバックアップとリカバリを有効にすることができます。この場合、バックアップサービスと、バックアップファイルで使用されるオブジェクトストレージスペースの使用コストが発生します。</block>
+  <block id="63259a0b3eae7652a0de9d3e92907940" category="list-text">BlueXP修正サービスは、Gov Cloudのどのリージョンまたはインターネットアクセスのないサイトではサポートされません。</block>
+  <block id="f3fb1dceef01486d91492939582c9e23" category="summary">BlueXPの修正とタグ付けの新機能をご紹介します。</block>
+  <block id="a8d3fe6a91db602634ae243a55423c5f" category="doc">BlueXPの修正とタグ付けの最新情報</block>
+  <block id="12c7b4f361520fac32769892a3adb104" category="paragraph">現在サポートされているのは、 Cloud Volumes ONTAP 上のボリュームとオンプレミスの ONTAP システムです。<block ref="cf92aa38511759ce0275086447e2bfa9" category="inline-link-rx"></block>。</block>
+  <block id="06671a41421557bc8120e9c0432d0846" category="inline-link-macro">BlueXPの修正に関するお知らせです</block>
+  <block id="73d5b5afc4a2cdcc8daaa40ba4ef5910" category="list-text"><block ref="73d5b5afc4a2cdcc8daaa40ba4ef5910" category="inline-link-macro-rx"></block></block>
+  <block id="c60b09ae2c96c9e21869de6d6df59453" category="sidebar">BlueXPの修正ドキュメント</block>
+  <block id="89bd41d8bc97392a23a93ae863b454bb" category="sidebar">BlueXPの修復機能を使用</block>
+  <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">新機能</block>
+  <block id="bdada2beda611e5479ba79eddd7f3b9f" category="sidebar">バックアップ、分類、またはレプリケーション機能をボリュームに追加します</block>
 </blocks>

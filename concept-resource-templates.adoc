@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-resource-templates.html 
 keywords: templates, overview, conceptual, resource templates, application templates, volume templates 
-summary: AppTemplateサービスを使用すると、BlueXPの作業環境でリソース作成を標準化できます。たとえば、「ボリュームテンプレート」内の必須パラメータをハードコーディングして、あとでストレージ管理者がテンプレートを使用してボリュームを作成するときに適用できます。これには、必要なディスクタイプ、サイズ、プロトコル、 Snapshot ポリシー、クラウドプロバイダ、 その他。作成したボリュームごとに、 Cloud Backup などの特定のサービスをオンにすることもできます。 
+summary: BlueXP修正サービスを使用すると、作業環境でのリソース作成をBlueXPで標準化できます。たとえば、「ボリュームテンプレート」内の必須パラメータをハードコーディングして、あとでストレージ管理者がテンプレートを使用してボリュームを作成するときに適用できます。これには、必要なディスクタイプ、サイズ、プロトコル、 Snapshot ポリシー、クラウドプロバイダ、 その他。作成されたすべてのボリュームに対して、BlueXPのバックアップとリカバリなどの特定のサービスを有効にすることもできます。 
 ---
-= AppTemplate について説明します
+= BlueXPの修正プログラムについて説明します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: AppTemplateサービスを使用すると、BlueXPの作業環境でリ
 
 
 [role="lead"]
-AppTemplateサービスを使用すると、BlueXP（旧Cloud Manager）の作業環境でのリソース作成を標準化できます。たとえば、「ボリュームテンプレート」内の必須パラメータをハードコーディングして、あとでストレージ管理者がテンプレートを使用してボリュームを作成するときに適用できます。これには、必要なディスクタイプ、サイズ、プロトコル、 Snapshot ポリシー、クラウドプロバイダ、 その他。作成したボリュームごとに、 Cloud Backup などの特定のサービスをオンにすることもできます。
+BlueXP修正サービスを使用すると、作業環境でのリソース作成をBlueXPで標準化できます。たとえば、「ボリュームテンプレート」内の必須パラメータをハードコーディングして、あとでストレージ管理者がテンプレートを使用してボリュームを作成するときに適用できます。これには、必要なディスクタイプ、サイズ、プロトコル、 Snapshot ポリシー、クラウドプロバイダ、 その他。作成されたすべてのボリュームに対して、BlueXPのバックアップとリカバリなどの特定のサービスを有効にすることもできます。
 
 テンプレートを使用することで、ストレージ管理者は、データベース、 E メール、ストリーミングサービスなど、導入する各アプリケーションのワークロード要件に合わせて最適化されたボリュームを簡単に作成できます。また、各ボリュームがアプリケーションごとに最適に作成されていることを確認すれば、ストレージアーキテクトの負担が軽減されます。
 
@@ -22,10 +22,10 @@ AppTemplateサービスを使用すると、BlueXP（旧Cloud Manager）の作�
 
 == の機能
 
-AppTemplate には、次の機能と利点があります。
+BlueXPの修正プログラムには、次の機能とメリットがあります。
 
 * インフラの設計と開発を自動化し、改善します
-* クラウドバックアップやクラウドデータセンスなど、さまざまな NetApp クラウドサービスを 1 箇所でアクティブ化できます
+* BlueXPのバックアップとリカバリやBlueXPの分類など、さまざまなネットアップクラウドサービスをアクティブ化するための単一の場所を提供します
 * 変更され、テンプレートに適合しなくなったリソースを特定します（「ドリフト」機能を使用）。
 +
 この時点で、リソースをテンプレートに合わせて戻すために、手動で調整を行う必要があります。 link:task-check-template-compliance.html["ドリフトの詳細については、こちらをご覧ください"]。
@@ -49,20 +49,20 @@ AppTemplate には、次の機能と利点があります。
 
 * サービスアクション： *
 
-* アクティブ化します https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["クラウドバックアップ"^] ボリューム（ Azure NetApp Files には該当しません）
-* アクティブ化します https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["クラウドデータの意味"^] ボリューム
-* アクティブ化します https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["レプリケーション"^] ボリューム（ Azure NetApp Files には該当しません）
+* アクティブ化します https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["BlueXPのバックアップとリカバリ"^] ボリューム（ Azure NetApp Files には該当しません）
+* アクティブ化します https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXPの分類"^] ボリューム
+* アクティブ化します https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["BlueXPレプリケーション"^] ボリューム（ Azure NetApp Files には該当しません）
 
 
-たとえば、 Cloud Volumes ONTAP ボリュームを作成するテンプレートを作成できます。または、 Cloud Volumes ONTAP ボリュームを作成してから、そのボリュームで Cloud Backup を有効にします。または、 Cloud Volumes ONTAP ボリュームを作成し、そのボリュームで Cloud Backup_or_Cloud Data Sense を有効にします。
+たとえば、 Cloud Volumes ONTAP ボリュームを作成するテンプレートを作成できます。または、Cloud Volumes ONTAP ボリュームが作成され、そのボリュームでBlueXPのバックアップとリカバリが有効になります。これでCloud Volumes ONTAP ボリュームが作成され、そのボリュームでBlueXPのバックアップとrecovery_and_BlueXP分類が有効になります。
 
 ネットアップは、時間の経過とともにアクションを追加します。
 
 
 
-== AppTemplateの仕組み
+== BlueXPの修復の仕組み
 
-AppTemplate サービスは 3 つの部品で構成されています。テンプレートを実行した結果、使用可能なテンプレート「アクション」、カスタマイズされたアプリケーションテンプレート、および展開されたリソース。次の図は、各コンポーネント間の関係を示しています。
+BlueXP修正サービスは3つのパートで構成されます。テンプレートを実行した結果、使用可能なテンプレート「アクション」、カスタマイズされたアプリケーションテンプレート、および展開されたリソース。次の図は、各コンポーネント間の関係を示しています。
 
 image:diagram_template_flow1.png["アプリケーションテンプレートの作成と使用に関連するさまざまなユーザーのダイアグラム。"]
 
@@ -87,15 +87,15 @@ image:diagram_template_flow1.png["アプリケーションテンプレートの�
 
 == 価格とライセンス
 
-AppTemplate機能はライセンス不要で、BlueXPのすべてのユーザーが無料で使用できます。
+BlueXPの修正機能にライセンスは不要で、すべてのBlueXPユーザが無料で使用できます。
 
 
-NOTE: テンプレートを使用すると、作成したリソースにクラウドサービスを適用できます。たとえば、すべてのボリュームで Cloud Backup を有効にします。この場合、バックアップサービスと、バックアップファイルで使用されるオブジェクトストレージスペースの使用コストが発生します。
+NOTE: テンプレートを使用すると、作成したリソースにクラウドサービスを適用できます。たとえば、すべてのボリュームでBlueXPのバックアップとリカバリを有効にすることができます。この場合、バックアップサービスと、バックアップファイルで使用されるオブジェクトストレージスペースの使用コストが発生します。
 
 
 
 == 制限
 
-* AppTemplate サービスは、 Gov クラウドのどのリージョンでも、またはインターネットにアクセスできないサイトではサポートされていません。
+* BlueXP修正サービスは、Gov Cloudのどのリージョンまたはインターネットアクセスのないサイトではサポートされません。
 * テンプレートを使用して既存のアグリゲートに Cloud Volumes ONTAP ボリュームを作成することはできません。新しいアグリゲートに新しいボリュームが作成されます。
 

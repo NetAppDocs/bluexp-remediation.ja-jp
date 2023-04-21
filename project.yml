@@ -1,6 +1,6 @@
 ---
 settings:
-  name: AppTemplate
+  name: BlueXP remediation
   platform: cloud
   internal:
     pdf_enabled: true
@@ -11,17 +11,17 @@ settings:
   langs: ja-jp,us-en,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr
 sidebar:
   entries:
-  - title: AppTemplate ドキュメント
+  - title: BlueXPの修正ドキュメント
     url: "/index.html"
   - title: リリースノート
     url: "/whats-new.html"
   - title: はじめに
     entries:
-    - title: AppTemplate について説明します
+    - title: BlueXPの修正プログラムについて説明します
       url: "/concept-resource-templates.html"
     - title: タグ付けの詳細をご覧ください
       url: "/concept-tagging.html"
-  - title: AppTemplate を使用します
+  - title: BlueXPの修復機能を使用
     entries:
     - title: テンプレートを使用して、リソース作成を標準化します
       entries:
@@ -51,7 +51,7 @@ homepage:
   tiles:
   - title: はじめに
     links:
-    - title: AppTemplate について説明します
+    - title: BlueXPの修正プログラムについて説明します
       url: concept-resource-templates.html
     - title: タグ付けの詳細はこちら
       url: concept-tagging.html
@@ -67,7 +67,7 @@ homepage:
       url: task-define-templates.html#create-a-template-for-an-azure-netapp-files-volume
     - title: オンプレミスの ONTAP ボリューム
       url: task-define-templates.html#create-a-template-for-an-on-premises-ontap-volume
-    - title: ボリュームにバックアップ、データセンス、またはレプリケーション機能を追加します
+    - title: バックアップ、分類、またはレプリケーション機能をボリュームに追加します
       url: task-define-templates.html#examples-of-enabling-services-using-templates
   - title: テンプレートを使用してリソースを作成する
     links:
@@ -86,11 +86,11 @@ homepage:
   - title: ブログコミュニティ
     links:
     - title: ネットアップコミュニティ
-      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
     - title: BlueXPブログ
-      url: https://cloud.netapp.com/blog
+      url: https://bluexp.netapp.com/blog
     - title: クラウドに関する Web セミナー
-      url: https://cloud.netapp.com/events
+      url: https://bluexp.netapp.com/events
 product-family:
   name: BlueXP
   repo: cloud-manager-family

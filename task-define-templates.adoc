@@ -28,7 +28,7 @@ summary: ネットアップが提供する「アクション」を 1 つ以上�
 
 
 [role="quick-margin-list"]
-* クラウドサービス「 action 」をテンプレートに追加する場合（など） https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["クラウドバックアップ"^] または https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["クラウドデータの意味"^]をクリックして、ご使用の環境でサービスがアクティブでライセンスされていることを確認してください。
+* クラウドサービス「 action 」をテンプレートに追加する場合（など） https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["BlueXPのバックアップとリカバリ"^] または https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXPの分類"^]をクリックして、ご使用の環境でサービスがアクティブでライセンスされていることを確認してください。
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] Application Templates サービスを起動します
@@ -46,12 +46,12 @@ summary: ネットアップが提供する「アクション」を 1 つ以上�
 以下の要件を読み、サポートされている構成になっていることを確認してください。
 
 * コネクタがない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクターの作成方法を参照してください"^] AWS 、 Azure 、 GCP 向け。
-* Cloud Volumes ONTAP ボリュームテンプレートを作成する際には、 Cloud Volumes ONTAP 作業環境がユーザに利用できることを確認してください。で Cloud Volumes ONTAP システムを起動する方法を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["AWS"^]、 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["Azure"^]または、のいずれかです https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["GCP"^]。
+* Cloud Volumes ONTAP ボリュームテンプレートを作成する際には、 Cloud Volumes ONTAP 作業環境がユーザに利用できることを確認してください。で Cloud Volumes ONTAP システムを起動する方法を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws.html["AWS"^]、 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-azure.html["Azure"^]または、のいずれかです https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["GCP"^]。
 * オンプレミスの ONTAP ボリュームテンプレートを作成する場合は、オンプレミスの ONTAP 作業環境がユーザに利用できることを確認します。方法を参照してください https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["オンプレミスの ONTAP システムを検出"^] BlueXPでは、
 * Azure NetApp Files ボリュームテンプレートを作成する際には、 Azure NetApp Files の作業環境がユーザに割り当てられていることを確認します。方法を参照してください https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Azure NetApp Files 作業環境を作成します"^] BlueXPでは、
-* クラウドバックアップを使用してテンプレート内のボリュームをバックアップする場合は、環境が Cloud Backup をアクティブ化していることを確認してください。
-* クラウドデータセンスを使用してテンプレート内のボリュームをスキャンする場合は、クラウドデータセンスがアクティブ化されていることを確認してください。
-* テンプレートでレプリケーションを有効にする場合、オンプレミスの ONTAP ボリューム用のテンプレートを使用するには、 ONTAP クラスタにアクティブな SnapMirror ライセンスが必要です。
+* BlueXPのバックアップとリカバリを使用してテンプレート内のボリュームをバックアップする場合は、環境でBlueXPのバックアップとリカバリをアクティブ化していることを確認してください。
+* BlueXP分類を使用してテンプレート内のボリュームをスキャンする場合は、環境でBlueXP分類がアクティブ化されていることを確認してください。
+* オンプレミスのONTAP ボリューム用のテンプレートでBlueXPレプリケーションを有効にする場合は、ONTAP クラスタにアクティブなSnapMirrorライセンスが必要です。
 
 
 
@@ -72,7 +72,7 @@ summary: ネットアップが提供する「アクション」を 1 つ以上�
 +
 AWS 環境のボリュームを 100GB のストレージで設定し、 Snapshot ポリシーを「 default 」に設定し、 Storage Efficiency を有効にします。
 
-* Cloud Backup を有効にします
+* BlueXPのバックアップとリカバリを有効にする
 +
 30 個の日単位バックアップ、 13 個の週単位バックアップ、 3 個の月単位バックアップを作成します（ _3 カ月保持ポリシーを使用）。
 
@@ -156,13 +156,13 @@ image:screenshot_create_template_define_action_cvo.png["入力が必要な空の
 +
 テンプレートの値が正しく入力されている場合は、 [ ボリュームを Cloud Volumes ONTAP に作成 ] ボックスに緑のチェックマークが追加されます。
 
-. Enable Cloud Backup on Volume * ボックスをクリックします。 Cloud Backup on Volume Action Definition_Dialog が表示され、 Cloud Backup の詳細を入力できます。
+. [Enable Cloud Backup on Volume]*ボックスをクリックします。BlueXPのバックアップとリカバリの詳細を入力できるように、[_Enable Cloud Backup on Volume Action Definition_Dialog]が表示されます。
 +
 image:screenshot_create_template_add_action.png["作成したボリュームに追加できるその他の操作を示すスクリーンショット。"]
 
 . 3 カ月保持 * バックアップ・ポリシーを選択し、 30 個の日単位、 13 個の週単位、 3 個の月単位バックアップを作成します。
 . [Working Environment] フィールドと [Volume Name] フィールドの下には、バックアップを有効にするボリュームを指定するために使用する 3 つの選択肢があります。を参照してください link:reference-template-building-blocks.html#pass-values-between-template-actions["これらのフィールドの入力方法"]。
-. [ 適用 ] をクリックすると、 [ クラウドバックアップ ] ダイアログが保存されます。
+. [適用]*をクリックすると、BlueXPのバックアップとリカバリのダイアログが保存されます。
 . 左上に、データベース * （この例では）のテンプレート名 * CVO ボリュームを入力してください。
 . [* 設定とドリフト * ] をクリックして、このテンプレートを他の同様のテンプレートと区別できるように、より詳細な概要を提供します。したがって、テンプレート全体のドリフトを有効にしてから、 [ * 適用 * ] をクリックします。
 +
@@ -282,7 +282,7 @@ image:screenshot_create_template_define_action_anf.png["入力する必要があ
 
 === オンプレミスの ONTAP ボリューム用のテンプレートを作成します
 
-を参照してください https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-provisioning-ontap.html#creating-volumes-for-ontap-clusters["オンプレミスの ONTAP ボリュームをプロビジョニングする方法"^] オンプレミスの ONTAP ボリュームテンプレートで実行する必要があるすべてのパラメータの詳細については、を参照してください。
+を参照してください https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-manage-ontap-connector.html#create-volumes["オンプレミスの ONTAP ボリュームをプロビジョニングする方法"^] オンプレミスの ONTAP ボリュームテンプレートで実行する必要があるすべてのパラメータの詳細については、を参照してください。
 
 .手順
 . [*正常性]>[修正]を選択し、[*テンプレート*]タブをクリックして、[*新しいテンプレートの追加*]をクリックします。
@@ -433,7 +433,7 @@ image:screenshot_create_template_cvo_env_aws1.png["入力が必要な空の Clou
 
 | タグ | AWS タグは、 AWS リソースのメタデータです。BlueXPは、Cloud Volumes ONTAP インスタンスとそのインスタンスに関連付けられている各AWSリソースにタグを追加します。タグの詳細については、を参照してください https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html["AWS ドキュメント：「 Tagging your Amazon EC2 Resources"^]。 
 |===
-. * 場所と接続 * ：に記録したネットワーク情報を入力します https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-planning-your-config.html#aws-network-information-worksheet["AWS ワークシート"^]。これには、 AWS リージョン、 VPC 、サブネット、セキュリティグループが含まれます。
+. * 場所と接続 * ：に記録したネットワーク情報を入力します https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-planning-your-config.html#collect-networking-information["AWS ワークシート"^]。これには、 AWS リージョン、 VPC 、サブネット、セキュリティグループが含まれます。
 +
 AWS Outpost を使用している場合は、 Outpost VPC を選択して、その Outpost に単一のノードの Cloud Volumes ONTAP システムを導入できます。エクスペリエンスは、 AWS に存在する他の VPC と同じです。
 
@@ -447,7 +447,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-
 
 . * 充電方法 * ：このシステムで使用する充電オプションを指定します。
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["これらの充電方法について説明します"^]。
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-licensing-aws.html["これらの充電方法について説明します"^]。
 
 . * ネットアップサポートサイトのアカウント * ：ネットアップサポートサイトのアカウントを選択します。
 . * 構成済みパッケージ *: 作業環境で作成されたボリュームのいくつかの要因を決定する 4 つの構成済みパッケージのいずれかを選択します
@@ -477,13 +477,13 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 既存のリソースを検索 _action を使用すると、特定の作業環境を検索したり、さまざまなフィルタを使用して既存のボリュームを検索したりできるため、検索対象を目的のリソースだけに絞り込むことができます。正しいリソースが見つかったら、作業環境にボリュームを追加するか、作成されたボリュームでクラウドサービスを有効にすることができます。
 
 
-NOTE: この時点で、 Cloud Volumes ONTAP 、オンプレミス ONTAP 、 Azure NetApp Files システム内にボリュームを見つけることができます。また、 Cloud Volumes ONTAP とオンプレミスの ONTAP でクラウドバックアップを有効にすることもできます。追加のリソースとサービスは、後で利用可能になります。
+NOTE: この時点で、 Cloud Volumes ONTAP 、オンプレミス ONTAP 、 Azure NetApp Files システム内にボリュームを見つけることができます。また、Cloud Volumes ONTAP ボリュームとオンプレミスのONTAP ボリュームでBlueXPのバックアップとリカバリを有効にすることもできます。追加のリソースとサービスは、後で利用可能になります。
 
 
 
 === 既存のボリュームを検索し、クラウドサービスをアクティブ化
 
-現在の _ 既存のリソースを検索 _ アクション機能を使用すると、現在クラウドバックアップまたはクラウドデータセンスが有効になっていない Cloud Volumes ONTAP およびオンプレミス ONTAP 作業環境上のボリュームを検索できます。特定のボリュームで Cloud Backup を有効にすると、その作業環境のデフォルトポリシーとして設定したバックアップポリシーも設定されるため、作業環境の以降のすべてのボリュームで同じバックアップポリシーを使用できます。
+current_Find Existing Resources_action機能を使用すると、現在BlueXPのバックアップとリカバリや分類が有効になっていないCloud Volumes ONTAP およびオンプレミスのONTAP 作業環境上のボリュームを検索できます。特定のボリュームでBlueXPのバックアップとリカバリを有効にすると、その作業環境のデフォルトポリシーとして設定したバックアップポリシーも設定されます。これにより、作業環境の今後のすべてのボリュームで同じバックアップポリシーを使用できるようになります。
 
 .手順
 . [*正常性]>[修正]を選択し、[*テンプレート*]タブをクリックして、[*新しいテンプレートの追加*]をクリックします。
@@ -513,7 +513,7 @@ image:screenshot_define_find_resource_action1.png["入力が必要な既存リ�
 このアクションに必要なエントリは、これだけです。「 * Continue * 」をクリックすると、環境内のすべての Cloud Volumes ONTAP システム上のすべてのボリュームのリストが表示されます。
 
 +
-代わりに、 Cloud Backup アクションを適用する結果（この場合はボリューム）の数を減らすために、いくつかのフィルタを入力することを推奨します。
+代わりに、いくつかのフィルタに入力して、BlueXPのバックアップとリカバリのアクションを適用する結果（この場合はボリューム）を少なくすることを推奨します。
 
 . _Context_area では、特定の作業環境とその作業環境に関するその他の詳細を選択できます。
 +
@@ -550,7 +550,7 @@ image:screenshot_define_find_resource_search_criteria.png["既存のリソース
 [Enable Cloud Backup on Volume_action_] がウィンドウに追加されます。
 
 +
-image:screenshot_template_add_backup_action.png["テンプレートにクラウドバックアップアクションを追加する手順を示すスクリーンショット。"]
+image:screenshot_template_add_backup_action.png["BlueXPのバックアップとリカバリのアクションをテンプレートに追加する手順を示すスクリーンショット。"]
 
 . で説明したように、バックアップ条件を定義できます <<ボリュームにバックアップ機能を追加します,ボリュームにバックアップ機能を追加する>> これにより、テンプレートは、既存のリソースを検索アクションで選択したボリュームに正しいバックアップポリシーを適用します。
 . [ 適用 ] をクリックして、 [ バックアップ ] アクションに加えたカスタマイズを保存し、完了したら [ テンプレートの保存 ] をクリックします。
@@ -611,13 +611,13 @@ image:screenshot_define_find_work_env.png["入力が必要な既存リソース�
 
 == テンプレートを使用してサービスを有効にする例
 
-サービステンプレートを使用すると、新しく作成したボリュームで Cloud Backup 、 Cloud Data Sense 、 Replication （ SnapMirror ）の各サービスをアクティブ化できます。
+サービステンプレートを使用すると、新しく作成したボリュームで、BlueXPのバックアップとリカバリ、BlueXP分類、またはBlueXPレプリケーション（SnapMirror）サービスをアクティブ化できます。
 
 
 
 === ボリュームにバックアップ機能を追加します
 
-ボリュームテンプレートを作成する場合、を使用して定期的にボリュームのバックアップを作成するテンプレートにを追加できます https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["クラウドバックアップ"^] サービス
+ボリュームテンプレートを作成する場合、を使用して定期的にボリュームのバックアップを作成するテンプレートにを追加できます https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["BlueXPのバックアップとリカバリ"^] サービス
 
 
 TIP: この操作は Azure NetApp Files ボリュームには適用されません。
@@ -634,9 +634,9 @@ image:screenshot_template_backup.png["ボリュームのバックアップ機能
 
 
 
-=== データセンス機能をボリュームに追加します
+=== BlueXPの分類機能をボリュームに追加します
 
-ボリュームテンプレートを作成するときに、を使用してボリュームのコンプライアンスと分類をスキャンするテンプレートにを追加できます https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["クラウドデータの意味"^] サービス
+ボリュームテンプレートを作成するときに、を使用してボリュームのコンプライアンスと分類をスキャンするテンプレートにを追加できます https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXPの分類"^] サービス
 
 image:screenshot_template_data_sense.png["ボリュームのスキャン機能を有効にするページのスクリーンショット。"]
 
@@ -649,25 +649,25 @@ image:screenshot_template_data_sense.png["ボリュームのスキャン機能�
 
 
 
-=== ボリュームにレプリケーション機能を追加します
+=== BlueXPレプリケーション機能をボリュームに追加します
 
-ボリュームテンプレートを作成するときに、を使用してボリューム内のデータを別のボリュームにレプリケートするテンプレートにを追加できます https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["レプリケーション"^] サービスデータは、 Cloud Volumes ONTAP クラスタまたはオンプレミスの ONTAP クラスタにレプリケートできます。
+ボリュームテンプレートを作成するときに、を使用してボリューム内のデータを別のボリュームにレプリケートするテンプレートにを追加できます https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["BlueXPレプリケーション"^] サービスデータは、 Cloud Volumes ONTAP クラスタまたはオンプレミスの ONTAP クラスタにレプリケートできます。
 
 
 TIP: この操作は Azure NetApp Files ボリュームには適用されません。
 
-レプリケーション機能は、ソースボリュームの選択、デスティネーションボリュームの選択、レプリケーション設定の定義の 3 つの部分で構成されます。各セクションについて以下で説明します。
+BlueXPレプリケーション機能は、ソースボリュームの選択、デスティネーションボリュームの選択、レプリケーション設定の定義の3つの部分で構成されます。各セクションについて以下で説明します。
 
 . * ソースの詳細 * ：レプリケートするソースボリュームの詳細を入力します。
 +
-image:screenshot_template_replication_source.png["レプリケーションソースボリュームの場所を定義するページのスクリーンショット。"]
+image:screenshot_template_replication_source.png["BlueXPレプリケーションのソースボリュームの場所を定義するページのスクリーンショット。"]
 
 +
 .. デフォルトでは、作業環境、 Storage VM 、およびボリュームについて、最初の 3 つの変数が入力されます。これは、同じテンプレートで以前に作成したボリュームをレプリケートすることを示します。これが必要な場合は、すべて設定されています。
 +
 別のボリュームをレプリケートする場合は、それらの詳細を手動で入力できます。方法を参照してください link:reference-template-building-blocks.html#pass-values-between-template-actions["[ コンテキスト（ Context ） ] フィールドに入力する"] をクリックして、別のボリュームを指定します。
 
-.. レプリケーションを実行するには、ソースとデスティネーションの作業環境がそれぞれのクラスタ間 LIF を介して接続されている必要があります。ソース作業環境のクラスタ間 LIF の IP アドレスを入力します。
+.. BlueXPレプリケーションを使用するには、ソースとデスティネーションの作業環境がそれぞれのクラスタ間LIFを介して接続されている必要があります。ソース作業環境のクラスタ間 LIF の IP アドレスを入力します。
 +
 この情報を取得するには、作業環境をダブルクリックし、メニューアイコンをクリックして、 [ 情報 ] をクリックします。
 
@@ -675,7 +675,7 @@ image:screenshot_template_replication_source.png["レプリケーションソー
 
 . * デスティネーションの詳細 * ：レプリケーション処理によって作成されるデスティネーションボリュームの詳細を入力します。
 +
-image:screenshot_template_replication_dest.png["レプリケーションのデスティネーションボリュームの場所を定義するページのスクリーンショット。"]
+image:screenshot_template_replication_dest.png["BlueXPレプリケーションのデスティネーションボリュームの場所を定義するページのスクリーンショット。"]
 
 +
 .. ボリュームを作成する作業環境を選択します。
@@ -683,14 +683,14 @@ image:screenshot_template_replication_dest.png["レプリケーションのデ�
 .. ボリュームを（オンプレミスの ONTAP クラスタではなく） Cloud Volumes ONTAP クラスタにレプリケートする場合は、デスティネーションプロバイダ（ AWS 、 Azure 、 GCP ）を指定する必要があります。
 .. ボリュームを Cloud Volumes ONTAP クラスタにレプリケートするときに、デスティネーションボリュームでボリューム階層化が有効になっているかどうかを指定することができます。
 .. デスティネーションボリューム名について、フィールドをクリックし、 5 つのオプションのいずれかを選択します。任意の名前を入力するには、 * Free Text * を選択します。ボリューム名に特定のプレフィックスまたはサフィックスを付けるか、 _contains_certain 文字を指定するか、または入力した正規表現（ regex ）のルールに従うように指定することもできます。
-.. レプリケーションを実行するには、ソースとデスティネーションの作業環境がそれぞれのクラスタ間 LIF を介して接続されている必要があります。デスティネーション作業環境のクラスタ間 LIF の IP アドレスを入力します。
+.. BlueXPレプリケーションを使用するには、ソースとデスティネーションの作業環境がそれぞれのクラスタ間LIFを介して接続されている必要があります。デスティネーション作業環境のクラスタ間 LIF の IP アドレスを入力します。
 .. ボリュームを配置するアグリゲートを選択します。
 .. ボリュームを（オンプレミスの ONTAP クラスタではなく） Cloud Volumes ONTAP クラスタにレプリケートする場合は、新しいボリュームに使用するディスクのタイプを指定する必要があります。
 
 
 . * レプリケーションの詳細 * ：レプリケーション操作のタイプと頻度に関する詳細を入力します。
 +
-image:screenshot_template_replication_policy.png["関係のレプリケーション設定を定義するページのスクリーンショット。"]
+image:screenshot_template_replication_policy.png["関係のBlueXPレプリケーション設定を定義するページのスクリーンショット。"]
 
 +
 .. を選択します https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication-policies.html#types-of-replication-policies["レプリケーションポリシー"^] を使用します。

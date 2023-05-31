@@ -49,9 +49,9 @@ BlueXPの修正プログラムには、次の機能とメリットがありま�
 
 * サービスアクション： *
 
-* アクティブ化します https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["BlueXPのバックアップとリカバリ"^] ボリューム（ Azure NetApp Files には該当しません）
-* アクティブ化します https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXPの分類"^] ボリューム
-* アクティブ化します https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["BlueXPレプリケーション"^] ボリューム（ Azure NetApp Files には該当しません）
+* アクティブ化します https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["BlueXPのバックアップとリカバリ"^] ボリューム（ Azure NetApp Files には該当しません）
+* アクティブ化します https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類"^] ボリューム
+* アクティブ化します https://docs.netapp.com/us-en/bluexp-replication/concept-replication.html["BlueXPレプリケーション"^] ボリューム（ Azure NetApp Files には該当しません）
 
 
 たとえば、 Cloud Volumes ONTAP ボリュームを作成するテンプレートを作成できます。または、Cloud Volumes ONTAP ボリュームが作成され、そのボリュームでBlueXPのバックアップとリカバリが有効になります。これでCloud Volumes ONTAP ボリュームが作成され、そのボリュームでBlueXPのバックアップとrecovery_and_BlueXP分類が有効になります。

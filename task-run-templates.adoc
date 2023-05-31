@@ -14,7 +14,7 @@ summary: 組織が構築したアプリケーションテンプレートの中�
 
 
 [role="lead"]
-組織が構築したアプリケーションテンプレートの中から 1 つ選択して、特定のワークロードとアプリケーションに最適化された作業環境またはボリュームを作成します。また、テンプレートを使用してアクティブ化することもできます https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["BlueXPのバックアップとリカバリ"^]、 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXPの分類"^]および https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["BlueXPレプリケーション"^] をクリックします。
+組織が構築したアプリケーションテンプレートの中から 1 つ選択して、特定のワークロードとアプリケーションに最適化された作業環境またはボリュームを作成します。また、テンプレートを使用してアクティブ化することもできます https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["BlueXPのバックアップとリカバリ"^]、 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類"^]および https://docs.netapp.com/us-en/bluexp-replication/concept-replication.html["BlueXPレプリケーション"^] をクリックします。
 
 テンプレートを使用すると、 Cloud Volumes ONTAP 、 Azure NetApp Files 、およびオンプレミスの ONTAP システム用のボリュームを作成できます。
 
@@ -30,7 +30,7 @@ summary: 組織が構築したアプリケーションテンプレートの中�
 
 
 [role="quick-margin-list"]
-* テンプレートが、などのボリュームのクラウドサービスをアクティブにした場合 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["BlueXPのバックアップとリカバリ"^] または https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXPの分類"^]をクリックして、ご使用の環境でサービスがアクティブでライセンスされていることを確認してください。
+* テンプレートが、などのボリュームのクラウドサービスをアクティブにした場合 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["BlueXPのバックアップとリカバリ"^] または https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類"^]をクリックして、ご使用の環境でサービスがアクティブでライセンスされていることを確認してください。
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] Application Templates サービスを起動します
@@ -47,11 +47,11 @@ summary: 組織が構築したアプリケーションテンプレートの中�
 
 以下の要件を読み、サポートされている構成になっていることを確認してください。
 
-* コネクタがない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクターの作成方法を参照してください"^] AWS 、 Azure 、 GCP 向け。
+* コネクタがない場合は、 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["コネクターの作成方法を参照してください"^] AWS 、 Azure 、 GCP 向け。
 * Cloud Volumes ONTAP ボリュームを作成するときは、 Cloud Volumes ONTAP の作業環境が利用可能であることを確認してください。
 * オンプレミスの ONTAP ボリュームを作成する場合は、オンプレミスの ONTAP 作業環境が利用可能であることを確認します。
 * Azure NetApp Files ボリュームを作成するときは、 Azure NetApp Files の作業環境が利用可能であることを確認してください。
-* テンプレートが、などのボリュームのクラウドサービスをアクティブにした場合  https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html["BlueXPのバックアップとリカバリ"^]、 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["BlueXPの分類"^]または https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html["BlueXPレプリケーション"^]をクリックして、ご使用の環境でサービスがアクティブでライセンスされていることを確認してください。
+* テンプレートが、などのボリュームのクラウドサービスをアクティブにした場合  https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["BlueXPのバックアップとリカバリ"^]、 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXPの分類"^]または https://docs.netapp.com/us-en/bluexp-replication/concept-replication.html["BlueXPレプリケーション"^]をクリックして、ご使用の環境でサービスがアクティブでライセンスされていることを確認してください。
 
 
 
@@ -66,9 +66,9 @@ summary: 組織が構築したアプリケーションテンプレートの中�
 
 どの方法を選択する場合でも、定義する必要があるボリュームの必須パラメータに関する詳細を以下のセクションで確認できます。
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html#create-a-volume-from-a-template["Cloud Volumes ONTAP ボリュームをプロビジョニングする方法"^]
-* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-create-volumes.html#create-volumes-from-templates["Azure NetApp Files ボリュームをプロビジョニングする方法"^]
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-manage-ontap-connector.html#create-volumes-from-templates["オンプレミスの ONTAP ボリュームをプロビジョニングする方法"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-create-volumes.html#create-a-volume-from-a-template["Cloud Volumes ONTAP ボリュームをプロビジョニングする方法"^]
+* https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-volumes.html#create-volumes-from-templates["Azure NetApp Files ボリュームをプロビジョニングする方法"^]
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-manage-ontap-connector.html#create-volumes-from-templates["オンプレミスの ONTAP ボリュームをプロビジョニングする方法"^]
 
 
 
@@ -131,7 +131,7 @@ image:screenshot_run_template_from_dashboard.png["テンプレートからボリ
 
 この機能用のテンプレートを作成している場合は、 _ テンプレートダッシュボード _ から新しい作業環境を作成できます。
 
-作業環境の作成に必要な詳細については、を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["AWS での Cloud Volumes ONTAP の起動"^]。
+作業環境の作成に必要な詳細については、を参照してください https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html["AWS での Cloud Volumes ONTAP の起動"^]。
 
 .手順
 . [*正常性]>[修正]を選択し、[*テンプレート*]タブをクリックします。

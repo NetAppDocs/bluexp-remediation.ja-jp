@@ -47,50 +47,6 @@ sidebar:
       url: "/task-get-help.html"
   - title: 法的通知
     url: "/legal-notices.html"
-homepage:
-  tiles:
-  - title: はじめに
-    links:
-    - title: BlueXPの修正プログラムについて説明します
-      url: concept-resource-templates.html
-    - title: タグ付けの詳細はこちら
-      url: concept-tagging.html
-    - title: 新機能
-      url: whats-new.html
-  - title: テンプレートを作成します
-    links:
-    - title: Cloud Volumes ONTAP 作業環境
-      url: task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-working-environment
-    - title: Cloud Volumes ONTAP ボリューム
-      url: task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-volume
-    - title: Azure NetApp Files ボリューム
-      url: task-define-templates.html#create-a-template-for-an-azure-netapp-files-volume
-    - title: オンプレミスの ONTAP ボリューム
-      url: task-define-templates.html#create-a-template-for-an-on-premises-ontap-volume
-    - title: バックアップ、分類、またはレプリケーション機能をボリュームに追加します
-      url: task-define-templates.html#examples-of-enabling-services-using-templates
-  - title: テンプレートを使用してリソースを作成する
-    links:
-    - title: Cloud Volumes ONTAP 作業環境
-      url: task-run-templates.html#select-and-run-a-working-environment-template
-    - title: CVO 、オンプレミス、 ANF のボリューム
-      url: task-run-templates.html#select-and-run-a-volume-template
-  - title: テンプレートとタグを使用してリソースを管理します
-    links:
-    - title: テンプレートへの準拠（ドリフト）のためのリソースの確認
-      url: task-check-template-compliance.html
-    - title: 既存のリソースを検出するテンプレートを実行します
-      url: task-run-templates.html#select-and-run-a-template-that-finds-existing-resources
-    - title: リソースのタグを管理します
-      url: task-using-tags.html
-  - title: ブログコミュニティ
-    links:
-    - title: ネットアップコミュニティ
-      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
-    - title: BlueXPブログ
-      url: https://bluexp.netapp.com/blog
-    - title: クラウドに関する Web セミナー
-      url: https://bluexp.netapp.com/events
 product-family:
   name: BlueXP
   repo: bluexp-family

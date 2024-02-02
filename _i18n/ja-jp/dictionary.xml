@@ -530,20 +530,6 @@
   <block id="4a37630008b707a26bac4e9b9d2d91bc" category="sidebar">タグを使用してリソースを整理します</block>
   <block id="0460583622f03a52d7693094d6fa2452" category="sidebar">概念</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
-  <block id="35f98b47133ad8954f63b25aef2dad3a" category="sidebar">タグ付けの詳細はこちら</block>
-  <block id="12b8ed36a576a6d4769c8d350b438a8a" category="sidebar">テンプレートを作成します</block>
-  <block id="59cccee54a9c1422dca33d7662d37b76" category="sidebar">Cloud Volumes ONTAP 作業環境</block>
-  <block id="f829fef4575b38109cd246bafbd6718e" category="sidebar">Cloud Volumes ONTAP ボリューム</block>
-  <block id="217aec976bd66d37571f1fe0e44a4e77" category="sidebar">Azure NetApp Files ボリューム</block>
-  <block id="21dc3aafb4a3e393dccd900e9ba42118" category="sidebar">オンプレミスの ONTAP ボリューム</block>
-  <block id="c8ca3079f96c0e324b876d7055a67c46" category="sidebar">テンプレートを使用してリソースを作成する</block>
-  <block id="70deba7f047a2bcc0d20e5ef94a2abf8" category="sidebar">CVO 、オンプレミス、 ANF のボリューム</block>
-  <block id="f8de1ec8d7766950989e3205a63d91d9" category="sidebar">テンプレートとタグを使用してリソースを管理します</block>
-  <block id="e85920abe34a4184988f078bd1e73279" category="sidebar">テンプレートへの準拠（ドリフト）のためのリソースの確認</block>
-  <block id="441c6d31d8063270a27b242c68cc0e6e" category="sidebar">既存のリソースを検出するテンプレートを実行します</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログコミュニティ</block>
-  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">ネットアップコミュニティ</block>
-  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">クラウドに関する Web セミナー</block>
   <block id="983a4e7f5913304ec713a249baf7be47" category="section-title">2022 年 3 月 3 日</block>
   <block id="17fc50243c5a80f407e83d268bcab18e" category="section-title">2022 年 2 月 9 日</block>
   <block id="784044bd2af30d58bbb0dbcea3adbad6" category="section-title">2021 年 10 月 31 日</block>
@@ -558,7 +544,6 @@
   <block id="ad47acd6a839d467d8e7d8cc0ab575bb" category="list-text">詳細領域では、ボリューム名、ボリュームサイズの範囲、およびボリュームに割り当てられているタグを選択できます。</block>
   <block id="75aa65993e3f52840fc5b343dbb63651" category="paragraph">タグの場合、特定のタグキー / 値ペアを含むボリュームのみが結果に表示されるように、検索をさらに絞り込むことができます。</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです</block>
-  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">ネットアップは、サポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用しています。</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">ログインページで、ネットアップサポートサイトの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">著作権に関する声明、商標、特許などにアクセスできます。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">著作権</block>
@@ -574,7 +559,6 @@
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">コミュニティ</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">ドキュメント</block>
-  <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto ： ng-cloudmanager-feedback@netapp.com [ フィードバックメール ]</block>
   <block id="214a61ce436e46b661501acdeee5221c" category="paragraph">この時点で、ドリフトはリソース内の変更されたパラメータを識別します。リソースを手動で調整して、テンプレートに準拠させる必要があります。将来的には、リソースがコンプライアンス違反になったときに通知を送信したり、テンプレートから作成されたすべてのリソースが自動的にコンプライアンスに戻されるようにユーザーの変更を元に戻したりすることができます。</block>
   <block id="5bd5bf968b8be74cc15838b062223bc7" category="paragraph">この時点で、リソースをテンプレートに合わせて戻すために、手動で調整を行う必要があります。 <block ref="070f7b254d8faecc6fc5a699202bdab9" category="inline-link-macro-rx"></block>。</block>
   <block id="cfd52dcb30bb7d2ea88bc2c66e2ccc0f" category="summary">BlueXPを使用すると'タグを_existing_resourcesに適用して'これらのリソースの編成と管理を容易にすることができますタグは、リソースをグループ化してアプリケーション、環境、リージョン、課金コード、クラウドプロバイダを識別するために使用できるメタデータです。 その他。</block>
@@ -621,7 +605,6 @@
   <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">BlueXPナレッジベースで問題のトラブルシューティングに役立つ記事を検索します。</block>
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">BlueXPコミュニティに参加して、進行中のディスカッションをフォローしたり、新しいディスカッションを作成したりできます。</block>
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">現在表示しているBlueXPのマニュアル。</block>
-  <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">お客様のご意見をお考えください。フィードバックを送信して、BlueXPの改善に役立ててください。</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">上記のセルフサポートオプションに加え、サポートを有効にしたあとで問題が発生した場合は、ネットアップサポートの担当者と相談して解決できます。</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*Service*:問題 が関連付けられているサービスを選択します。たとえば、サービス内のワークフローまたは機能を備えたテクニカルサポート問題 に固有のBlueXPなどです。</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*作業環境*：ストレージに該当する場合は、* Cloud Volumes ONTAP *または*オンプレミス*を選択し、関連する作業環境を選択します。</block>
@@ -644,8 +627,6 @@
   <block id="6d28d54ad9c4f6685bb752801088510b" category="summary">BlueXP Taggingサービスを使用すると、既存のリソースに割り当てられているタグを表示、追加、変更、および削除できます。これにより、リソースの管理を整理して簡単に行うことができます。</block>
   <block id="10b56653c6ddbf81d7d4419364238254" category="list-text">[* Health]&gt;[Remediation *]を選択し、[* Tags]タブをクリックします。</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">BlueXPに関する注意事項</block>
-  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXPブログ</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">BlueXPのすべてのマニュアル</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">1つ</block>
   <block id="a915908264892de9209e8f5f402e6e50" category="list-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 必要な前提条件を確認する</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">2 つ</block>
@@ -701,7 +682,6 @@
   <block id="e7ec4c4152826f2deedfea467894a855" category="paragraph"><block ref="e7ec4c4152826f2deedfea467894a855" category="inline-image-macro-rx" type="image"></block></block>
   <block id="af859a8aacc30e0bb1648f64ed76f23d" category="section-title">BlueXPレプリケーションの健全性の詳細がドリフトレポートに表示されます</block>
   <block id="dccc80768bfca83f2c18a964a2ada6e0" category="inline-link-macro">テンプレートを使用したボリュームでのBlueXPレプリケーションの有効化</block>
-  <block id="ff1a821ec32f5470f851de8ef3edd6a9" category="summary">BlueXP修正サービス（AppTemplate）を使用すると、BlueXP作業環境向けに標準的なリソース作成を行うことができます。</block>
   <block id="510f57bbfca743348ff245cb08dc02e3" category="doc">BlueXPの問題解決に関するドキュメント</block>
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
   <block id="2603b912f5fde0329947b49c922b5a4d" category="summary">組織が構築したアプリケーションテンプレートの中から 1 つ選択して、特定のワークロードとアプリケーションに最適化された作業環境またはボリュームを作成します。テンプレートを使用して、ボリュームまたは既存のボリュームでBlueXPのバックアップとリカバリ、BlueXPの分類、BlueXPのレプリケーション（SnapMirror）をアクティブ化することもできます。</block>
@@ -757,8 +737,6 @@
   <block id="73d5b5afc4a2cdcc8daaa40ba4ef5910" category="list-text"><block ref="73d5b5afc4a2cdcc8daaa40ba4ef5910" category="inline-link-macro-rx"></block></block>
   <block id="c60b09ae2c96c9e21869de6d6df59453" category="sidebar">BlueXPの修正ドキュメント</block>
   <block id="89bd41d8bc97392a23a93ae863b454bb" category="sidebar">BlueXPの修復機能を使用</block>
-  <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">新機能</block>
-  <block id="bdada2beda611e5479ba79eddd7f3b9f" category="sidebar">バックアップ、分類、またはレプリケーション機能をボリュームに追加します</block>
   <block id="3c66700164b4cb085d6e086bf6b7d73b" category="paragraph">いつ <block ref="438903b5e6182d9d4cc41396268e5cbc" category="inline-link-macro-rx"></block>では、 ［ レプリケーションの正常性監視を有効にする ］ フィールドでドリフトを有効にすることにより、ドリフトレポートに詳細なレプリケーション情報を表示できます。ドリフトレポートを有効にすると、BlueXPレプリケーション関係の健常性が正常かどうか（ドリフト）、およびSnapMirrorの遅延時間、ステータス、前回の転送時間が表示されます。</block>
   <block id="8abfe8e6c06581937c37ec49be54c6d7" category="list-text">遅延時間、ステータス、および前回の転送時間に加えて、 SnapMirror 関係のレプリケーションの健常性もドリフトレポートに含める場合は、レプリケーションの健常性ステータスの監視を有効にします。 <block ref="1eb00ed04881df5d17ae6b01acb7f8fb" category="inline-link-macro-rx"></block>。</block>
   <block id="8b6065ebfe1dc5ad36b1f573c520ca7b" category="list-text">アクティブ化します<block ref="238f65d8124d9fce2c3e9e1c7b70b0d8" category="inline-link-rx"></block> ボリューム（ Azure NetApp Files には該当しません）</block>
@@ -857,4 +835,6 @@
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">クラウドプロバイダのファイルサービスのサポート</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">クラウドプロバイダのファイルサービスとそのインフラ、またはサービスを使用する解決策に関連するテクニカルサポートについては、該当する製品のBlueXPドキュメントの「困ったときは」を参照してください。</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">BlueXPおよびそのストレージソリューションとサービスに固有のテクニカルサポートを受けるには、以下に記載されているサポートオプションを使用してください。</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetAppでは、サポートとライセンスに固有の認証サービスのIDプロバイダとしてMicrosoftエントラIDを使用します。</block>
+  <block id="5010faf2ce0072bc73496fec6f09f024" category="summary">BlueXP修正サービスは、BlueXP作業環境向けに標準化されたリソース作成を可能にします。</block>
 </blocks>

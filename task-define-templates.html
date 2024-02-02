@@ -1,0 +1,2382 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head class="at-element-marker">
+  <title>組織のアプリケーションテンプレートを作成します | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="組織のアプリケーションテンプレートを作成します | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/ja-jp/bluexp-remediation/task-define-templates.html" />
+	<meta property="og:description" content="ネットアップが提供する「アクション」を 1 つ以上選択し、組織がリソース作成の最適化を開始するために使用できるアプリケーションテンプレートを迅速に構築します。" />
+  <meta property="og:image" content="https://docs.netapp.com/ja-jp/bluexp-remediation/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="ネットアップが提供する「アクション」を 1 つ以上選択し、組織がリソース作成の最適化を開始するために使用できるアプリケーションテンプレートを迅速に構築します。">
+  <meta name="keywords" content=" templates, resource templates, services templates, volume templates, cvo working environment template, find volumes"><!-- Icons -->
+  <link rel="icon" href="/ja-jp/bluexp-remediation/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/ja-jp/bluexp-remediation/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/ja-jp/bluexp-remediation/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/ja-jp/bluexp-remediation/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/ja-jp/bluexp-remediation/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/ja-jp/bluexp-remediation/task-define-templates.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-remediation/task-define-templates.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-remediation/task-define-templates.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-remediation/task-define-templates.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-remediation/task-define-templates.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-remediation/task-define-templates.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-remediation/task-define-templates.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-remediation/task-define-templates.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-remediation/task-define-templates.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ja-jp/bluexp-remediation/js/na-search.js'></script><script src='/ja-jp/bluexp-remediation/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/ja-jp/bluexp-remediation/js/custom-dropdown.js'></script>
+  <script src='/ja-jp/bluexp-remediation/js/FileSaver.min.js'></script>
+  <script src='/ja-jp/bluexp-remediation/js/jszip-utils.min.js'></script>
+  <script src='/ja-jp/bluexp-remediation/js/jszip.min.js'></script><script src='/ja-jp/bluexp-remediation/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/ja-jp/bluexp-remediation/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/ja/">
+                <image id="ie-header-logo" src="/ja-jp/bluexp-remediation/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/ja/support-and-training/documentation/">ドキュメント</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/ja-jp/bluexp-remediation/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">日本語</span>
+                    <img src="/ja-jp/bluexp-remediation/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/ja-jp/bluexp-remediation/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-remediation/task-define-templates.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-remediation/task-define-templates.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-remediation/task-define-templates.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-remediation/task-define-templates.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-remediation/task-define-templates.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-remediation/task-define-templates.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-remediation/task-define-templates.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-remediation/task-define-templates.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-remediation/task-define-templates.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/ja-jp/bluexp-remediation/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">すべてのNetApp</span>
+                    <img src="/ja-jp/bluexp-remediation/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/ja-jp/bluexp-remediation/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/ja/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">サポート</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb-ja.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">ナレッジ ベース</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">トレーニング</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/ja-jp/bluexp-remediation/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/ja-jp/bluexp-remediation/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">すべてのドキュメント</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">クラウド ドキュメント</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/ja-jp/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/ja-jp/bluexp-remediation/">-->
+      BlueXP remediation
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/ja-jp/bluexp-remediation/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/ja-jp/bluexp-remediation/search.html" 
+        data-type="widget"
+        data-placeholder="ドキュメントを検索"
+        data-no-results-found="{query}に一致する結果は見つかりませんでした"
+        data-did-you-mean="{suggestion}で検索しています。"
+        data-no-results-found-did-you-mean="{query}に一致する結果は見つかりませんでした。{suggestion}で検索しますか？"
+        data-results-found="{hitCount}件の結果が見つかりました"
+        data-error-message="エラーが発生しました。もう一度お試しください。"
+        data-error-reset="検索をリセット"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXPの修正ドキュメント"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-define-templates.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ja-jp/bluexp-remediation/index.html">
+        BlueXPの修正ドキュメント
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="リリースノート"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-define-templates.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ja-jp/bluexp-remediation/whats-new.html">
+        リリースノート
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="はじめに"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-define-templates.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-remediation/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-remediation/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> はじめに</div>-->
+         はじめに
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXPの修正プログラムについて説明します"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-define-templates.html" 
+      dale-entry-url="/concept-resource-templates.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/bluexp-remediation/concept-resource-templates.html">
+        BlueXPの修正プログラムについて説明します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="タグ付けの詳細をご覧ください"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-define-templates.html" 
+      dale-entry-url="/concept-tagging.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/bluexp-remediation/concept-tagging.html">
+        タグ付けの詳細をご覧ください
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXPの修復機能を使用"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-define-templates.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-remediation/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-remediation/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> BlueXPの修復機能を使用</div>-->
+         BlueXPの修復機能を使用
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="テンプレートを使用して、リソース作成を標準化します"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-define-templates.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-remediation/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-remediation/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> テンプレートを使用して、リソース作成を標準化します</div>-->
+         テンプレートを使用して、リソース作成を標準化します
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="組織のテンプレートを作成します"
+      data-li-level="3#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/task-define-templates.html" 
+      dale-entry-url="/task-define-templates.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-remediation/task-define-templates.html">
+        組織のテンプレートを作成します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="テンプレートのコンプライアンスについては、リソースを確認してください"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-define-templates.html" 
+      dale-entry-url="/task-check-template-compliance.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-remediation/task-check-template-compliance.html">
+        テンプレートのコンプライアンスについては、リソースを確認してください
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="テンプレートを実行してリソースを作成する"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-define-templates.html" 
+      dale-entry-url="/task-run-templates.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-remediation/task-run-templates.html">
+        テンプレートを実行してリソースを作成する
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="タグを使用してリソースを整理します"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-define-templates.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-remediation/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-remediation/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> タグを使用してリソースを整理します</div>-->
+         タグを使用してリソースを整理します
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="リソースのタグを管理します"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-define-templates.html" 
+      dale-entry-url="/task-using-tags.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/ja-jp/bluexp-remediation/task-using-tags.html">
+        リソースのタグを管理します
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="概念"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-define-templates.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-remediation/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-remediation/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 概念</div>-->
+         概念
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="テンプレートのビルディングブロック"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-define-templates.html" 
+      dale-entry-url="/reference-template-building-blocks.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/bluexp-remediation/reference-template-building-blocks.html">
+        テンプレートのビルディングブロック
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="知識とサポート"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-define-templates.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/ja-jp/bluexp-remediation/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/ja-jp/bluexp-remediation/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 知識とサポート</div>-->
+         知識とサポート
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="サポートに登録します"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-define-templates.html" 
+      dale-entry-url="/task-support-registration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/bluexp-remediation/task-support-registration.html">
+        サポートに登録します
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ヘルプを表示します"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-define-templates.html" 
+      dale-entry-url="/task-get-help.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/ja-jp/bluexp-remediation/task-get-help.html">
+        ヘルプを表示します
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="法的通知"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-define-templates.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/ja-jp/bluexp-remediation/legal-notices.html">
+        法的通知
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/ja-jp/bluexp-remediation"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/ja-jp/bluexp-remediation"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/ja-jp/bluexp-remediation/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 日本語は機械翻訳による参考訳です。内容に矛盾や不一致があった場合には、英語の内容が優先されます。 </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">組織のアプリケーションテンプレートを作成します</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2023-05-31 15:20:14 +0000">05/31/2023</time>
+        
+    
+    
+        <span>共同作成者
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/ja-jp/bluexp-remediation/images/discuss-sm.svg" alt="" class="github-icon" />変更を提案</span>
+        <img src="/ja-jp/bluexp-remediation/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/ja-jp/bluexp-remediation/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-remediation.ja-jp/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/ja-jp/bluexp-remediation/task-define-templates.html&page-title=組織のアプリケーションテンプレートを作成します" class="page-nav-contribute-link" role="button">ドキュメントの変更をリクエスト</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-remediation/blob/main/task-define-templates.adoc" class="page-nav-contribute-link" role="button">このページを編集</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >フィードバックを送るには</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/ja-jp/bluexp-remediation/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/ja-jp/bluexp-remediation/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/ja-jp/bluexp-remediation/pdfs/fullsite-sidebar/BlueXPの問題解決に関するドキュメント.pdf" >
+                    <img src="/ja-jp/bluexp-remediation/images/pdf-icon.png" alt="" width="16" height="16"/>このドキュメント ページのPDF</a>
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-remediation/pdfs/sidebar/はじめに.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-remediation/images/pdf-icon.png" alt="" width="16" height="16"/>
+            はじめに
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-remediation/pdfs/sidebar/BlueXPの修復機能を使用.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-remediation/images/pdf-icon.png" alt="" width="16" height="16"/>
+            BlueXPの修復機能を使用
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-remediation/pdfs/sidebar/テンプレートを使用して_リソース作成を標準化します.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-remediation/images/pdf-icon.png" alt="" width="16" height="16"/>
+            テンプレートを使用して、リソース作成を標準化します
+          </a>
+          
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-remediation/pdfs/sidebar/タグを使用してリソースを整理します.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-remediation/images/pdf-icon.png" alt="" width="16" height="16"/>
+            タグを使用してリソースを整理します
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-remediation/pdfs/sidebar/概念.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-remediation/images/pdf-icon.png" alt="" width="16" height="16"/>
+            概念
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/ja-jp/bluexp-remediation/pdfs/sidebar/知識とサポート.pdf" 
+            
+          >
+            <img src="/ja-jp/bluexp-remediation/images/pdf-icon.png" alt="" width="16" height="16"/>
+            知識とサポート
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/ja-jp/bluexp-remediation/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>PDF版ドキュメントのセット<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>ネットアップが提供する「アクション」を 1 つ以上選択し、組織がリソース作成の最適化を開始するために使用できるアプリケーションテンプレートを迅速に構築します。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="クイックスタート">クイックスタート</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。</p>
+</div>
+<div class="ulist quick-margin-list">
+<div class="title"><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png" alt="1つ"></span> 必要な前提条件を確認する</div>
+<ul>
+<li>
+<p>ユーザがテンプレートを使用して Cloud Volumes ONTAP 、オンプレミス ONTAP 、または Azure NetApp Files システム用のボリュームを作成する前に、ボリュームを導入する適切な作業環境にアクセスできることを確認してください。</p>
+</li>
+</ul>
+</div>
+<div class="ulist quick-margin-list">
+<ul>
+<li>
+<p>クラウドサービス「 action 」をテンプレートに追加する場合（など） <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html" target="_blank" rel="noopener">"BlueXPのバックアップとリカバリ"</a> または <a href="https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html" target="_blank" rel="noopener">"BlueXPの分類"</a>をクリックして、ご使用の環境でサービスがアクティブでライセンスされていることを確認してください。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph quick-margin-para">
+<div class="title"><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png" alt="2 つ"></span> Application Templates サービスを起動します</div>
+<p>[<strong>正常性]&gt;[修正]を選択し、[*エディタ</strong>]タブをクリックして、テンプレートで使用するアクションを選択します。</p>
+</div>
+<div class="paragraph quick-margin-para">
+<div class="title"><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png" alt="3つ"></span> 「アクション」を選択し、パラメーターを定義して、テンプレートを作成します</div>
+<p>作成手順に従い、テンプレートによって実行されるアクションを定義します。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="要件">要件</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>以下の要件を読み、サポートされている構成になっていることを確認してください。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>コネクタがない場合は、 <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html" target="_blank" rel="noopener">"コネクターの作成方法を参照してください"</a> AWS 、 Azure 、 GCP 向け。</p>
+</li>
+<li>
+<p>Cloud Volumes ONTAP ボリュームテンプレートを作成する際には、 Cloud Volumes ONTAP 作業環境がユーザに利用できることを確認してください。で Cloud Volumes ONTAP システムを起動する方法を参照してください <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws.html" target="_blank" rel="noopener">"AWS"</a>、 <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-azure.html" target="_blank" rel="noopener">"Azure"</a>または、のいずれかです <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-gcp.html" target="_blank" rel="noopener">"GCP"</a>。</p>
+</li>
+<li>
+<p>オンプレミスの ONTAP ボリュームテンプレートを作成する場合は、オンプレミスの ONTAP 作業環境がユーザに利用できることを確認します。方法を参照してください <a href="https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html" target="_blank" rel="noopener">"オンプレミスの ONTAP システムを検出"</a> BlueXPでは、</p>
+</li>
+<li>
+<p>Azure NetApp Files ボリュームテンプレートを作成する際には、 Azure NetApp Files の作業環境がユーザに割り当てられていることを確認します。方法を参照してください <a href="https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html" target="_blank" rel="noopener">"Azure NetApp Files 作業環境を作成します"</a> BlueXPでは、</p>
+</li>
+<li>
+<p>BlueXPのバックアップとリカバリを使用してテンプレート内のボリュームをバックアップする場合は、環境でBlueXPのバックアップとリカバリをアクティブ化していることを確認してください。</p>
+</li>
+<li>
+<p>BlueXP分類を使用してテンプレート内のボリュームをスキャンする場合は、環境でBlueXP分類がアクティブ化されていることを確認してください。</p>
+</li>
+<li>
+<p>オンプレミスのONTAP ボリューム用のテンプレートでBlueXPレプリケーションを有効にする場合は、ONTAP クラスタにアクティブなSnapMirrorライセンスが必要です。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="テンプレートを使用してリソースを作成する例">テンプレートを使用してリソースを作成する例</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>リソーステンプレートを使用して、新しいボリュームや新しい Cloud Volumes ONTAP 作業環境を作成できます。</p>
+</div>
+<div class="sect2">
+<h3 id="cloud-volumes-ontap-ボリュームのテンプレートを作成します">Cloud Volumes ONTAP ボリュームのテンプレートを作成します</h3>
+<div class="paragraph">
+<p>を参照してください <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-create-volumes.html" target="_blank" rel="noopener">"Cloud Volumes ONTAP ボリュームをプロビジョニングする方法"</a> Cloud Volumes ONTAP ボリュームテンプレートで実行する必要があるすべてのパラメータの詳細については、を参照してください。</p>
+</div>
+<div class="paragraph">
+<p>この例では、「データベース用の CVO ボリューム」という名前のテンプレートを作成し、次の 2 つのアクションを含めます。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Cloud Volumes ONTAP ボリュームを作成します</p>
+<div class="paragraph">
+<p>AWS 環境のボリュームを 100GB のストレージで設定し、 Snapshot ポリシーを「 default 」に設定し、 Storage Efficiency を有効にします。</p>
+</div>
+</li>
+<li>
+<p>BlueXPのバックアップとリカバリを有効にする</p>
+<div class="paragraph">
+<p>30 個の日単位バックアップ、 13 個の週単位バックアップ、 3 個の月単位バックアップを作成します（ _3 カ月保持ポリシーを使用）。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>[<strong>正常性]&gt;[修正]を選択し、[*テンプレート</strong>]タブをクリックして、[<strong>新しいテンプレートの追加</strong>]をクリックします。</p>
+<div class="paragraph">
+<p>Select_a Template_page が表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_create_template_primary_action_cvo.png" alt="このテンプレートを使用して実行する主なアクションの選択方法を示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>作成するリソースのタイプとして * Cloud Volumes ONTAP + Backup * のボリュームを選択し、 * Get Started * をクリックします。</p>
+<div class="paragraph">
+<p>Cloud Volumes ONTAP アクション定義ページでのボリュームの作成（ _Create Volume in Action Definition_page ）が表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_create_template_define_action_cvo.png" alt="入力が必要な空の CVO テンプレートを示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>* アクション名 * ：オプションで、デフォルト値の代わりにカスタマイズされたアクション名を入力します。</p>
+</li>
+<li>
+<p>* コンテキスト： * Cloud Volumes ONTAP 作業環境コンテキストを入力します（必要な場合）。</p>
+<div class="paragraph">
+<p>ユーザが既存の作業環境からテンプレートを起動すると、この情報は自動的に入力されます。</p>
+</div>
+<div class="paragraph">
+<p>ユーザが（作業環境ではなく） Templates Dashboard からテンプレートを起動する際には、作業環境とボリュームを作成する SVM を選択する必要があります。そのため、これらのフィールドは「編集可能」としてマークされます。</p>
+</div>
+</li>
+<li>
+<p>* 詳細： * ボリュームの名前とサイズを入力します。</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">フィールド</th>
+<th class="tableblock halign-left valign-top">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ボリューム名</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">フィールド内をクリックし、 5 つのオプションのいずれかを選択します。任意の名前を入力するには、 * Free Text * を選択します。ボリューム名に特定のプレフィックスまたはサフィックスを付けるか、 _contains_certain 文字を指定するか、または入力した正規表現（ regex ）のルールに従うように指定することもできます。たとえば、「 db 」には必須のプレフィックス、サフィックス、またはに次の名前を指定できます。「 db_vol1 」、「 vol1_db 」、「 vol_db_1 」などのボリューム名を追加するようユーザに要求できます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ボリュームサイズ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">許容値の範囲を指定することも、固定サイズを指定することもできます。この値は GB 単位です。この例では、固定値 <strong>100</strong> を追加できます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">タグ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">このボリュームに関連付けるタグの名前と値のペアを入力します。たとえば、タグ名に「コストセンター」を追加し、コストセンターコード「 655829 」を値として追加できます。タグ名と値のペアをさらに追加することで、ボリュームに複数のタグを関連付けることができます。</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>* 保護： * 「 default 」またはその他のポリシーを選択して Snapshot コピーを作成するか、 Snapshot コピーを作成しない場合は「 None 」を選択します。</p>
+</li>
+<li>
+<p>* 使用プロファイル： * ネットアップの Storage Efficiency 機能をボリュームに適用するかどうかを選択します。これには、シンプロビジョニング、重複排除、圧縮が含まれます。この例では、 Storage Efficiency を有効にしておきます。</p>
+</li>
+<li>
+<p>* ディスクタイプ：クラウドストレージプロバイダとディスクタイプを選択ディスクの選択によっては、最小および最大の IOPS またはスループット（ MB/ 秒）値を選択することもできます。基本的には、特定の Quality of Service （ QoS ；サービス品質）を定義します。</p>
+</li>
+<li>
+<p>* プロトコルオプション： * NFS * または * SMB * を選択して、ボリュームのプロトコルを設定します。次に、プロトコルの詳細を指定します。</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">NFS フィールド</th>
+<th class="tableblock halign-left valign-top">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Access Control の略</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ボリュームへのアクセスにアクセス制御が必要かどうかを選択します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">エクスポートポリシー</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ボリュームにアクセスできるサブネット内のクライアントを定義するエクスポートポリシーを作成します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NFS バージョン</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ボリュームの NFS バージョンを選択します。 <em>nfsv3_or_nfsv4</em> 、またはその両方を選択できます。</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">SMB フィールド</th>
+<th class="tableblock halign-left valign-top">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">共有名</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">フィールド内をクリックし、 5 つのオプションのいずれかを選択します。任意の名前（フリーテキスト）を入力するか、共有名に特定のプレフィックスまたはサフィックスを付加する、 _contains_certain 文字を使用する、または入力した正規表現（ regex ）のルールに従うように指定できます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">権限</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ユーザとグループ（アクセス制御リストまたは ACL とも呼ばれる）の共有へのアクセスのレベルを選択します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ユーザ / グループ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ローカルまたはドメインの Windows ユーザまたはグループ、あるいは UNIX ユーザまたはグループを指定します。ドメインの Windows ユーザ名を指定する場合は、 domain\username 形式でユーザのドメインを指定する必要があります。</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>* 階層化： * ボリュームに適用する階層化ポリシーを選択します。このボリュームからオブジェクトストレージにコールドデータを階層化しない場合は、「なし」に設定します。</p>
+<div class="paragraph">
+<p>を参照してください <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html#volume-tiering-policies" target="_blank" rel="noopener">"ボリューム階層化ポリシー"</a> 概要については、およびを参照してください <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html" target="_blank" rel="noopener">"使用頻度の低いデータをオブジェクトストレージに階層化します"</a> をクリックして、環境が階層化用に設定されていることを確認してください。</p>
+</div>
+</li>
+<li>
+<p>このアクションに必要なパラメーターを定義したら、 * 適用 * をクリックする。</p>
+<div class="paragraph">
+<p>テンプレートの値が正しく入力されている場合は、 [ ボリュームを Cloud Volumes ONTAP に作成 ] ボックスに緑のチェックマークが追加されます。</p>
+</div>
+</li>
+<li>
+<p>[Enable Cloud Backup on Volume]*ボックスをクリックします。BlueXPのバックアップとリカバリの詳細を入力できるように、[_Enable Cloud Backup on Volume Action Definition_Dialog]が表示されます。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_create_template_add_action.png" alt="作成したボリュームに追加できるその他の操作を示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>3 カ月保持 * バックアップ・ポリシーを選択し、 30 個の日単位、 13 個の週単位、 3 個の月単位バックアップを作成します。</p>
+</li>
+<li>
+<p>[Working Environment] フィールドと [Volume Name] フィールドの下には、バックアップを有効にするボリュームを指定するために使用する 3 つの選択肢があります。を参照してください <a href="reference-template-building-blocks.html#pass-values-between-template-actions">"これらのフィールドの入力方法"</a>。</p>
+</li>
+<li>
+<p>[適用]*をクリックすると、BlueXPのバックアップとリカバリのダイアログが保存されます。</p>
+</li>
+<li>
+<p>左上に、データベース * （この例では）のテンプレート名 * CVO ボリュームを入力してください。</p>
+</li>
+<li>
+<p>[* 設定とドリフト * ] をクリックして、このテンプレートを他の同様のテンプレートと区別できるように、より詳細な概要を提供します。したがって、テンプレート全体のドリフトを有効にしてから、 [ * 適用 * ] をクリックします。</p>
+<div class="paragraph">
+<p>ドリフトを使用すると、BlueXPでは、このテンプレートの作成時に入力したハードコードされた値を監視できます。</p>
+</div>
+</li>
+<li>
+<p>[ テンプレートの保存 *] をクリックします。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">結果</div>
+<p>テンプレートが作成され、新しいテンプレートが表示されるテンプレートダッシュボードに戻ります。</p>
+</div>
+<div class="paragraph">
+<p>を参照してください <a href="#テンプレートの作成後の作業">テンプレートについてユーザに説明する必要がある内容</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="azure-netapp-files-ボリュームのテンプレートを作成します">Azure NetApp Files ボリュームのテンプレートを作成します</h3>
+<div class="paragraph">
+<p>Azure NetApp Files ボリュームのテンプレートは、 Cloud Volumes ONTAP ボリュームのテンプレートを作成する場合と同じ方法で作成します。</p>
+</div>
+<div class="paragraph">
+<p>を参照してください <a href="https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-volumes.html#create-volumes" target="_blank" rel="noopener">"Azure NetApp Files ボリュームをプロビジョニングする方法"</a> ANF ボリュームテンプレートで実行する必要があるすべてのパラメータの詳細については、を参照してください。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>[<strong>正常性]&gt;[修正]を選択し、[*テンプレート</strong>]タブをクリックして、[<strong>新しいテンプレートの追加</strong>]をクリックします。</p>
+<div class="paragraph">
+<p>Select_a Template_page が表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_create_template_primary_action_blank.png" alt="このテンプレートを使用して実行する主なアクションの選択方法を示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>[ 空白のテンプレート ] を選択し、 [ 開始 ] をクリックします。</p>
+</li>
+<li>
+<p>作成するリソースのタイプとして * Azure NetApp Files でボリュームを作成 * を選択し、 * 適用 * をクリックします。</p>
+<div class="paragraph">
+<p>Azure NetApp Files アクション定義ページでのボリュームの作成（ _Create Volume in Action Definition_page ）が表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_create_template_define_action_anf.png" alt="入力する必要がある空の ANF テンプレートを示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>* アクション名 * ：オプションで、デフォルト値の代わりにカスタマイズされたアクション名を入力します。</p>
+</li>
+<li>
+<p>* ボリュームの詳細： * ボリュームの名前とサイズを入力します。必要に応じて、ボリュームのタグを指定することもできます。</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">フィールド</th>
+<th class="tableblock halign-left valign-top">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ボリューム名</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">フィールド内をクリックし、 5 つのオプションのいずれかを選択します。任意の名前を入力するには、 * Free Text * を選択します。ボリューム名に特定のプレフィックスまたはサフィックスを付けるか、 _contains_certain 文字を指定するか、または入力した正規表現（ regex ）のルールに従うように指定することもできます。たとえば、「 db 」には必須のプレフィックス、サフィックス、またはに次の名前を指定できます。「 db_vol1 」、「 vol1_db 」、「 vol_db_1 」などのボリューム名を追加するようユーザに要求できます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ボリュームサイズ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">許容値の範囲を指定することも、固定サイズを指定することもできます。この値は GB 単位です。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">タグ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">このボリュームに関連付けるタグの名前と値のペアを入力します。たとえば、タグ名に「コストセンター」を追加し、コストセンターコード「 655829 」を値として追加できます。タグ名と値のペアをさらに追加することで、ボリュームに複数のタグを関連付けることができます。</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>* プロトコル：ボリュームのプロトコルを設定するには、 * nfsv3 * 、 * NFSv4.1 * 、または * smb * を選択します。次に、プロトコルの詳細を指定します。</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">NFS フィールド</th>
+<th class="tableblock halign-left valign-top">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ボリュームパス</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5 つのオプションのいずれかを選択します。管理者が任意のパスを入力できるようにするには、 * フリーテキスト * を選択するか、パス名に特定の接頭辞または接尾辞を付けるか、 _contains_certain 文字を使用するか、または入力した正規表現（ regex ）の規則に従うように指定します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">エクスポートポリシールール</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ボリュームにアクセスできるサブネット内のクライアントを定義するエクスポートポリシーを作成します。</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">SMB フィールド</th>
+<th class="tableblock halign-left valign-top">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ボリュームパス</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5 つのオプションのいずれかを選択します。管理者が任意のパスを入力できるようにするには、 * フリーテキスト * を選択するか、パス名に特定の接頭辞または接尾辞を付けるか、 _contains_certain 文字を使用するか、または入力した正規表現（ regex ）の規則に従うように指定します。</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>* コンテキスト： * Azure NetApp Files 作業環境、新規または既存の Azure NetApp Files アカウントの詳細、およびその他の詳細を入力します。</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">フィールド</th>
+<th class="tableblock halign-left valign-top">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">作業環境</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ストレージ管理者ユーザが既存の作業環境からテンプレートを起動すると、この情報は自動的に入力されます。ユーザが（作業環境ではなく） Templates Dashboard からテンプレートを起動する場合、ボリュームを作成する作業環境を選択する必要があります。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ネットアップアカウント名</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アカウントに使用する名前を入力します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Azure サブスクリプション ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Azure サブスクリプション ID を入力します。これは、「 2b04f26-7de6-42eb-9234-e2903d7s327 」のような形式のフル ID です。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">地域</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">を使用してリージョンを入力します <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.documents.locationnames?view=azure-dotnet#fields" target="_blank" rel="noopener">"内部リージョン名"</a>。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">リソースグループ名</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用するリソースグループの名前を入力します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Capacity Pool Name の略</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">既存の容量プールの名前を入力します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">サブネット</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VNet とサブネットを入力します。この値には、完全パスが含まれます。形式は「 /subscription/&lt;subscription_id&gt;/resourceGroups/&lt;resource_group&gt;/provider/Microsoft.Network/virtualNetworks/&lt;vpc_name&gt;/subnets/&lt;subhet_name&gt;" です。</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>* Snapshot コピー： * 既存のボリュームの特性を使用して新しいボリュームを作成する場合は、既存のボリューム Snapshot の Snapshot ID を入力します。</p>
+</li>
+<li>
+<p>このアクションに必要なパラメーターを定義したら、 * 適用 * をクリックする。</p>
+</li>
+<li>
+<p>テンプレートに使用する名前を左上に入力します。</p>
+</li>
+<li>
+<p>[* 設定とドリフト * ] をクリックして、このテンプレートを他の同様のテンプレートと区別できるように、より詳細な概要を提供します。したがって、テンプレート全体のドリフトを有効にしてから、 [ * 適用 * ] をクリックします。</p>
+<div class="paragraph">
+<p>ドリフトを使用すると、BlueXPでは、このテンプレートの作成時に入力したハードコードされた値を監視できます。</p>
+</div>
+</li>
+<li>
+<p>[ テンプレートの保存 *] をクリックします。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">結果</div>
+<p>テンプレートが作成され、新しいテンプレートが表示されるテンプレートダッシュボードに戻ります。</p>
+</div>
+<div class="paragraph">
+<p>を参照してください <a href="#テンプレートの作成後の作業">テンプレートについてユーザに説明する必要がある内容</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="オンプレミスの-ontap-ボリューム用のテンプレートを作成します">オンプレミスの ONTAP ボリューム用のテンプレートを作成します</h3>
+<div class="paragraph">
+<p>を参照してください <a href="https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-manage-ontap-connector.html#create-volumes" target="_blank" rel="noopener">"オンプレミスの ONTAP ボリュームをプロビジョニングする方法"</a> オンプレミスの ONTAP ボリュームテンプレートで実行する必要があるすべてのパラメータの詳細については、を参照してください。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>[<strong>正常性]&gt;[修正]を選択し、[*テンプレート</strong>]タブをクリックして、[<strong>新しいテンプレートの追加</strong>]をクリックします。</p>
+<div class="paragraph">
+<p>Select_a Template_page が表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_create_template_primary_action_blank.png" alt="このテンプレートを使用して実行する主なアクションの選択方法を示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>[ 空白のテンプレート ] を選択し、 [ 開始 ] をクリックします。</p>
+<div class="paragraph">
+<p>[ 新規アクションの追加（ <em>Add New Action</em>） ] ページが表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_create_template_primary_action_onprem.png" alt="新しいアクションの追加ページで主なアクションを選択する方法を示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>作成するリソースのタイプとして * Create Volume in On-Premises ONTAP * を選択し、 * Apply * をクリックします。</p>
+<div class="paragraph">
+<p>オンプレミスの ONTAP アクション定義ページでのボリュームの作成（ _Create Volume in On-Premises Action Definition_page ）が表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_create_template_define_action_onprem.png" alt="入力する必要がある空のオンプレミス ONTAP テンプレートを示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>* アクション名 * ：オプションで、デフォルト値の代わりにカスタマイズされたアクション名を入力します。</p>
+</li>
+<li>
+<p>* コンテキスト： * 必要に応じて、オンプレミスの ONTAP 作業環境を入力します。</p>
+<div class="paragraph">
+<p>ユーザが既存の作業環境からテンプレートを起動すると、この情報は自動的に入力されます。</p>
+</div>
+<div class="paragraph">
+<p>ユーザが（作業環境ではなく） Templates Dashboard からテンプレートを起動する際には、作業環境、 SVM 、およびボリュームを作成するアグリゲートを選択する必要があります。</p>
+</div>
+</li>
+<li>
+<p>* 詳細： * ボリュームの名前とサイズを入力します。</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">フィールド</th>
+<th class="tableblock halign-left valign-top">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ボリューム名</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">フィールド内をクリックし、 5 つのオプションのいずれかを選択します。任意の名前を入力するには、 * Free Text * を選択します。ボリューム名に特定のプレフィックスまたはサフィックスを付けるか、 _contains_certain 文字を指定するか、または入力した正規表現（ regex ）のルールに従うように指定することもできます。たとえば、「 db 」には必須のプレフィックス、サフィックス、またはに次の名前を指定できます。「 db_vol1 」、「 vol1_db 」、「 vol_db_1 」などのボリューム名を追加するようユーザに要求できます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ボリュームサイズ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">許容値の範囲を指定することも、固定サイズを指定することもできます。この値は GB 単位です。この例では、固定値 <strong>100</strong> を追加できます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">タグ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">このボリュームに関連付けるタグの名前と値のペアを入力します。たとえば、タグ名に「コストセンター」を追加し、コストセンターコード「 655829 」を値として追加できます。タグ名と値のペアをさらに追加することで、ボリュームに複数のタグを関連付けることができます。</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>* 保護： * 「 default 」またはその他のポリシーを選択して Snapshot コピーを作成するか、 Snapshot コピーを作成しない場合は「 None 」を選択します。</p>
+</li>
+<li>
+<p>* 使用プロファイル： * ネットアップの Storage Efficiency 機能をボリュームに適用するかどうかを選択します。これには、シンプロビジョニング、重複排除、圧縮が含まれます。</p>
+</li>
+<li>
+<p>* プロトコルオプション： * NFS * または * SMB * を選択して、ボリュームのプロトコルを設定します。次に、プロトコルの詳細を指定します。</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">NFS フィールド</th>
+<th class="tableblock halign-left valign-top">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Access Control の略</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ボリュームへのアクセスにアクセス制御が必要かどうかを選択します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">エクスポートポリシー</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ボリュームにアクセスできるサブネット内のクライアントを定義するエクスポートポリシーを作成します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NFS バージョン</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ボリュームの NFS バージョンを選択します。 <em>nfsv3_or_nfsv4</em> 、またはその両方を選択できます。</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">SMB フィールド</th>
+<th class="tableblock halign-left valign-top">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">共有名</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">フィールド内をクリックし、 5 つのオプションのいずれかを選択します。任意の名前（フリーテキスト）を入力するか、共有名に特定のプレフィックスまたはサフィックスを付加する、 _contains_certain 文字を使用する、または入力した正規表現（ regex ）のルールに従うように指定できます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">権限</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ユーザとグループ（アクセス制御リストまたは ACL とも呼ばれる）の共有へのアクセスのレベルを選択します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ユーザ / グループ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ローカルまたはドメインの Windows ユーザまたはグループ、あるいは UNIX ユーザまたはグループを指定します。ドメインの Windows ユーザ名を指定する場合は、 domain\username 形式でユーザのドメインを指定する必要があります。</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>このアクションに必要なパラメーターを定義したら、 * 適用 * をクリックする。</p>
+<div class="paragraph">
+<p>テンプレートの値が正しく入力されている場合は、「オンプレミスの ONTAP にボリュームを作成」ボックスに緑のチェックマークが追加されます。</p>
+</div>
+</li>
+<li>
+<p>左上にテンプレート名を入力します。</p>
+</li>
+<li>
+<p>[* 設定とドリフト * ] をクリックして、このテンプレートを他の同様のテンプレートと区別できるように、より詳細な概要を提供します。したがって、テンプレート全体のドリフトを有効にしてから、 [ * 適用 * ] をクリックします。</p>
+<div class="paragraph">
+<p>ドリフトを使用すると、BlueXPでは、このテンプレートの作成時に入力したハードコードされた値を監視できます。</p>
+</div>
+</li>
+<li>
+<p>[ テンプレートの保存 *] をクリックします。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">結果</div>
+<p>テンプレートが作成され、新しいテンプレートが表示されるテンプレートダッシュボードに戻ります。</p>
+</div>
+<div class="paragraph">
+<p>を参照してください <a href="#テンプレートの作成後の作業">テンプレートについてユーザに説明する必要がある内容</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="cloud-volumes-ontap-作業環境のテンプレートを作成します">Cloud Volumes ONTAP 作業環境のテンプレートを作成します</h3>
+<div class="paragraph">
+<p>テンプレートを使用して、シングルノードまたは高可用性 Cloud Volumes ONTAP 作業環境を作成できます。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-remediation/images/note.svg" alt="メモ">
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>このサポートは、現時点では AWS 環境に対してのみ提供されています。</p>
+</li>
+<li>
+<p>このテンプレートは、作業環境で最初のボリュームを作成するものではありません。ボリュームを作成するには、テンプレートに「 Create Volume in Cloud Volumes ONTAP 」アクションを追加する必要があります。</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>を参照してください <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html#launching-a-single-node-cloud-volumes-ontap-system-in-aws" target="_blank" rel="noopener">"AWS でシングルノードの Cloud Volumes ONTAP システムを起動する方法"</a> または <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html#launching-a-cloud-volumes-ontap-ha-pair-in-aws" target="_blank" rel="noopener">"AWS での Cloud Volumes ONTAP HA ペア"</a> 必要な前提条件については、このテンプレートで定義する必要があるすべてのパラメータの詳細については、を参照してください。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>[<strong>正常性]&gt;[修正]を選択し、[*テンプレート</strong>]タブをクリックして、[<strong>新しいテンプレートの追加</strong>]をクリックします。</p>
+<div class="paragraph">
+<p>Select_a Template_page が表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_create_template_primary_action_blank.png" alt="このテンプレートを使用して実行する主なアクションの選択方法を示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>[ 空白のテンプレート ] を選択し、 [ 開始 ] をクリックします。</p>
+<div class="paragraph">
+<p>[ 新規アクションの追加（ <em>Add New Action</em>） ] ページが表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_create_template_cvo_env_aws.png" alt="新しいアクションの追加ページで主なアクションを選択する方法を示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>作成するリソースのタイプとして、 * Create Working Environment in AWS （シングルノード） * または * Create Working Environment in AWS （ハイアベイラビリティ） * を選択し、 * Apply * をクリックします。</p>
+<div class="paragraph">
+<p>この例では、「 _Create Working Environment in AWS （ single node ） _page 」が表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_create_template_cvo_env_aws1.png" alt="入力が必要な空の Cloud Volumes ONTAP 作業環境テンプレートを示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>* アクション名 * ：オプションで、デフォルト値の代わりにカスタマイズされたアクション名を入力します。</p>
+</li>
+<li>
+<p>* 詳細とクレデンシャル * ：使用する AWS クレデンシャルを選択し、作業環境名を入力して、必要に応じてタグを追加します。</p>
+<div class="paragraph">
+<p>このページの一部のフィールドは、説明のために用意されています。次の表では、ガイダンスが必要なフィールドについて説明します。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">フィールド</th>
+<th class="tableblock halign-left valign-top">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">クレデンシャル</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">これらは、 Cloud Volumes ONTAP クラスタ管理アカウントのクレデンシャルです。これらのクレデンシャルを使用して、 ONTAP System Manager またはその CLI を使用して Cloud Volumes ONTAP に接続できます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">作業環境名</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BlueXPでは、作業環境名を使用してCloud Volumes ONTAP システムとAmazon EC2インスタンスの両方に名前を付けます。また、このオプションを選択した場合は、事前定義されたセキュリティグループのプレフィックスとして名前が使用されます。フィールド内をクリックし、 5 つのオプションのいずれかを選択します。管理者が任意の名前を入力できるようにするには、 * フリーテキスト * を選択するか、作業環境名に特定の接頭辞または接尾辞を付けるか、 _contains_certain 文字を使用するか、または入力した正規表現（ regex ）の規則に従うように指定します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">タグ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AWS タグは、 AWS リソースのメタデータです。BlueXPは、Cloud Volumes ONTAP インスタンスとそのインスタンスに関連付けられている各AWSリソースにタグを追加します。タグの詳細については、を参照してください <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html" target="_blank" rel="noopener">"AWS ドキュメント：「 Tagging your Amazon EC2 Resources"</a>。</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>* 場所と接続 * ：に記録したネットワーク情報を入力します <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config.html#collect-networking-information" target="_blank" rel="noopener">"AWS ワークシート"</a>。これには、 AWS リージョン、 VPC 、サブネット、セキュリティグループが含まれます。</p>
+<div class="paragraph">
+<p>AWS Outpost を使用している場合は、 Outpost VPC を選択して、その Outpost に単一のノードの Cloud Volumes ONTAP システムを導入できます。エクスペリエンスは、 AWS に存在する他の VPC と同じです。</p>
+</div>
+</li>
+<li>
+<p>* 認証方法 * ：使用する SSH 認証方法として、パスワードまたはキーペアを選択します。</p>
+</li>
+<li>
+<p>* データ暗号化 * ：データ暗号化なし、または AWS で管理する暗号化を選択します。</p>
+<div class="paragraph">
+<p>AWS で管理する暗号化の場合は、アカウントまたは別の AWS アカウントから別の Customer Master Key （ CMK ；カスタマーマスターキー）を選択できます。</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-setting-up-kms.html" target="_blank" rel="noopener">"Cloud 用の AWS KMS の設定方法については、こちらをご覧ください Volume ONTAP の略"</a>。</p>
+</div>
+</li>
+<li>
+<p>* 充電方法 * ：このシステムで使用する充電オプションを指定します。</p>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-licensing-aws.html" target="_blank" rel="noopener">"これらの充電方法について説明します"</a>。</p>
+</div>
+</li>
+<li>
+<p>* ネットアップサポートサイトのアカウント * ：ネットアップサポートサイトのアカウントを選択します。</p>
+</li>
+<li>
+<p>* 構成済みパッケージ *: 作業環境で作成されたボリュームのいくつかの要因を決定する 4 つの構成済みパッケージのいずれかを選択します</p>
+</li>
+<li>
+<p>* SMB 構成 * ：この作業環境で SMB を使用してボリュームを導入する場合は、 CIFS サーバと関連する構成要素をセットアップできます。</p>
+</li>
+<li>
+<p>このアクションに必要なパラメーターを定義したら、 * 適用 * をクリックする。</p>
+<div class="paragraph">
+<p>テンプレートの値が正しく入力されている場合は、「 Create Working Environment in AWS （単一ノード）」ボックスに緑のチェックマークが追加されます。</p>
+</div>
+</li>
+<li>
+<p>このテンプレートに別の操作を追加して、この作業環境用のボリュームを作成することもできます。その場合は、をクリックします <span class="image"><img src="./media/button_plus_sign_round.png" alt="プラスボタン"></span> そのアクションを追加します。方法を参照してください <a href="#cloud-volumes-ontap-ボリュームのテンプレートを作成します">Cloud Volumes ONTAP ボリュームのテンプレートを作成します</a> を参照してください。</p>
+</li>
+<li>
+<p>左上にテンプレート名を入力します。</p>
+</li>
+<li>
+<p>[* 設定とドリフト * ] をクリックして、このテンプレートを他の同様のテンプレートと区別できるように、より詳細な概要を提供します。したがって、テンプレート全体のドリフトを有効にしてから、 [ * 適用 * ] をクリックします。</p>
+<div class="paragraph">
+<p>ドリフトを使用すると、BlueXPでは、このテンプレートの作成時に入力したハードコードされた値を監視できます。</p>
+</div>
+</li>
+<li>
+<p>[ テンプレートの保存 *] をクリックします。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">結果</div>
+<p>テンプレートが作成され、新しいテンプレートが表示されるテンプレートダッシュボードに戻ります。</p>
+</div>
+<div class="paragraph">
+<p>を参照してください <a href="#テンプレートの作成後の作業">テンプレートについてユーザに説明する必要がある内容</a>。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="テンプレートを使用して既存のリソースを検索する例">テンプレートを使用して既存のリソースを検索する例</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>既存のリソースを検索 _action を使用すると、特定の作業環境を検索したり、さまざまなフィルタを使用して既存のボリュームを検索したりできるため、検索対象を目的のリソースだけに絞り込むことができます。正しいリソースが見つかったら、作業環境にボリュームを追加するか、作成されたボリュームでクラウドサービスを有効にすることができます。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-remediation/images/note.svg" alt="メモ">
+</td>
+<td class="content">
+この時点で、 Cloud Volumes ONTAP 、オンプレミス ONTAP 、 Azure NetApp Files システム内にボリュームを見つけることができます。また、Cloud Volumes ONTAP ボリュームとオンプレミスのONTAP ボリュームでBlueXPのバックアップとリカバリを有効にすることもできます。追加のリソースとサービスは、後で利用可能になります。
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="既存のボリュームを検索しクラウドサービスをアクティブ化">既存のボリュームを検索し、クラウドサービスをアクティブ化</h3>
+<div class="paragraph">
+<p>current_Find Existing Resources_action機能を使用すると、現在BlueXPのバックアップとリカバリや分類が有効になっていないCloud Volumes ONTAP およびオンプレミスのONTAP 作業環境上のボリュームを検索できます。特定のボリュームでBlueXPのバックアップとリカバリを有効にすると、その作業環境のデフォルトポリシーとして設定したバックアップポリシーも設定されます。これにより、作業環境の今後のすべてのボリュームで同じバックアップポリシーを使用できるようになります。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>[<strong>正常性]&gt;[修正]を選択し、[*テンプレート</strong>]タブをクリックして、[<strong>新しいテンプレートの追加</strong>]をクリックします。</p>
+<div class="paragraph">
+<p>Select_a Template_page が表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_create_template_primary_action_blank.png" alt="このテンプレートを使用して実行する主なアクションの選択方法を示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>[ 空白のテンプレート ] を選択し、 [ 開始 ] をクリックします。</p>
+<div class="paragraph">
+<p>[ 新規アクションの追加（ <em>Add New Action</em>） ] ページが表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_create_template_find_resource_action.png" alt="新しいアクションの追加ページから既存リソースを検索アクションを選択する方法を示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>定義するアクションのタイプとして * 既存のリソースを検索 * を選択し、 * 適用 * をクリックします。</p>
+<div class="paragraph">
+<p>既存リソースを検索アクション定義ページが表示されます</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_define_find_resource_action1.png" alt="入力が必要な既存リソースの検索テンプレートが空白であることを示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>* アクション名 * ：デフォルト値の代わりに、カスタマイズされたアクション名を入力します。たとえば、「 Cluster ABC で大容量ボリュームを検索してバックアップを有効にする」などです。</p>
+</li>
+<li>
+<p>* リソースタイプ： * 検索するリソースのタイプを選択します。この場合は、「 * Volumes in Cloud Volumes ONTAP * 」を選択します。</p>
+<div class="paragraph">
+<p>このアクションに必要なエントリは、これだけです。「 * Continue * 」をクリックすると、環境内のすべての Cloud Volumes ONTAP システム上のすべてのボリュームのリストが表示されます。</p>
+</div>
+<div class="paragraph">
+<p>代わりに、いくつかのフィルタに入力して、BlueXPのバックアップとリカバリのアクションを適用する結果（この場合はボリューム）を少なくすることを推奨します。</p>
+</div>
+</li>
+<li>
+<p>_Context_area では、特定の作業環境とその作業環境に関するその他の詳細を選択できます。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_define_find_resource_filter_context.png" alt="既存リソースの検索テンプレートに適用できるコンテキストフィルタを示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>詳細領域では、ボリューム名、ボリュームサイズの範囲、およびボリュームに割り当てられているタグを選択できます。</p>
+<div class="paragraph">
+<p>ボリューム名として、フィールド内をクリックし、 5 つのオプションのいずれかを選択します。任意の名前を入力するには、 * Free Text * を選択します。ボリューム名に特定のプレフィックスまたはサフィックスを付けるか、 _contains_certain 文字を指定するか、または入力した正規表現（ regex ）のルールに従うように指定することもできます。</p>
+</div>
+<div class="paragraph">
+<p>ボリュームサイズの範囲を指定できます。たとえば、 100GiB ~ 500GiB のすべてのボリュームを指定できます。</p>
+</div>
+<div class="paragraph">
+<p>タグの場合、特定のタグキー / 値ペアを含むボリュームのみが結果に表示されるように、検索をさらに絞り込むことができます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_define_find_resource_filter_details.png" alt="既存のリソースの検索テンプレートに適用できる詳細フィルタを示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>[* Continue （続行） ] をクリックすると、ページが更新され、テンプレートで定義した検索条件が表示されます。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_define_find_resource_search_criteria.png" alt="既存のリソースの検索テンプレートに対して定義した検索条件を示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>[ 検索条件を今すぐテストする ] をクリックして、現在の結果を表示します。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>結果が想定どおりでない場合は、をクリックします <span class="image"><img src="./media/screenshot_edit_icon.gif" alt="鉛筆アイコンを編集します"></span> をクリックし、さらに検索条件を絞り込んでください。</p>
+</li>
+<li>
+<p>結果が正常に表示されたら、「 * 完了 * 」をクリックします。</p>
+<div class="paragraph">
+<p>完成した既存のリソースを検索アクションがエディタウィンドウに表示されます</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>プラス記号をクリックして別のアクションを追加し、 * ボリュームでクラウドバックアップを有効にする * を選択して、 * 適用 * をクリックします。</p>
+<div class="paragraph">
+<p>[Enable Cloud Backup on Volume_action_] がウィンドウに追加されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_template_add_backup_action.png" alt="BlueXPのバックアップとリカバリのアクションをテンプレートに追加する手順を示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>で説明したように、バックアップ条件を定義できます <a href="#ボリュームにバックアップ機能を追加します">ボリュームにバックアップ機能を追加する</a> これにより、テンプレートは、既存のリソースを検索アクションで選択したボリュームに正しいバックアップポリシーを適用します。</p>
+</li>
+<li>
+<p>[ 適用 ] をクリックして、 [ バックアップ ] アクションに加えたカスタマイズを保存し、完了したら [ テンプレートの保存 ] をクリックします。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">結果</div>
+<p>テンプレートが作成され、新しいテンプレートが表示されるテンプレートダッシュボードに戻ります。</p>
+</div>
+<div class="paragraph">
+<p>を参照してください <a href="#テンプレートの作成後の作業">テンプレートについてユーザに説明する必要がある内容</a>。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="既存の作業環境を検索">既存の作業環境を検索</h3>
+<div class="paragraph">
+<p>既存のリソースを検索アクションを使用すると ' 作業環境を検索し ' ボリュームの作成などの他のテンプレートアクションを使用して ' 既存の作業環境に対して簡単にアクションを実行できます</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>[<strong>正常性]&gt;[修正]を選択し、[*テンプレート</strong>]タブをクリックして、[<strong>新しいテンプレートの追加</strong>]をクリックします。</p>
+<div class="paragraph">
+<p>Select_a Template_page が表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_create_template_primary_action_blank.png" alt="このテンプレートを使用して実行する主なアクションの選択方法を示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>[ 空白のテンプレート ] を選択し、 [ 開始 ] をクリックします。</p>
+<div class="paragraph">
+<p>[ 新規アクションの追加（ <em>Add New Action</em>） ] ページが表示されます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_create_template_find_resource_action.png" alt="新しいアクションの追加ページから既存リソースを検索アクションを選択する方法を示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>定義するアクションのタイプとして * 既存のリソースを検索 * を選択し、 * 適用 * をクリックします。</p>
+<div class="paragraph">
+<p>既存リソースを検索アクション定義ページが表示されます</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_define_find_work_env.png" alt="入力が必要な既存リソースの検索テンプレートが空白であることを示すスクリーンショット。"></span></p>
+</div>
+</li>
+<li>
+<p>* アクション名 * ：デフォルト値の代わりに、カスタマイズされたアクション名を入力します。たとえば、「ダラスを含む作業環境を検索」とします。</p>
+</li>
+<li>
+<p>* リソースタイプ： * 検索するリソースのタイプを選択します。この場合は、 * 作業環境 * を選択します。</p>
+<div class="paragraph">
+<p>このアクションに必要なエントリは、これだけです。[* Continue * Now] をクリックすると、環境内のすべての作業環境のリストが表示されます。</p>
+</div>
+<div class="paragraph">
+<p>代わりに、いくつかのフィルタを入力して結果の数を減らすことを推奨します（この場合は作業環境）。</p>
+</div>
+</li>
+<li>
+<p>_Details_area でいくつかのフィルタを定義したら ' 特定の作業環境を選択できます</p>
+</li>
+<li>
+<p>[* Continue * （続行） ] をクリックして設定を保存し、 [* Done * （完了 * ） ] をクリックします。</p>
+</li>
+<li>
+<p>左上にテンプレート名を入力し、 [ テンプレートの保存 ] をクリックします</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">結果</div>
+<p>テンプレートが作成され、新しいテンプレートが表示されるテンプレートダッシュボードに戻ります。</p>
+</div>
+<div class="paragraph">
+<p>を参照してください <a href="#テンプレートの作成後の作業">テンプレートについてユーザに説明する必要がある内容</a>。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="テンプレートを使用してサービスを有効にする例">テンプレートを使用してサービスを有効にする例</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>サービステンプレートを使用すると、新しく作成したボリュームで、BlueXPのバックアップとリカバリ、BlueXP分類、またはBlueXPレプリケーション（SnapMirror）サービスをアクティブ化できます。</p>
+</div>
+<div class="sect2">
+<h3 id="ボリュームにバックアップ機能を追加します">ボリュームにバックアップ機能を追加します</h3>
+<div class="paragraph">
+<p>ボリュームテンプレートを作成する場合、を使用して定期的にボリュームのバックアップを作成するテンプレートにを追加できます <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html" target="_blank" rel="noopener">"BlueXPのバックアップとリカバリ"</a> サービス</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-remediation/images/tip.svg" alt="ヒント">
+</td>
+<td class="content">
+この操作は Azure NetApp Files ボリュームには適用されません。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_template_backup.png" alt="ボリュームのバックアップ機能を有効にするページのスクリーンショット。"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>* Policy * ：使用するバックアップポリシーを選択します。</p>
+</li>
+<li>
+<p>* コンテキスト * ：デフォルトでは、作業環境、 Storage VM 、およびボリュームには変数が設定され、同じテンプレートで以前に作成したボリュームのバックアップを作成することを示します。これが必要な場合は、すべて設定されています。</p>
+<div class="paragraph">
+<p>別のボリュームのバックアップを作成する場合は、それらの詳細を手動で入力できます。方法を参照してください <a href="reference-template-building-blocks.html#pass-values-between-template-actions">"[ コンテキスト（ Context ） </a> フィールドに入力する"] をクリックして、別のボリュームを指定します。</p>
+</div>
+</li>
+<li>
+<p>[ 適用 ] をクリックして変更を保存します。</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bluexpの分類機能をボリュームに追加します">BlueXPの分類機能をボリュームに追加します</h3>
+<div class="paragraph">
+<p>ボリュームテンプレートを作成するときに、を使用してボリュームのコンプライアンスと分類をスキャンするテンプレートにを追加できます <a href="https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html" target="_blank" rel="noopener">"BlueXPの分類"</a> サービス</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_template_data_sense.png" alt="ボリュームのスキャン機能を有効にするページのスクリーンショット。"></span></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>* コンテキスト * ：デフォルトでは、作業環境、ボリューム名、ボリューム UUID 、ボリュームパス、およびプロトコルの変数が入力されます。これは、この同じテンプレートで以前に作成したボリュームのデータをスキャンすることを示します。これが必要な場合は、すべて設定されています。</p>
+<div class="paragraph">
+<p>別のボリュームのデータをスキャンする場合は、それらの詳細を手動で入力できます。方法を参照してください <a href="reference-template-building-blocks.html#pass-values-between-template-actions">"[ コンテキスト（ Context ） </a> フィールドに入力する"] をクリックして、別のボリュームを指定します。</p>
+</div>
+</li>
+<li>
+<p>[ 適用 ] をクリックして変更を保存します。</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bluexpレプリケーション機能をボリュームに追加します">BlueXPレプリケーション機能をボリュームに追加します</h3>
+<div class="paragraph">
+<p>ボリュームテンプレートを作成するときに、を使用してボリューム内のデータを別のボリュームにレプリケートするテンプレートにを追加できます <a href="https://docs.netapp.com/us-en/bluexp-replication/concept-replication.html" target="_blank" rel="noopener">"BlueXPレプリケーション"</a> サービスデータは、 Cloud Volumes ONTAP クラスタまたはオンプレミスの ONTAP クラスタにレプリケートできます。</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/bluexp-remediation/images/tip.svg" alt="ヒント">
+</td>
+<td class="content">
+この操作は Azure NetApp Files ボリュームには適用されません。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>BlueXPレプリケーション機能は、ソースボリュームの選択、デスティネーションボリュームの選択、レプリケーション設定の定義の3つの部分で構成されます。各セクションについて以下で説明します。</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>* ソースの詳細 * ：レプリケートするソースボリュームの詳細を入力します。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_template_replication_source.png" alt="BlueXPレプリケーションのソースボリュームの場所を定義するページのスクリーンショット。"></span></p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>デフォルトでは、作業環境、 Storage VM 、およびボリュームについて、最初の 3 つの変数が入力されます。これは、同じテンプレートで以前に作成したボリュームをレプリケートすることを示します。これが必要な場合は、すべて設定されています。</p>
+<div class="paragraph">
+<p>別のボリュームをレプリケートする場合は、それらの詳細を手動で入力できます。方法を参照してください <a href="reference-template-building-blocks.html#pass-values-between-template-actions">"[ コンテキスト（ Context ） </a> フィールドに入力する"] をクリックして、別のボリュームを指定します。</p>
+</div>
+</li>
+<li>
+<p>BlueXPレプリケーションを使用するには、ソースとデスティネーションの作業環境がそれぞれのクラスタ間LIFを介して接続されている必要があります。ソース作業環境のクラスタ間 LIF の IP アドレスを入力します。</p>
+<div class="paragraph">
+<p>この情報を取得するには、作業環境をダブルクリックし、メニューアイコンをクリックして、 [ 情報 ] をクリックします。</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>* デスティネーションの詳細 * ：レプリケーション処理によって作成されるデスティネーションボリュームの詳細を入力します。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_template_replication_dest.png" alt="BlueXPレプリケーションのデスティネーションボリュームの場所を定義するページのスクリーンショット。"></span></p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>ボリュームを作成する作業環境を選択します。</p>
+</li>
+<li>
+<p>ボリュームを配置する Storage VM を選択します。</p>
+</li>
+<li>
+<p>ボリュームを（オンプレミスの ONTAP クラスタではなく） Cloud Volumes ONTAP クラスタにレプリケートする場合は、デスティネーションプロバイダ（ AWS 、 Azure 、 GCP ）を指定する必要があります。</p>
+</li>
+<li>
+<p>ボリュームを Cloud Volumes ONTAP クラスタにレプリケートするときに、デスティネーションボリュームでボリューム階層化が有効になっているかどうかを指定することができます。</p>
+</li>
+<li>
+<p>デスティネーションボリューム名について、フィールドをクリックし、 5 つのオプションのいずれかを選択します。任意の名前を入力するには、 * Free Text * を選択します。ボリューム名に特定のプレフィックスまたはサフィックスを付けるか、 _contains_certain 文字を指定するか、または入力した正規表現（ regex ）のルールに従うように指定することもできます。</p>
+</li>
+<li>
+<p>BlueXPレプリケーションを使用するには、ソースとデスティネーションの作業環境がそれぞれのクラスタ間LIFを介して接続されている必要があります。デスティネーション作業環境のクラスタ間 LIF の IP アドレスを入力します。</p>
+</li>
+<li>
+<p>ボリュームを配置するアグリゲートを選択します。</p>
+</li>
+<li>
+<p>ボリュームを（オンプレミスの ONTAP クラスタではなく） Cloud Volumes ONTAP クラスタにレプリケートする場合は、新しいボリュームに使用するディスクのタイプを指定する必要があります。</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>* レプリケーションの詳細 * ：レプリケーション操作のタイプと頻度に関する詳細を入力します。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_template_replication_policy.png" alt="関係のBlueXPレプリケーション設定を定義するページのスクリーンショット。"></span></p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>を選択します <a href="https://docs.netapp.com/us-en/bluexp-replication/concept-replication-policies.html#types-of-replication-policies" target="_blank" rel="noopener">"レプリケーションポリシー"</a> を使用します。</p>
+</li>
+<li>
+<p>1 回限りのコピーまたは繰り返し実行するレプリケーションスケジュールを選択します。</p>
+</li>
+<li>
+<p>遅延時間、ステータス、および前回の転送時間に加えて、 SnapMirror 関係のレプリケーションの健常性もドリフトレポートに含める場合は、レプリケーションの健常性ステータスの監視を有効にします。 <a href="task-check-template-compliance.html#bluexp-replication-health-details-in-the-drift-report">"ドリフトレポートでは、このような内容を確認できます"</a>。</p>
+</li>
+<li>
+<p>転送速度の上限を設定するかどうかを選択し、データの転送速度の上限（ 1 秒あたりのキロバイト数）を入力します。固定値を入力するか、または最小値と最大値を指定して、ストレージ管理者にその範囲の値を選択させることができます。</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>[ 適用 ] をクリックして変更を保存します。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="テンプレートの作成後の作業">テンプレートの作成後の作業</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>テンプレートを作成したら、新しい作業環境およびボリュームを作成する際にテンプレートを使用するようストレージ管理者に通知する必要があります。</p>
+</div>
+<div class="paragraph">
+<p>それらをに示すことができます <a href="task-run-templates.html">"テンプレートを使用したリソースの作成"</a> を参照してください。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="テンプレートを編集または削除します">テンプレートを編集または削除します</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>パラメータを変更する必要がある場合は、テンプレートを変更できます。変更を保存すると、テンプレートから作成された以降のすべてのリソースに新しいパラメータ値が使用されます。</p>
+</div>
+<div class="paragraph">
+<p>不要になったテンプレートを削除することもできます。テンプレートを削除しても、そのテンプレートで作成されたリソースには影響しません。ただし、テンプレートを削除した後にドリフトコンプライアンスチェックを実行することはできません。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_template_edit_remove.png" alt="テンプレートを変更または削除する方法を示すスクリーンショット。"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="テンプレートのコピーを作成します">テンプレートのコピーを作成します</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>既存のテンプレートのコピーを作成できます。これにより、既存のテンプレートと非常によく似た新しいテンプレートを作成する場合に、時間を大幅に節約できます。新しい名前で複製を作成し、テンプレートを編集して、テンプレートを一意にする結合アイテムを変更することができます。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_template_duplicate.png" alt="テンプレートを複製する方法を示すスクリーンショット。"></span></p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/ja-jp/bluexp-remediation/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/ja-jp/bluexp-remediation/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">このページ</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">ご利用規約</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">プライバシー ポリシー</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">クッキー ポリシー</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">クッキーの設定</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">このページに関するフィードバックをお寄せください</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/ja-jp/bluexp-remediation/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/ja-jp/bluexp-remediation/js/prism.js'></script>
+      <script type="text/javascript" src='/ja-jp/bluexp-remediation/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/ja-jp/bluexp-remediation/js/ie-tabbed-blocks.js'></script>
+    <script src='/ja-jp/bluexp-remediation/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
